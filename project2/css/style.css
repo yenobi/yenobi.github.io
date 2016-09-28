@@ -1,0 +1,62 @@
+/* здесь должен быть фон для всей страницы #f9f9f9 */
+
+body{
+  background-color: #ffffff;
+  margin: 0 150px;
+  border: 2px solid lightgray;
+  border-top: none;
+  border-bottom: none;
+  font: 14pt OpenSans;
+  /* Не уверен по поводу шрифта */
+}
+
+/* Header */
+
+.logo{
+  padding-top: 40px;
+  margin-bottom: 40px;
+}
+
+.main-menu{
+  background-color: #575656;
+  color: white;
+}
+
+.header{
+  margin: 0 50px;
+}
+
+li{
+  display: inline-block;
+  padding: 20px;
+  text-shadow: 2px 2px black;
+}
+
+.main-menu-item:hover{
+  border-left: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+  background-color: #484848;
+}
+
+.header a{
+  color: white;
+  text-decoration: none;
+}
+/* Content */
+
+/* Footer */
+
+.footer{
+  background-color: #e1e1e1;
+  font-size: 13pt;
+
+}
+.footer a{
+  color: black;
+  text-decoration: none;
+  text-shadow: none;
+}
+
+.footer-menu-item:hover{
+  text-decoration: underline;
+}
