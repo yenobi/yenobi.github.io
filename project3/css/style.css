@@ -1,0 +1,32 @@
+body{
+  /*background-color: black;*/
+  background-image: url(../img/bg.jpg);
+  background-repeat: space;
+  background-size: cover;
+  /*background-position: center;*/
+}
+
+/* Header */
+
+
+.logo {
+  margin-left: 7%;
+  /*margin-top: 5%;*/
+  float: left;
+}
+
+p {
+  color: white;
+  font-family: Tahoma;
+  text-align: right;
+  margin-right: 7%;
+}
+
+.contacts-first {
+  font-size: 20px;
+  margin-top: 7%;
+}
+
+.contacts-second {
+  font-size: 14px;
+}
