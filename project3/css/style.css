@@ -11,7 +11,7 @@ body{
 
 .logo {
   margin-left: 7%;
-  /*margin-top: 5%;*/
+  margin-top: 5%;
   float: left;
 }
 
@@ -24,9 +24,16 @@ p {
 
 .contacts-first {
   font-size: 20px;
-  margin-top: 7%;
+  padding-top: 145px;
 }
 
 .contacts-second {
   font-size: 14px;
+}
+
+/* Content */
+
+.first-line {
+  display: inline-flex;
+  flex-direction: row;
 }
