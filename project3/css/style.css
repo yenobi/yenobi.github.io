@@ -36,4 +36,25 @@ p {
 .first-line {
   display: inline-flex;
   flex-direction: row;
+  width: 90%;
+  margin-left: 7%;
+  justify-content: center;
+}
+
+.second-line {
+  display: inline-flex;
+  flex-direction: row;
+  width: 90%;
+  margin-left: 4%;
+  justify-content: center;
+}
+
+.content img{
+  width: 350px;
+  height: 241px;
+  padding-right: 10px;
+}
+
+.nepal img{
+
 }
