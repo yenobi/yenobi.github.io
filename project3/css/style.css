@@ -35,7 +35,12 @@ p {
 
 /* Content */
 
-.first-line {
+.content {
+  width: xx%;
+  margin: 0 auto;
+}
+
+.line {
   display: inline-flex;
   flex-direction: row;
   width: 90%;
@@ -43,12 +48,7 @@ p {
   justify-content: center;
 }
 
-.second-line {
-  display: inline-flex;
-  flex-direction: row;
-  width: 90%;
-  margin-left: 7%;
-  justify-content: center;
+.line:last-child {
   padding-top: 30px;
 }
 
@@ -60,11 +60,7 @@ p {
 
 .content p {
   text-align: center;
-}
-
-.contet p {
   font-size: 14px;
-
 }
 
 /* footer */
