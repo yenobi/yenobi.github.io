@@ -1,34 +1,36 @@
 body{
-  /*background-color: black;*/
+  background-color: black;
   background-image: url(../img/bg.jpg);
   background-repeat: space;
   background-size: cover;
   /*background-position: center;*/
 }
 
+p {
+  color: white;
+  font-family: Tahoma;
+}
 /* Header */
 
 
 .logo {
-  margin-left: 7%;
-  margin-top: 5%;
+  margin-left: 10%;
+  margin-top: 3%;
   float: left;
 }
 
-p {
-  color: white;
-  font-family: Tahoma;
+.header p {
   text-align: right;
   margin-right: 7%;
 }
 
 .contacts-first {
-  font-size: 20px;
-  padding-top: 145px;
+  font-size: 14px;
+  padding-top: 120px;
 }
 
 .contacts-second {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 /* Content */
@@ -45,16 +47,34 @@ p {
   display: inline-flex;
   flex-direction: row;
   width: 90%;
-  margin-left: 4%;
+  margin-left: 7%;
   justify-content: center;
+  padding-top: 30px;
 }
 
 .content img{
-  width: 350px;
-  height: 241px;
+  width: 400px;
+  height: 276px;
   padding-right: 10px;
 }
 
-.nepal img{
+.content p {
+  text-align: center;
+}
 
+.contet p {
+  font-size: 14px;
+
+}
+
+/* footer */
+
+.footer {
+  padding-top: 200px;
+  padding-bottom: 40px;
+}
+
+.footer p {
+  font-size: 13px;
+  text-align: center;
 }
