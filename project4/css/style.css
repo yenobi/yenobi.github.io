@@ -4,10 +4,19 @@ body {
 
 .wrapper {
   background-color: white;
-  position: fixed;
-  top: 38px;
-  left: 150px;
-  right: 130px;
+  margin: 38px auto 20px;
+  width: 1000px;
+  font-family: Tahoma;
+  -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 3px 3px 5px 5px rgba(0,0,0,0.75);
+  position: relative;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 /* wrapper has shaddow */
@@ -17,17 +26,26 @@ body {
 .header {
   /*display: flex;
   flex-direction: row;*/
-  display: inline;
+  width: 100%;
+  display: inline-block;
+  height: 173px;
 }
 
 .logo {
   padding-left: 30px;
+  padding-top: 10px;
+  float: left;
+  width: 285px;
 }
 
 .contacts {
+  width: 160px;
   height: 70px;
   float: right;
-  /*align-self: right;*/
+  padding-top: 20px;
+  padding-right: 20px;
+  font-size: 15px;
+
 }
 .contacts p:first-child{
   font-weight: bold;
@@ -36,7 +54,14 @@ body {
 .header li {
   display: inline-block;
 }
-/* content */
+
+.countries {
+  float: right;
+  margin-top: 25px;
+  margin-right: 20px;
+  clear: right;
+}
+/* photo */
 
 .photo img{
   width: 100%;
@@ -51,34 +76,73 @@ body {
 
 .menu ul{
   width: 100%;
+  height: 30px;
 }
 
 .menu li{
   display: inline-block;
-  padding: 10px;
+  padding: 4px;
   font-family: Tahoma;
   font-weight: lighter;
   width: 130px;
+  text-align: center;
+  position: relative;
 }
 
+.menu a {
+  text-decoration: none;
+  display: block;
+  /*padding: 4px;*/
+  color: white;
+}
+
+.menu ul.submenu {
+    display: none;
+    position: absolute;
+    width: 120px;
+    top: 37px;
+    left: 0;
+    border: 1px solid red;
+}
+
+ul.submenu > li {
+  display: block;
+}
+
+ul.submenu > li > a {
+  display: block;
+}
+
+ul.menu > li:hover > ul.submenu {
+	display: block;
+}
+/* content */
+
 .sidebar {
-  float: left;
-  background-color: yellow;
+  /*float: left;*/
+  background-color: lightgray;
+  padding-top: 10px;
+  padding-left: 10px;
+  width: 210px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+p {
+  margin-bottom: 5px;
 }
 
 .news {
   float: right;
-  background-color: green;
+  background-color: #edeef0;
+  width: 210px;
+  padding-top: 10px;
+  padding-left: 10px;
 }
 /* footer */
 .footer p {
   text-align: center;
-  /*position: absolute;
-  top: 99%;*/
-}
-
-.clearfix:after {
-  content: "";
-  display: block;
-  clear: both;
 }
