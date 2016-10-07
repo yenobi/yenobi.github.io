@@ -128,7 +128,7 @@ ul.menu > li:hover > ul.submenu {
 /* content */
 
 .sidebar {
-  /*float: left;*/
+  float: left;
   background-color: lightgray;
   padding-top: 10px;
   padding-left: 10px;
@@ -153,9 +153,10 @@ p {
   padding-left: 10px;
 }
 
-.content {
-  width: 300px;
+.questions {
+  width: 580px;
 }
+
 /* footer */
 .footer p {
   text-align: center;
