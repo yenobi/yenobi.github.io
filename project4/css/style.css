@@ -45,6 +45,7 @@ box-shadow: 3px 3px 5px 5px rgba(0,0,0,0.75);
   padding-top: 20px;
   padding-right: 20px;
   font-size: 15px;
+  color: #128aa7;
 
 }
 .contacts p:first-child{
@@ -65,7 +66,7 @@ box-shadow: 3px 3px 5px 5px rgba(0,0,0,0.75);
 
 .photo img{
   width: 100%;
-  height: 320px;
+  height: 285px;
 }
 
 /* menu */
@@ -87,6 +88,13 @@ box-shadow: 3px 3px 5px 5px rgba(0,0,0,0.75);
   width: 130px;
   text-align: center;
   position: relative;
+  border-bottom: 1px solid black;
+}
+
+.menu > li > a > img {
+  width: 12px;
+  height: 12px;
+  padding-left: 5px;
 }
 
 .menu a {
@@ -99,18 +107,19 @@ box-shadow: 3px 3px 5px 5px rgba(0,0,0,0.75);
 .menu ul.submenu {
     display: none;
     position: absolute;
-    width: 120px;
-    top: 37px;
-    left: 0;
-    border: 1px solid red;
+    width: 130px;
+    top: 25px;
+    left: 0px;
 }
 
 ul.submenu > li {
   display: block;
+  background-color: #333333;
 }
 
 ul.submenu > li > a {
   display: block;
+
 }
 
 ul.menu > li:hover > ul.submenu {
@@ -124,6 +133,7 @@ ul.menu > li:hover > ul.submenu {
   padding-top: 10px;
   padding-left: 10px;
   width: 210px;
+  margin-right: 0px;
 }
 
 h2 {
@@ -142,7 +152,14 @@ p {
   padding-top: 10px;
   padding-left: 10px;
 }
+
+.content {
+  width: 300px;
+}
 /* footer */
 .footer p {
   text-align: center;
+  color: #ffffff;
+  font-family: Tahoma;
+  /* почему сюда не дошел общий фонт-фамили? */
 }
