@@ -1,0 +1,20 @@
+body {
+  background-image: url(../img/bg.jpg);
+}
+
+/* nagication-top */
+
+.nav li {
+  float: left;
+  padding: 5px;
+  color: white;
+  font-family: Arial;
+  font-size: 14px;
+}
+
+.nav > li > a {
+  display: block;
+  position: relative;
+  color: white;
+  text-decoration: none;
+}
