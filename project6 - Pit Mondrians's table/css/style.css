@@ -1,0 +1,45 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div {
+  padding-top: 40px;
+}
+
+table {
+  width: 420px;
+  border-collapse: collapse;
+}
+
+.white {
+  background-color: white;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.red {
+  background-color: red;
+}
+
+.black {
+  background-color: black;
+  opacity: 0.9;
+}
+
+.blue {
+  background-color: blue;
+}
+
+td {
+  width: 60px;
+  height: 60px;
+  border: 5px solid black;
+}
+
+tr {
+  height: 60px;
+}
