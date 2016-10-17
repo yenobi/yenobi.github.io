@@ -1,0 +1,41 @@
+.header {
+  background-image: url(../img/bg.png);
+}
+
+.nav>a {
+  display: block;
+}
+
+.nav>a:hover{
+  color: white;
+  background-color: #4eabda
+}
+
+.nav ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav li {
+  width: 70px;
+  height: 40px;
+  padding: 10px;
+  display: block;
+}
+
+.brdr {
+  border-right: 1px solid #56a2dc;
+}
+
+.nav ul:last-child {
+  background-image: url();
+}
+
+.nav ul:last-child>a{
+  text-decoration: underline;
+}
+
+.nav img {
+  width: 20px;
+  height: 20px;
+}
