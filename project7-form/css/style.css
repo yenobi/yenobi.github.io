@@ -1,9 +1,19 @@
-.header {
-  background-image: url(../img/bg.png);
+html, body, .wrapper {
+  width: 1300px;;
+  height: 100%;
 }
 
-.nav>a {
+/* header */
+.header {
+  background-image: url(../img/bg.png);
+  color: white;
+}
+
+.nav ul li a {
   display: block;
+  text-decoration: none;
+  color: white;
+  font-family: Arial;
 }
 
 .nav>a:hover{
@@ -12,6 +22,7 @@
 }
 
 .nav ul {
+  margin-right: 20px;
   display: flex;
   justify-content: flex-end;
 }
@@ -19,7 +30,7 @@
 .nav li {
   width: 70px;
   height: 40px;
-  padding: 10px;
+  padding: 8px;
   display: block;
 }
 
@@ -27,7 +38,21 @@
   border-right: 1px solid #56a2dc;
 }
 
-.nav ul:last-child {
+.flag {
+  display: block;
+  position: relative;
+  width: 120px;
+}
+
+.flag img {
+  float: left;
+  margin-right: 5px;
+}
+.nav li:first-child {
+  width: 100px;
+}
+.nav li:last-child {
+  width: 200px;
   background-image: url();
 }
 
@@ -39,3 +64,12 @@
   width: 20px;
   height: 20px;
 }
+
+/* wrapper */
+.wrapper {
+  background-image: url(../img/bg2.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+/* form */
