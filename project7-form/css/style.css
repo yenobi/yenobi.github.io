@@ -1,6 +1,8 @@
 html, body, .wrapper {
-  width: 1300px;;
+  width: 100%;
   height: 100%;
+  font-family: Arial;
+  font-weight: 100;
 }
 
 /* header */
@@ -9,29 +11,29 @@ html, body, .wrapper {
   color: white;
 }
 
+.nav li {
+  width: 70px;
+  height: 20px;
+  padding: 8px;
+  display: block;
+}
+
 .nav ul li a {
   display: block;
+  height: 100%;
   text-decoration: none;
   color: white;
   font-family: Arial;
 }
 
-.nav>a:hover{
-  color: white;
-  background-color: #4eabda
+.nav ul li > a:hover{
+  background-color: #4eabda;
 }
 
 .nav ul {
   margin-right: 20px;
   display: flex;
   justify-content: flex-end;
-}
-
-.nav li {
-  width: 70px;
-  height: 40px;
-  padding: 8px;
-  display: block;
 }
 
 .brdr {
@@ -41,7 +43,9 @@ html, body, .wrapper {
 .flag {
   display: block;
   position: relative;
-  width: 120px;
+  width: 130px;
+  margin-right: 60px;
+  white-space: nowrap;
 }
 
 .flag img {
@@ -54,6 +58,7 @@ html, body, .wrapper {
 .nav li:last-child {
   width: 200px;
   background-image: url();
+  white-space: nowrap;
 }
 
 .nav ul:last-child>a{
@@ -70,6 +75,42 @@ html, body, .wrapper {
   background-image: url(../img/bg2.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
+}
+
+.wrapper-2 {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+/* content */
+
+.content {
+  width:560px;
+  height:614px;
+  background-image: url(../img/bg-content.png);
+}
+.main {
+  position: relative;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  font-weight: lighter;
+  font-size: x-large;
+}
+
+.fb {
+  position: relative;
+    left: 142px;
+    top: 30px;
+}
+
+.ou {
+  position: relative;
+  top: 50px;
+  left: 142px;
 }
 
 /* form */
