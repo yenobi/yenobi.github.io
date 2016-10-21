@@ -114,3 +114,21 @@ h1 {
 }
 
 /* form */
+.form {
+  position: relative;
+  top: 75px;
+}
+.form-item {
+  text-align: center;
+  color: white;
+}
+
+[type="text"],[type="password"] {
+  margin-bottom: 20px;
+  width: 275px;
+  height: 35px;
+  background-color: black;
+  border: none;
+  border-bottom: 1px solid gray;
+  /* как задать цвет текста для плейсхолдер? */ 
+}
