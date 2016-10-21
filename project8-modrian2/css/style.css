@@ -35,10 +35,19 @@ td:nth-child(n+2)
 */
 
 
-tr:first-child td:nth-child(n+6) {
+tr:nth-child(-n+3) td:nth-child(n+6), tr:nth-last-of-type(-n+2) td:first-child{
   background-color: yellow;
 }
 
-tr:nth-child(2) td:nth-child(-n+5) {
+tr:nth-child(n+2):nth-child(-n+5) td:nth-child(-n+5):nth-child(n+2) {
   background-color: red;
+}
+
+tr:nth-last-of-type(n+2):nth-last-of-type(-n+3) td:nth-child(n+6){
+  background-color: blue;
+}
+
+tr:nth-child(n+6):nth-child(-n+7) td:nth-child(n+2):nth-child(-n+3),
+tr:nth-last-of-type(2) td:nth-last-of-type(n+3):nth-last-of-type(-n+4){
+  background-color: grey;
 }
