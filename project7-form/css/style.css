@@ -1,7 +1,7 @@
 html, body, .wrapper {
   width: 100%;
   height: 100%;
-  font-family: Arial;
+  font-family: Tahoma, Arial, sans-serif;
   font-weight: 100;
 }
 
@@ -9,13 +9,21 @@ html, body, .wrapper {
 .header {
   background-image: url(../img/bg.png);
   color: white;
+  background-size: 100%;
+}
+
+.nav ul {
+  margin-right: 20px;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .nav li {
   width: 70px;
-  height: 20px;
-  padding: 8px;
+  height: 40px;
   display: block;
+  line-height: 40px;
+  text-align: center;
 }
 
 .nav ul li a {
@@ -30,38 +38,36 @@ html, body, .wrapper {
   background-color: #4eabda;
 }
 
-.nav ul {
-  margin-right: 20px;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.brdr {
+li:nth-child(5) {
   border-right: 1px solid #56a2dc;
 }
 
-.flag {
+li.flag {
   display: block;
   position: relative;
-  width: 130px;
-  margin-right: 60px;
+  width: 140px;
   white-space: nowrap;
 }
 
 .flag img {
   float: left;
   margin-right: 5px;
+  padding-top: 10px;
+  padding-left: 5px;
 }
+
 .nav li:first-child {
   width: 100px;
 }
 .nav li:last-child {
   width: 200px;
-  background-image: url();
+  background-image: url(../img/bg-button-2.jpg);
+  background-size: 110%;
   white-space: nowrap;
 }
 
-.nav ul:last-child>a{
+.nav li:last-child > a {
+  display: inline;
   text-decoration: underline;
 }
 
@@ -75,12 +81,9 @@ html, body, .wrapper {
   background-image: url(../img/bg2.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
-}
-
-.wrapper-2 {
-  display:flex;
-  justify-content:center;
-  align-items:center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* content */
@@ -90,9 +93,6 @@ html, body, .wrapper {
   height:614px;
   background-image: url(../img/bg-content.png);
 }
-.main {
-  position: relative;
-}
 
 h1 {
   text-align: center;
@@ -101,34 +101,58 @@ h1 {
   font-size: x-large;
 }
 
-.fb {
-  position: relative;
-    left: 142px;
-    top: 30px;
+div.content :nth-child(n+2):nth-child(-n+3){
+  padding-top: 30px;
+  padding-left: 142px;
 }
 
-.ou {
-  position: relative;
-  top: 50px;
-  left: 142px;
-}
-
-/* form */
+/* form
 .form {
   position: relative;
   top: 75px;
 }
+*/
+
 .form-item {
+  margin-bottom: 20px;
   text-align: center;
   color: white;
+  font-size: 14px;
 }
 
 [type="text"],[type="password"] {
-  margin-bottom: 20px;
+  padding-left: 20px;
   width: 275px;
   height: 35px;
   background-color: black;
+  color: white;
   border: none;
   border-bottom: 1px solid gray;
-  /* как задать цвет текста для плейсхолдер? */ 
+}
+
+/* почему-то не получилось объелинить эти селекторы */
+
+[type="password"]::-webkit-input-placeholder {
+  color: white;
+}
+
+[type="text"]::-webkit-input-placeholder {
+  color: white;
+}
+
+[type="text"]:focus,[type="password"]:focus {
+    background-color: #1b5288;
+    box-shadow: 0px 0px 15px 5px rgba(104, 155, 204, .75);
+}
+
+[type="submit"] {
+  width: 150px;
+  height: 80px;
+}
+
+.form p {
+  text-align: center;
+  color: white;
+  font-size: 12px;
+  font-weight: 100;
 }
