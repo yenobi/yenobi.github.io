@@ -42,14 +42,14 @@ li:nth-child(5) {
   border-right: 1px solid #56a2dc;
 }
 
-li.flag {
+li:nth-child(6) {
   display: block;
   position: relative;
   width: 140px;
   white-space: nowrap;
 }
 
-.flag img {
+li:nth-child(6) img {
   float: left;
   margin-right: 5px;
   padding-top: 10px;
@@ -101,19 +101,15 @@ h1 {
   font-size: x-large;
 }
 
-div.content :nth-child(n+2):nth-child(-n+3){
+.content > div:nth-child(n+2):nth-of-type(-n+3){
   padding-top: 30px;
   padding-left: 142px;
 }
 
-/* form
-.form {
-  position: relative;
-  top: 75px;
-}
-*/
+/* form */
 
 .form-item {
+  margin-top: 20px;
   margin-bottom: 20px;
   text-align: center;
   color: white;
@@ -145,14 +141,26 @@ div.content :nth-child(n+2):nth-child(-n+3){
     box-shadow: 0px 0px 15px 5px rgba(104, 155, 204, .75);
 }
 
-[type="submit"] {
-  width: 150px;
-  height: 80px;
-}
-
 .form p {
+  width: 300px;
+  margin-top: 20px;
+  margin-left: 130px;
   text-align: center;
   color: white;
   font-size: 12px;
   font-weight: 100;
+}
+
+button {
+  width: 147px;
+  height: 34px;
+  margin: 0 206px;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+button img {
+  margin-top: -2px;
+  margin-left: -2px;
 }
