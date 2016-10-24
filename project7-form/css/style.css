@@ -72,10 +72,14 @@ li:nth-child(6) img {
 }
 .nav li:last-child {
   width: 200px;
-  background-image: url(../img/bg-button-2.jpg);
-  background-size: 110%;
   white-space: nowrap;
+  background-color: #4299d2;
+  background: linear-gradient(to top, #2e7ac4, #50aedb);
+  box-shadow: inset 0px 5px 5px 0px rgba(101,195,229,0.5);
 }
+
+/*background-image: url(../img/bg-button-2.jpg);
+background-size: 110%;*/
 
 .nav li:last-child > a {
   display: inline;
@@ -91,7 +95,7 @@ li:nth-child(6) img {
 .wrapper {
   background-image: url(../img/bg2.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -117,6 +121,30 @@ h1 {
   padding-left: 142px;
 }
 
+.content button {
+  padding: 0;
+  width: 280px;
+  height: 40px;
+  background-color: #354d8b;
+  background: linear-gradient(to bottom, #3d5699, #2d4478);
+  border: none;
+  border-radius: 7px;
+  border-top: 1px solid #7a89b4;
+  color: white;
+  font-size: 14px;
+  line-height: 35px;
+  vertical-align: baseline;
+  cursor: pointer;
+}
+
+button img {
+  display: block;
+  float: left;
+  border-right: 1px solid #213c71;
+  height: 38px;
+  margin-left: 5px;
+}
+
 /* form */
 
 .form-item {
@@ -137,7 +165,9 @@ h1 {
   border-bottom: 1px solid gray;
 }
 
-/* почему-то не получилось объелинить эти селекторы */
+span {
+  vertical-align:middle;
+}
 
 [type="password"]::-webkit-input-placeholder {
   color: white;
@@ -162,16 +192,16 @@ h1 {
   font-weight: 100;
 }
 
-button {
-  width: 147px;
-  height: 34px;
+button[type="submit"] {
   margin: 0 206px;
-  padding: 0;
+  width: 150px;
+  height: 40px;
+  background-color: #4299d2;
+  background: linear-gradient(to top, #2e7ac4, #50aedb);
+  box-shadow: inset 0px 5px 5px 0px rgba(101,195,229,0.5);
+  border-radius: 7px;
   border: none;
+  color: white;
+  font-size: 14px;
   cursor: pointer;
-}
-
-button img {
-  margin-top: -2px;
-  margin-left: -2px;
 }
