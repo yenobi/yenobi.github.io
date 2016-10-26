@@ -1,14 +1,11 @@
 /* need to center body */
-
 body {
   width: 908px;
   background: rgb(255, 255, 255);
   display: flex;
   justify-content: center;
 }
-
 /* header */
-
 header {
   margin-top: 18px;
   height: 21px;
@@ -68,6 +65,7 @@ header {
     height: 19px;
     border: 1px solid #c1c8cb;
     border-radius: 14px;
+    box-shadow: 1px 1px 1px 1px #e2e5e6;
 
     :first-child {
       margin-left: 7px;
