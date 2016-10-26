@@ -125,15 +125,13 @@ header {
   span {
     font-size: 11px;
     line-height: 31px;
-  }
 
-  span:nth-child(odd){
-    color: grey;
+    &:nth-child(odd){
+      color: grey;
+    }
+    &:nth-child(even){
+      margin-right: 15px;
+      color: #0d5a8f;
   }
-
-  span:nth-child(even) {
-    margin-right: 15px;
-    color: #0d5a8f;
-  }
-
+}
 }
