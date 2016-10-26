@@ -1,0 +1,25 @@
+body {
+  width: 908px;
+  display: flex;
+  justify-content: center;
+  background: white;
+}
+
+/* header */
+header {
+  margin-top: 18px;
+  height: 21px;
+  line-height: 21px;
+}
+header img {
+  margin-right: 5px;
+}
+header span {
+  vertical-align: top;
+}
+header form {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/*# sourceMappingURL=style.css.map */

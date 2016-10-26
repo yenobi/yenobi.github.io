@@ -1,0 +1,25 @@
+body {
+  width: 908px;
+  display: flex;
+  justify-content: center;
+  background: rgb(255, 255, 255);
+}
+
+/* header */
+
+header {
+  margin-top: 18px;
+  height: 21px;
+  line-height: 21px;
+  img {
+    margin-right: 5px;
+  }
+  span {
+    vertical-align: top;
+  }
+  form {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+}
