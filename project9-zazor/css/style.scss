@@ -1,12 +1,11 @@
+/* need to center body */
 body {
   width: 908px;
+  background: rgb(255, 255, 255);
   display: flex;
   justify-content: center;
-  background: rgb(255, 255, 255);
 }
-
 /* header */
-
 header {
   margin-top: 18px;
   height: 21px;
@@ -16,10 +15,61 @@ header {
   }
   span {
     vertical-align: top;
+    margin-right: 17px;
   }
   form {
     display: inline-block;
     vertical-align: top;
+    margin-right: 17px;
+    width: 495px;
+    height: 25px;
+    background: linear-gradient(to bottom, #1f6787, #0c3357);
+    border-radius: 4px;
+
+    img {
+      margin-left: 5px;
+      margin-top: 3px;
+      }
+
+    [type="text"],[type="password"] {
+      vertical-align: top;
+      margin-top: 3px;
+      width: 111px;
+      height: 14px;
+    }
+  }
+/* need to center links */
+  a {
+    vertical-align: top;
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 12px;
+
+    &:first-of-type {
+      border-right: 1px solid white;
+      padding-right: 5px;
+    }
+
+    &:last-child {
+      margin-left: 15px;
+      color: lightgrey;
+      text-decoration: underline;
+    }
+  }
+
+  >:last-child {
+    display: inline-block;
+    margin-right: 6px;
+    width: 74px;
+    height: 19px;
+    border: 1px solid #c1c8cb;
+    border-radius: 14px;
+    box-shadow: 1px 1px 1px 1px #e2e5e6;
+
+    :first-child {
+      margin-left: 7px;
+    }
   }
 
 }
