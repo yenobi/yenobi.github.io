@@ -135,3 +135,29 @@ header {
   }
 }
 }
+
+.filters {
+  margin-top: 12px;
+  font-size: 12px;
+
+  fieldset {
+    width: 440px;
+    height: 143px;
+    position: relative;
+    border: 1px solid #b8b8b9;
+    border-radius: 10px;
+  }
+
+  .wrapper {
+    width: 200px;
+    float: left;
+    margin-right: 20px;
+
+    select {
+      width: 102px;
+      height: 17px;
+      float: right;
+    }
+  }
+
+}
