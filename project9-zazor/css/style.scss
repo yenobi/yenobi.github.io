@@ -139,25 +139,54 @@ header {
 .filters {
   margin-top: 12px;
   font-size: 12px;
+  display: flex;
+
+  > div {
+    margin-right: 12px;
+  }
 
   fieldset {
-    width: 440px;
-    height: 143px;
     position: relative;
     border: 1px solid #b8b8b9;
     border-radius: 10px;
   }
 
-  .wrapper {
-    width: 200px;
-    float: left;
-    margin-right: 20px;
+  & div:first-of-type {
+    width: 440px;
+    height: 143px;
 
-    select {
-      width: 102px;
-      height: 17px;
-      float: right;
-    }
+    .wrapper {
+      width: 176px;
+      float: left;
+      margin-right: 20px;
+
+      h3 {
+        margin: 5px;
+        font-size: 120%;
+        font-weight: bold;
+          }
+
+      label {
+        width: 74px;
+        vertical-align: middle;
+        line-height: 20px;
+
+        select {
+          width: 60px;
+          height: 17px;
+          float: right;
+                }
+              }
+            }
+          }
+
+  & div:nth-of-type(3) {
+    width: 190px;
+    height: 143px;
   }
 
+  & div:last-of-type {
+      width: 260px;
+      height: 143px;
+    }
 }
