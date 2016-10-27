@@ -125,4 +125,26 @@ header > :last-child :first-child {
   color: #0d5a8f;
 }
 
+.filters {
+  margin-top: 12px;
+  font-size: 12px;
+}
+.filters fieldset {
+  width: 440px;
+  height: 143px;
+  position: relative;
+  border: 1px solid #b8b8b9;
+  border-radius: 10px;
+}
+.filters .wrapper {
+  width: 200px;
+  float: left;
+  margin-right: 20px;
+}
+.filters .wrapper select {
+  width: 102px;
+  height: 17px;
+  float: right;
+}
+
 /*# sourceMappingURL=style.css.map */
