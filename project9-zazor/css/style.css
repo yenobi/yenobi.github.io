@@ -200,7 +200,7 @@ aside > :first-child > img {
 }
 aside > :first-child span {
   vertical-align: middle;
-  font-size: 12px;
+  font-size: 11px;
 }
 aside dl {
   margin-top: 13px;
@@ -241,12 +241,134 @@ aside dl dd:hover {
   font-style: italic;
   /* make color darken */
 }
+aside:last-of-type dd {
+  margin-left: 10px;
+}
+aside:last-of-type dd:hover {
+  text-decoration: none;
+  font-style: normal;
+}
+aside:last-of-type dd [type="checkbox"] {
+  margin-right: 15px;
+}
+aside:last-of-type > button {
+  margin-top: 15px;
+  margin-left: 15px;
+  width: 80px;
+  height: 25px;
+  border-top: 1px solid #7a95a1;
+  border-bottom: 1px solid #697b8b;
+  border-left: none;
+  border-right: none;
+  border-radius: 15px;
+  background: linear-gradient(to bottom, #1f6787, #0c3357);
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
+  color: white;
+  text-transform: uppercase;
+}
 
 .content {
-  width: 520px;
+  width: 585px;
   height: 620px;
   margin-right: 15px;
   background: linear-gradient(to top, #93a7b0, #e5e7e8);
+  display: flex;
+  flex-wrap: wrap;
+  /*.item {
+    > h2 {
+      content: "Goodyear";
+    }
+  }
+  */
+}
+.content .item {
+  margin-top: 10px;
+  margin-right: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.content .item:nth-child(3n-2) {
+  margin-left: 25px;
+}
+.content .item h2 {
+  color: #206988;
+}
+.content .item p:last-child {
+  color: #114165;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.brands {
+  margin-top: 40px;
+  margin-bottom: 15px;
+  margin-left: 100px;
+  width: 700px;
+  height: 40px;
+  display: flex;
+}
+.brands > div {
+  margin-right: 15px;
+  width: 90px;
+  height: 27px;
+  background-repeat: no-repeat;
+}
+.brands div:nth-of-type(1) {
+  background-image: url(../img/brand-1.png);
+}
+.brands div:nth-of-type(2) {
+  background-image: url(../img/brand-2.png);
+}
+.brands div:nth-of-type(3) {
+  background-image: url(../img/brand-3.png);
+}
+.brands div:nth-of-type(4) {
+  background-image: url(../img/brand-4.png);
+}
+.brands div:nth-of-type(5) {
+  background-image: url(../img/brand-5.png);
+}
+.brands div:nth-of-type(6) {
+  background-image: url(../img/brand-6.png);
+}
+.brands div:nth-of-type(7) {
+  background-image: url(../img/brand-7.png);
+}
+.brands div:nth-of-type(8) {
+  background-image: url(../img/brand-8.png);
+}
+
+footer {
+  width: 908px;
+  height: 100px;
+  background-color: #213a4d;
+  text-align: center;
+}
+footer ul {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+footer ul li {
+  height: 6px;
+  margin-top: 15px;
+  padding: 10px;
+  line-height: 10px;
+  font-size: 12px;
+}
+footer ul li:nth-child(-n+3) {
+  border-right: 2px solid #bec6c9;
+}
+footer ul li a {
+  color: #bec6c9;
+  text-decoration: none;
+}
+footer ul li a:hover {
+  color: #52abcb;
+}
+footer > span {
+  font-size: 10px;
+  color: #7a4641;
 }
 
 /*# sourceMappingURL=style.css.map */
