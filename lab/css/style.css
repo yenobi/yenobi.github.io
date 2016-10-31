@@ -1,0 +1,12 @@
+body {
+  width: 600px;
+  height: 600px;
+  background-color: grey;
+}
+body div {
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+}
+
+/*# sourceMappingURL=style.css.map */

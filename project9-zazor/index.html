@@ -76,18 +76,26 @@
       <form action="" method="">
         <fieldset>
           <legend>Поиск шин</legend>
-          <label>Размер
+          <div><label>Размер
             <select>
               <option>145</option>
-            </select>
+            </select>&nbsp;/
             <select>
             </select>
           </label>
-          <label>R
+        </div>
+          <div><label>R
             <select>
               <option>12</option>
             </select>
           </label>
+        </div>
+        <div>
+          <p>Сезон:</p>
+      <div><label><input type="checkbox">лето</label></div>
+      <div><label><input type="checkbox">зима</label></div>
+      <div><label><input type="checkbox">всесез</label></div>
+    </div>
           <button type="submit">Поиск...</button>
         </fieldset>
       </form>
@@ -97,6 +105,12 @@
       <form action="" method="">
         <fieldset>
           <legend>Поиск дисков</legend>
+          <div class="wrapper">
+          <div>Диаметр<span>диска:</span><select><option>14</option></select></div>
+          <div>Количество<span>крепёжных отверстий:</span><select><option>3</option></select></div>
+          <div>Диаметр<span>расположения крепёжных отверстий:</span><select><option>12</option></select></div>
+          </div>
+          
           <button type="submit">Поиск...</button>
         </fieldset>
     </div>
@@ -199,7 +213,7 @@
         <a href="#"><img src="img/tier-3.png"></a>
         <p>393.00 грн</p>
       </div>
-      
+
     </div>
 
     <aside>

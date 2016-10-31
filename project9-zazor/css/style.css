@@ -138,37 +138,64 @@ header > div:last-child :first-child {
   border: 1px solid #b8b8b9;
   border-radius: 10px;
 }
-.filters div:first-of-type {
-  width: 440px;
-  height: 143px;
+.filters fieldset button {
+  float: right;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  border: none;
+  background-color: white;
+  font-style: italic;
+  text-decoration: underline;
 }
-.filters div:first-of-type .wrapper {
-  width: 176px;
+.filters > div:first-of-type {
+  width: 501px;
+  margin-left: 10px;
+}
+.filters > div:first-of-type .wrapper {
+  width: 183px;
+  height: 123px;
   float: left;
   margin-right: 20px;
 }
-.filters div:first-of-type .wrapper h3 {
+.filters > div:first-of-type .wrapper h3 {
   margin: 5px;
   font-size: 120%;
   font-weight: bold;
 }
-.filters div:first-of-type .wrapper label {
+.filters > div:first-of-type .wrapper:last-of-type h3 {
+  margin-left: 125px;
+}
+.filters > div:first-of-type .wrapper label {
   width: 74px;
   vertical-align: middle;
   line-height: 20px;
 }
-.filters div:first-of-type .wrapper label select {
+.filters > div:first-of-type .wrapper label select {
   width: 60px;
   height: 17px;
   float: right;
 }
-.filters div:nth-of-type(3) {
+.filters > div:first-of-type .wrapper label:nth-of-type(3) select {
+  width: 30px;
+}
+.filters > div:nth-of-type(3) {
   width: 190px;
   height: 143px;
 }
-.filters div:last-of-type {
+.filters > div:last-of-type {
   width: 260px;
   height: 143px;
+}
+.filters > div:nth-of-type(2) {
+  width: 190px;
+  height: 135px;
+}
+.filters > div:nth-of-type(2) div {
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+.filters > div:nth-of-type(2) button {
+  margin-top: -3px;
 }
 
 .main {

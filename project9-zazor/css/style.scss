@@ -149,14 +149,25 @@ header {
     position: relative;
     border: 1px solid #b8b8b9;
     border-radius: 10px;
+
+    button {
+      float: right;
+      margin-bottom: 10px;
+      margin-right: 20px;
+      border: none;
+      background-color: white;
+      font-style: italic;
+      text-decoration: underline;
+    }
   }
 
-  & div:first-of-type {
-    width: 440px;
-    height: 143px;
+  & > div:first-of-type {
+    width: 501px;
+    margin-left: 10px;
 
     .wrapper {
-      width: 176px;
+      width: 183px;
+      height: 123px;
       float: left;
       margin-right: 20px;
 
@@ -165,6 +176,12 @@ header {
         font-size: 120%;
         font-weight: bold;
           }
+
+      &:last-of-type {
+         h3 {
+           margin-left: 125px;
+         }
+        }
 
       label {
         width: 74px;
@@ -176,19 +193,39 @@ header {
           height: 17px;
           float: right;
                 }
+
+        &:nth-of-type(3) {
+          select {
+            width: 30px;
+                  }
+                }
               }
             }
           }
 
-  & div:nth-of-type(3) {
+  & > div:nth-of-type(3) {
     width: 190px;
     height: 143px;
   }
 
-  & div:last-of-type {
+  & > div:last-of-type {
       width: 260px;
       height: 143px;
     }
+
+  & > div:nth-of-type(2){
+    width: 190px;
+    height: 135px;
+
+    div {
+      margin-left: 5px;
+      margin-bottom: 5px;
+    }
+
+    button {
+      margin-top: -3px;
+    }
+  }
 }
 
 .main {
