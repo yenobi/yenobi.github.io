@@ -481,3 +481,43 @@ for logos - height: 294px;
 footer - p -  margin-left: 78px; margin-top: 42px;
 }
 */
+
+@media (min-device-width: 320px) and (max-device-width: 479px) {
+  header {
+    flex-direction: column;
+    justify-content: center;
+
+    > a {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    nav {
+      margin-left: auto;
+      margin-right: auto;
+      ul {
+        li {
+          margin-right: 0px;
+        }
+
+        li:nth-last-child(-n+5){
+            display: none;
+        }
+      }
+    }
+  }
+
+  .slider {
+    background-color: rgba(0, 0, 0, 0);
+
+    .wrapper {
+
+      p {
+        display: none;
+      }
+      > :last-child {
+        display: none;
+      }
+    }
+  }
+}

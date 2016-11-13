@@ -441,5 +441,35 @@ for logos - height: 294px;
 footer - p -  margin-left: 78px; margin-top: 42px;
 }
 */
+@media (min-device-width: 320px) and (max-device-width: 479px) {
+  header {
+    flex-direction: column;
+    justify-content: center;
+  }
+  header > a {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  header nav {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  header nav ul li {
+    margin-right: 0px;
+  }
+  header nav ul li:nth-last-child(-n+5) {
+    display: none;
+  }
+
+  .slider {
+    background-color: transparent;
+  }
+  .slider .wrapper p {
+    display: none;
+  }
+  .slider .wrapper > :last-child {
+    display: none;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
