@@ -18,7 +18,7 @@ body {
     flex-direction: column;
   align-items: center;
   font-family: sans-serif;
-    
+
     a, h3 {
         font-family: "League Gothic";
     }
@@ -32,8 +32,8 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
-  > img {
+
+  > a img {
       margin-top: 69px;
   }
 
@@ -45,11 +45,12 @@ header {
       padding-right: 5px;
       padding-bottom: 6px;
       text-transform: uppercase;
-      
+
       li {
           display: inline-block;
-          margin-right: 20px;
-          
+          margin-right: 50px;
+          margin-top: -4px;
+
           &:last-of-type {
               margin-right: 0px;
           }
@@ -58,7 +59,7 @@ header {
       a {
           display: block;
         color: white;
-        font-size: 20px;
+        font-size: 23px;
         text-decoration: none;
 
         &:hover {
@@ -97,13 +98,13 @@ ul {
 
 .slider {
     width: 100%;
-    height: 270px;
-    margin-top: 184px;
+    height: 396px;
+    margin-top: 171px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.2);
-    
+
               .arrow {
     width: 23px;
     height: 36px;
@@ -113,7 +114,7 @@ ul {
             margin-left: 10px;
             transform: rotate(180deg);
          }
-    
+
     .wrapper{
         width: 960px;
   display: flex;
@@ -131,24 +132,37 @@ ul {
     & div:first-of-type {
         width: 470px;
         color: white;
+
+        img:first-of-type {
+          width: 338px;
+          margin-top: 13px;
+          margin-left: 5px;
+        }
+
+        p {
+          line-height: 23px;
+        }
     }
-    
+
     & div:last-of-type {
-        width: 192px;
-        height: 262px;
-        margin-top: -26px;
+        width: 274px;
+        height: 377px;
+        margin-top: -57px;
+        margin-right: 66px;
         background-image: url(../img/iphone.png);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
-        
-    }    
+
+    }
 }
 
 .slider-nav {
           width: 83px;
     height: 19px;
-    margin-top: 78px;
-    margin-bottom: 70px;
-    margin-left: 450px;
+    margin-top: 93px;
+    margin-bottom: 57px;
+    margin-left: 546px;
     background-image: url(../img/slider-nav.png);
 }
 
@@ -165,13 +179,13 @@ ul {
 
   > div {
       width: 280px;
-    margin-top: 20px;
+    margin-top: 24px;
     margin-right: 20px;
     margin-bottom: 4px;
-    margin-left: 15px;
+    margin-left: 37px;
     color: white;
-    line-height: 25px;
-      
+    line-height: 27px;
+
          div {
         width: 30px;
         height: 30px;
@@ -179,32 +193,32 @@ ul {
         background-image: url(../img/about-sprite.png);
     background-repeat: no-repeat;
     }
-      
+
       &:nth-child(2) div {
           background-position: -55px 0px;
       }
-      
+
       &:last-child div {
           background-position: -110px 0px;
       }
-      
+
     h3 {
-        margin-left: 50px;
+        margin-left: 54px;
         line-height: 18px;
-        font-size: 24px;
+        font-size: 29px;
       text-transform: uppercase;
     }
 
     p {
-        margin-top: 5px;
+        margin-top: 18px;
       margin-left: 49px;
       font-weight: 100;
     }
 
     a {
       float: right;
-        margin-top: 11px;
-        margin-right: 16px;
+        margin-top: 24px;
+        margin-right: 4px;
         font-size: 19px;
       color: white;
       text-transform: uppercase;
@@ -230,20 +244,22 @@ ul {
   position: relative;
   width: 430px;
   height: 260px;
-  margin-top: 69px;
+  margin-top: 100px;
+  margin-left: -164px;
   padding-top: 27px;
     padding-right: 30px;
   background-image: url(../img/blog-bg.png);
     background-repeat: no-repeat;
 
   h3 {
-    font-size: 24px;
-    margin-left: 60px;
+    font-size: 29px;
+    margin-top: 2px;
+    margin-left: 64px;
     text-transform: uppercase;
   }
 
   span {
-      font-size: 24px;
+      font-size: 29px;
     font-family: "League Gothic";
     text-transform: uppercase;
      color: #edbfff;
@@ -257,14 +273,14 @@ ul {
    }
 
    img:last-of-type {
-    margin-top: 100px;
-    margin-left: 200px;
+    margin-top: 83px;
+    margin-left: 196px;
    }
 }
 
 .updates {
-  margin-top: 67px;
-  margin-left: 90px;
+  margin-top: 132px;
+  margin-left: 51px;
   line-height: 25px;
 
   h2 {
@@ -288,18 +304,18 @@ ul {
         font-size: 16px;
       font-weight: bold;
     }
-      
+
       p {
             margin-left: 67px;
       }
   }
 
   a {
-    margin-top: 18px;
-    margin-right: 15px;
+    margin-top: 16px;
+    margin-right: -142px;
     display: block;
     float: right;
-      font-size: 18px;
+      font-size: 19px;
     color: black;
     text-decoration: none;
     text-transform: uppercase;
@@ -314,19 +330,19 @@ ul {
 .logos {
     display: inherit;
     justify-content: space-around;
-    width: 776px;
+    width: 849px;
     height: 70px;
   margin-top: 90px;
-margin-left: 79px;
+margin-left: -39px;
   padding-left: 50px;
-    
+
     div {
         width: 74px;
         height: 70px;
         background-image: url(../img/logos-sprite.png);
         background-repeat: no-repeat;
     }
-    
+
     @for $s from 1 through 6 {
         div:nth-of-type(#{$s}) {
             background-position: (-133*#{$s})px 0px;
@@ -334,28 +350,82 @@ margin-left: 79px;
     }
   }
 
+.last {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 395px;
+  margin: 0 auto;
+  background-color: #ececec;
+  border-top: 1px solid #d8d8d8;
+  box-shadow: 0px 5px 7px 0px rgba(0,0,0,0.75);
+  line-height: 24px;
+  text-shadow: 2px 2px 1px rgba(255, 255, 255, 1);
+
+  & > div:nth-child(-n+2) {
+          margin-right: 60px;
+  }
+
+  & > div:last-child{
+    article {
+      margin-left: -4px;
+    }
+  }
+
+  div {
+    width: 280px;
+    height: 200px;
+
+    & > p:first-of-type {
+      margin-top: 8px;
+      margin-left: -5px;
+      margin-bottom: 7px;
+      color: #c5c5c5;
+      font-style: italic;
+    }
+  }
+
+  article {
+    h3 {
+      font-size: 28px;
+      text-transform: uppercase;
+    }
+
+    p {
+      margin-top: 10px;
+    }
+
+    &:first-of-type {
+      margin-left: -2px;
+    }
+  }
+}
+
 footer {
     text-align: center;
     width: 100%;
-      height: 200px;
+    height: 114px;
     background-image: url(../img/footer-bg.jpg);
     box-shadow: inset 0px 2px 4px 0px rgba(0,0,0,1);
         display: inherit;
     justify-content: space-around;
     align-items: center;
-    
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+
       nav {
       height: 21px;
-      margin-left: 140px;
+      margin-top: 4px;
+      margin-left: -2px;
       padding-left: 5px;
       padding-right: 5px;
       padding-bottom: 6px;
       text-transform: uppercase;
-      
+
       li {
           display: inline-block;
-          margin-right: 20px;
-          
+          margin-right: 40px;
+
           &:last-of-type {
               margin-right: 0px;
           }
@@ -373,12 +443,14 @@ footer {
         }
       }
     }
-    
+
     p {
     color: white;
     font-size: 12px;
     text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.4);
-        
+    margin-top: 4px;
+    margin-left: -167px;
+
         a {
             text-decoration: none;
             font-weight: bold;
@@ -390,7 +462,7 @@ footer {
 }
 
 /*
-@maedia only screen 
+@maedia only screen
     and (min-device-width: 320px) {
 
 for img in header -   margin-left: 85px;
