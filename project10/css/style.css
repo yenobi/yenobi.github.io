@@ -451,24 +451,131 @@ footer - p -  margin-left: 78px; margin-top: 42px;
     margin-right: auto;
   }
   header nav {
+    margin-top: 39px;
     margin-left: auto;
     margin-right: auto;
   }
   header nav ul li {
     margin-right: 0px;
   }
+  header nav ul li a {
+    font-size: 40px;
+  }
   header nav ul li:nth-last-child(-n+5) {
     display: none;
   }
 
   .slider {
+    height: 256px;
+    justify-content: center;
+    margin-top: 0px;
     background-color: transparent;
+  }
+  .slider .arrow {
+    margin-right: 8px;
+    margin-top: 37px;
+  }
+  .slider .wrapper {
+    width: 185px;
+    margin-left: 31px;
+    margin-top: 39px;
+  }
+  .slider .wrapper img {
+    width: 260px;
+    height: 53px;
   }
   .slider .wrapper p {
     display: none;
   }
   .slider .wrapper > :last-child {
     display: none;
+  }
+  .slider .next {
+    margin-left: 175px;
+  }
+
+  .slider-nav {
+    margin-top: -4px;
+    margin-left: 12px;
+    margin-bottom: 65px;
+  }
+
+  .about {
+    height: 650px;
+    flex-direction: column;
+    line-height: 26px;
+  }
+  .about > div:first-child {
+    margin-top: -42px;
+  }
+  .about div div:first-of-type {
+    background-position: 0px 0px;
+  }
+  .about div p {
+    margin-top: 10px;
+  }
+  .about div p span {
+    display: none;
+  }
+  .about div a {
+    margin-top: 5px;
+  }
+
+  .content {
+    height: 1208px;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .content .blog {
+    width: 280px;
+    margin-top: 71px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .content .blog h3 span {
+    display: block;
+  }
+  .content .blog p span {
+    display: none;
+  }
+  .content .blog img:last-of-type {
+    margin-top: 64px;
+    margin-left: 122px;
+  }
+  .content .updates {
+    align-self: center;
+    margin-top: 80px;
+    margin-left: 0px;
+  }
+  .content .updates a {
+    margin-right: 20px;
+  }
+  .content .logos {
+    width: 280px;
+    flex-wrap: wrap;
+    align-self: center;
+    margin-top: 133px;
+    margin-left: -110px;
+  }
+  .content .logos div {
+    margin-left: 40px;
+    margin-bottom: 60px;
+  }
+
+  .last {
+    display: none;
+  }
+
+  footer {
+    justify-content: center;
+  }
+  footer nav {
+    display: none;
+  }
+  footer p {
+    margin-top: 0px;
+    margin-left: 0px;
   }
 }
 
