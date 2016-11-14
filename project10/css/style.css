@@ -229,7 +229,7 @@ ul {
   margin-left: 64px;
   text-transform: uppercase;
 }
-.blog span {
+.blog h3 > span {
   font-size: 29px;
   font-family: "League Gothic";
   text-transform: uppercase;

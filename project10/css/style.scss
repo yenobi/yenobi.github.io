@@ -256,14 +256,14 @@ ul {
     margin-top: 2px;
     margin-left: 64px;
     text-transform: uppercase;
+    
+    > span {
+        font-size: 29px;
+      font-family: "League Gothic";
+      text-transform: uppercase;
+       color: #edbfff;
+     }
   }
-
-  span {
-      font-size: 29px;
-    font-family: "League Gothic";
-    text-transform: uppercase;
-     color: #edbfff;
-   }
 
  p {
      margin-top: 3px;
