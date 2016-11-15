@@ -256,7 +256,7 @@ ul {
     margin-top: 2px;
     margin-left: 64px;
     text-transform: uppercase;
-    
+
     > span {
         font-size: 29px;
       font-family: "League Gothic";
@@ -384,6 +384,10 @@ margin-left: -39px;
       color: #c5c5c5;
       font-style: italic;
     }
+
+    &:nth-of-type(n+4) {
+       display: none;
+     }
   }
 
   article {
@@ -648,4 +652,150 @@ footer - p -  margin-left: 78px; margin-top: 42px;
       margin-left: 0px;
     }
   }
+}
+
+@media (min-device-width: 480px) and (max-device-width: 760px) {
+  header {
+    flex-direction: column;
+    justify-content: center;
+
+    > a {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    nav {
+      margin-top: 39px;
+      margin-left: auto;
+      margin-right: auto;
+      ul {
+        li {
+          margin-right: 0px;
+
+          a {
+            font-size: 40px;
+          }
+        }
+
+        li:nth-last-child(-n+5){
+            display: none;
+        }
+      }
+    }
+  }
+
+  .slider {
+    height: 226px;
+    margin-top: 30px;
+    justify-content: center;
+
+    .wrapper {
+      width: 330px;
+      flex-wrap: nowrap;
+      p {
+        display: none;
+      }
+
+      div:first-of-type{
+        width: 150px;
+
+        img:first-of-type {
+          width: 150px;
+        }
+      }
+
+      div:last-of-type {
+        width: 180px;
+        height: 246px;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-left: 0px;
+      }
+    }
+
+    .next {
+      margin-left: 0px;
+    }
+  }
+
+  .slider-nav {
+    margin-top: 25px;
+    margin-left: 12px;
+    margin-bottom: 65px;
+  }
+
+  .about {
+    height: 600px;
+    flex-direction: column;
+    line-height: 26px;
+
+    > div:first-child {
+        margin-top: 0px;
+      }
+
+      div {
+        width: 340px;
+
+        div:first-of-type {
+          background-position: 0px 0px;
+        }
+
+        p {
+          margin-top: 10px;
+        }
+
+        a {
+          margin-top: 5px;
+        }
+      }
+  }
+
+  .content{
+    height: 1020px;
+
+    .blog{
+      width: 350px;
+      margin-top: 30px;
+      margin-left: 0px;
+    }
+
+    .updates{
+      margin-top: 0px;
+    }
+
+    .logos {
+      width: 280px;
+      flex-wrap: wrap;
+      align-self: center;
+      margin-top: 133px;
+      margin-left: -110px;
+
+      div {
+        margin-left: 40px;
+        margin-bottom: 60px;
+      }
+    }
+  }
+
+  .last {
+    height: 670px;
+    flex-direction: column;
+
+    div {
+      &:nth-of-type(-n+2) {
+         display: none;
+       }
+
+       &:nth-of-type(n+3) {
+          display: block;
+          width: 360px;
+          margin-bottom: 20px;
+        }
+
+        &:nth-of-type(3){
+            margin-top: 30px;
+        }
+    }
+  }
+
 }
