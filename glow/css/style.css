@@ -7,7 +7,7 @@ header {
   height: 680px;
   background-image: url(../img/header-bg.jpg);
 }
-header div:first-child a {
+header > div:first-child a {
   display: block;
   width: 170px;
   height: 80px;
@@ -15,16 +15,62 @@ header div:first-child a {
   background-repeat: no-repeat;
   text-indent: -9999px;
 }
-header div:nth-child(2) {
-  background-image: url(../img/app-sprite.png);
+header .wrapper {
+  display: flex;
+  flex-direction: row;
+  margin: 40px 0;
 }
-header div:last-child a {
+header .wrapper div {
+  margin-right: 15px;
+}
+header .wrapper div a {
+  display: block;
+  width: 54px;
+  height: 53px;
+  background-image: url(../img/app-sprite.png);
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  text-indent: -9999px;
+}
+header .wrapper div a:hover {
+  opacity: 1;
+}
+header .wrapper div:nth-child(2) a {
+  background-position: -55px 0;
+}
+header .wrapper div:nth-child(3) a {
+  background-position: -111px 0;
+}
+header > div:last-child a {
   display: block;
   width: 50px;
   height: 15px;
   background-image: url(../img/arrow.png);
   background-repeat: no-repeat;
   text-indent: -9999px;
+}
+
+.features {
+  width: 100%;
+  height: 615px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.features > div:nth-child(2) {
+  margin-top: -185px;
+}
+.features article {
+  width: 320px;
+  height: 130px;
+}
+
+.about {
+  width: 100%;
+  height: 430px;
+  background-color: #e8e8e8;
 }
 
 /*# sourceMappingURL=style.css.map */
