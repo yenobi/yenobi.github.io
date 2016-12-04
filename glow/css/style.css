@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=PT+Sans");
 @font-face {
   font-family: 'Helvetica Neue';
-  src: url("../fonts/HelveticaNeue/helveticaneue-thin-webfont.eot");
-  src: url("../fonts/HelveticaNeue/helveticaneue-thin-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeue/helveticaneue-thin-webfont.woff2") format("woff2"), url("../fonts/HelveticaNeue/helveticaneue-thin-webfont.woff") format("woff"), url("../fonts/HelveticaNeue/helveticaneue-thin-webfont.ttf") format("truetype");
+  src: url("../fonts/HelveticaNeue/helveticaneuecyr-light-webfont.eot");
+  src: url("../fonts/HelveticaNeue/helveticaneuecyr-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeue/helveticaneuecyr-light-webfont.woff2") format("woff2"), url("../fonts/HelveticaNeue/helveticaneuecyr-light-webfont.woff") format("woff"), url("../fonts/HelveticaNeue/helveticaneuecyr-light-webfont.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -137,6 +137,9 @@ header > div:last-child a {
   width: 100%;
   height: 820px;
   text-align: center;
+  background-image: url(../img/advantages-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .advantages .wrapper {
   display: flex;
@@ -149,7 +152,6 @@ header > div:last-child a {
 .advantages .wrapper > div {
   width: 370px;
   height: 250px;
-  box-shadow: 31px 31px 0px -30px #e3e3e3;
 }
 .advantages .wrapper > div div {
   width: 53px;
@@ -217,6 +219,17 @@ header > div:last-child a {
 .pricing .wrapper td {
   vertical-align: middle;
   border-bottom: 1px solid #c2c2c2;
+}
+
+.testimonals div p:first-child {
+  font-family: 'Helvetica Neue Italic';
+}
+.testimonals div p:last-child {
+  font-family: 'PT Sans';
+}
+.testimonals:last-child {
+  background-image: url(../testimonals-nav.png);
+  background-repeat: no-repeat;
 }
 
 /*# sourceMappingURL=style.css.map */
