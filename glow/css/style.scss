@@ -195,7 +195,7 @@ header {
     flex-wrap: wrap;
     width: 1120px;
     height: 550px;
-    margin: 100px auto;
+    margin: 70px auto;
 
     > div {
       width: 370px;
@@ -254,7 +254,7 @@ header {
   text-align: center;
 
   > div {
-    margin-top: 50px;
+    padding-top: 60px;
   }
 
   p {
@@ -327,6 +327,11 @@ header {
       td {
         vertical-align: middle;
         border-bottom: 1px solid #c2c2c2;
+
+        span {
+          font-size: 0.7em;
+          vertical-align: top;
+        }
       }
     }
   }
@@ -334,7 +339,7 @@ header {
 .testimonals {
   div {
     width: 820px;
-    margin: 30px auto;
+    margin: 130px auto 0 auto;
     font-size: 1.15em;
 
     p:first-child {
@@ -412,18 +417,52 @@ header {
   .wrapper {
     display: flex;
 
-    a {
-      display: block;
+    div {
       width: 35px;
       height: 35px;
       margin-right: 10px;
       border-radius: 50%;
       background-color: #d4d4d4;
-      text-indent: -99999px;
-    }
 
-    & a:last-child {
-      margin-right: none;
+      &:hover {
+        background-color: #e74c3c;
+      }
+
+      a {
+        display: block;
+        width: 35px;
+        height: 35px;
+        text-indent: -99999px;
+        background-image: url(../img/socilas-sprite.png);
+        background-repeat: no-repeat;
+      }
+
+      &:first-child a {
+        background-position: 8px 4px;
+      }
+
+      &:nth-child(2) a {
+        background-position: -35px 4px;
+      }
+
+      &:nth-child(3) a {
+        background-position: -79px 5px;
+      }
+
+      &:nth-child(4) a {
+        background-image: url(../img/google.png);
+        background-size: 65%;
+        background-position: 6px;
+      }
+
+      &:nth-child(5) a {
+        background-position: -167px 5px;
+      }
+
+      &:last-child a {
+        margin-right: none;
+        background-position: -211px 5px;
+      }
     }
   }
 }

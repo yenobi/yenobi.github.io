@@ -154,7 +154,7 @@ header > div:last-child a {
   flex-wrap: wrap;
   width: 1120px;
   height: 550px;
-  margin: 100px auto;
+  margin: 70px auto;
 }
 .advantages .wrapper > div {
   width: 370px;
@@ -197,7 +197,7 @@ header > div:last-child a {
   text-align: center;
 }
 .pricing > div {
-  margin-top: 50px;
+  padding-top: 60px;
 }
 .pricing p {
   width: 700px;
@@ -252,10 +252,14 @@ header > div:last-child a {
   vertical-align: middle;
   border-bottom: 1px solid #c2c2c2;
 }
+.pricing .wrapper td span {
+  font-size: 0.7em;
+  vertical-align: top;
+}
 
 .testimonals div {
   width: 820px;
-  margin: 30px auto;
+  margin: 130px auto 0 auto;
   font-size: 1.15em;
 }
 .testimonals div p:first-child {
@@ -325,17 +329,44 @@ header > div:last-child a {
 .socials .wrapper {
   display: flex;
 }
-.socials .wrapper a {
-  display: block;
+.socials .wrapper div {
   width: 35px;
   height: 35px;
   margin-right: 10px;
   border-radius: 50%;
   background-color: #d4d4d4;
-  text-indent: -99999px;
 }
-.socials .wrapper a:last-child {
+.socials .wrapper div:hover {
+  background-color: #e74c3c;
+}
+.socials .wrapper div a {
+  display: block;
+  width: 35px;
+  height: 35px;
+  text-indent: -99999px;
+  background-image: url(../img/socilas-sprite.png);
+  background-repeat: no-repeat;
+}
+.socials .wrapper div:first-child a {
+  background-position: 8px 4px;
+}
+.socials .wrapper div:nth-child(2) a {
+  background-position: -35px 4px;
+}
+.socials .wrapper div:nth-child(3) a {
+  background-position: -79px 5px;
+}
+.socials .wrapper div:nth-child(4) a {
+  background-image: url(../img/google.png);
+  background-size: 65%;
+  background-position: 6px;
+}
+.socials .wrapper div:nth-child(5) a {
+  background-position: -167px 5px;
+}
+.socials .wrapper div:last-child a {
   margin-right: none;
+  background-position: -211px 5px;
 }
 
 footer {
