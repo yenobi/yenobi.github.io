@@ -194,3 +194,102 @@ header {
     }
   }
 }
+
+#prices {
+  width: 100%;
+  height: 650px;
+  background-image: url(../img/prices-bg.jpg);
+
+  h2 {
+    width: 600px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 65px;
+  }
+
+  > span {
+    width: 539px;
+    height: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px auto;
+    color: #1ebda2;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+
+    > div {
+      width: 205px;
+      height: 295px;
+      margin: 30px 105px 95px 0;
+      padding: 15px;
+      border: 1px solid #1ebda2;
+
+      .img {
+        width: 190px;
+        height: 130px;
+        background-image: url(../img/prices-img.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      h3 {
+        margin-top: 10px;
+        text-align: center;
+      }
+
+      div {
+        margin: 15px 0 20px 0;
+        text-align: center;
+
+        span {
+          display: block;
+          margin-top: 6px;
+          color: #1ebda2;
+        }
+      }
+
+      button {
+        width: 160px;
+        height: 38px;
+        background-color: #1ebda2;
+        border: none;
+        color: white;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.calc {
+  width: 100%;
+  height: 110px;
+  background-color: #1ebda2;
+  padding-top: 20px;
+  cursor: pointer;
+
+  > div {
+    width: 1185px;
+    height: 85px;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+
+    .icon {
+      width: 43px;
+      height: 53px;
+      margin-right: 37px;
+      background-image: url(../img/calc-icon.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    h1 {
+      font-size: 250%;
+    }
+  }
+}
