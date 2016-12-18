@@ -314,34 +314,39 @@ header {
     > div:first-child {
       position: relative;
       top: 200px;
-      right: 50px;
+      left: 120px;
     }
 
     > div:nth-child(2) {
       position: relative;
-      right: 50px;
-      top: 50px;
+      right: 25px;
+      top: 65px;
     }
 
     > div:last-child {
       position: relative;
-      right: 45px;
+      right: 100px;
     }
   }
 
     div:nth-child(2) {
       div:last-child {
       position: relative;
-      left: 350px;
+      left: 290px;
     }
   }
 
   > div:last-child {
 
+    > div:first-child {
+      position: relative;
+      left: 180px;
+      top: 30px;
+    }
+
     div:last-child {
       position: relative;
-      left: 100px;
-      top: 35px;
+      left: 140px;
     }
   }
 
@@ -361,8 +366,8 @@ header {
     background-color: #1ebda2;
     text-align: center;
     position: relative;
-    left: 275px;
-    top: 30px;
+    left: 225px;
+    top: 32px;
 
     .main-text {
       display: block;
@@ -372,15 +377,34 @@ header {
   }
 
   .item {
-    width: 270px;
+    width: 510px;
     height: 150px;
     display: flex;
-    justify-content: center;
     align-items: center;
 
     > span:last-child {
-      width: 100px;
-      font-size: 1.0em;
+      width: 315px;
+      padding-left: 10px;
+      font-size: 0.8em;
+      line-height: 1.2em;
+    }
+  }
+
+  .unique {
+    width: 250px;
+    height: 235px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    > span {
+      display: block;
+      margin-top: 10px;
+      text-align: center;
+      font-size: 0.8em;
+      line-height: 1.2em;
     }
   }
 
@@ -397,5 +421,15 @@ header {
     padding-top: 45px;
     font-size: 3.0em;
     font-weight: bold;
+    }
+
+    .hr-1 {
+      width: 415px;
+      height: 0px;
+      border: 1px solid #1ebda2;
+      transform: rotate(10deg);
+      position: absolute;
+      left: 167px;
+      top: 100px;
     }
 }
