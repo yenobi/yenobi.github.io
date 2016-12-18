@@ -46,8 +46,11 @@ header {
       & li:last-child {
         margin-right: none;
       }
-    }
 
+      a:hover {
+        border-bottom: 1px solid #1ebda2;
+      }
+    }
   }
 }
 
@@ -217,13 +220,13 @@ header {
   }
 
   .container {
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 
     > div {
       width: 205px;
       height: 295px;
-      margin: 30px 105px 95px 0;
       padding: 15px;
       border: 1px solid #1ebda2;
 
@@ -252,8 +255,10 @@ header {
       }
 
       button {
+        display: block;
         width: 160px;
         height: 38px;
+        margin: 0 auto;
         background-color: #1ebda2;
         border: none;
         color: white;
@@ -397,6 +402,8 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+    left: 220px;
 
 
     > span {
@@ -427,9 +434,84 @@ header {
       width: 415px;
       height: 0px;
       border: 1px solid #1ebda2;
-      transform: rotate(10deg);
+      transform: rotate(6deg);
       position: absolute;
       left: 167px;
       top: 100px;
     }
+
+    .hr-2 {
+      width: 215px;
+      height: 0px;
+      border: 1px solid #1ebda2;
+      transform: rotate(47deg);
+      position: absolute;
+      left: 456px;
+      top: 10px;
+    }
+
+    .hr-3 {
+      width: 315px;
+      height: 0px;
+      border: 1px solid #1ebda2;
+      transform: rotate(128deg);
+      position: absolute;
+      left: 624px;
+      top: -10px;
+    }
+
+    .hr-4 {
+      width: 315px;
+      height: 0px;
+      border: 1px solid #1ebda2;
+      transform: rotate(175deg);
+      position: absolute;
+      left: 756px;
+      top: 100px;
+
+    }
+
+    .hr-5 {
+      width: 229px;
+      height: 0px;
+      border: 1px solid #1ebda2;
+      transform: rotate(-134deg);
+      position: absolute;
+      top: 262px;
+      left: 700px;
+    }
+
+    .hr-6 {
+      width: 215px;
+      height: 0px;
+      border: 1px solid #1ebda2;
+      transform: rotate(-44deg);
+      position: absolute;
+      top: 248px;
+      left: 420px;
+    }
+
+    .popUp {
+      animation-name: popUp;
+      animation-duration: 2s;
+      animation-timing-function: ease-in-out;
+    }
+
+    @keyframes popUp {
+    0% {
+        transform: scale(0);
+        opacity: 0.0;
+    }
+    60% {
+        transform: scale(1.1);
+    }
+    80% {
+        transform: scale(0.9);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+  }
 }
