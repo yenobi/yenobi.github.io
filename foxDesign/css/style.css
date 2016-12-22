@@ -1,0 +1,219 @@
+body {
+  font-size: medium;
+}
+body p, body a, body h1, body h3 {
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+}
+
+header {
+  width: 100%;
+  height: 55px;
+  padding-top: 5px;
+  background-color: black;
+}
+header .wrapper {
+  width: 960px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+header .wrapper nav ul {
+  display: flex;
+}
+header .wrapper nav ul li a {
+  width: 125px;
+  height: 30px;
+  display: block;
+  color: white;
+  text-decoration: none;
+  line-height: 30px;
+  margin-top: 10px;
+}
+header .wrapper nav ul li a:hover {
+  background-color: white;
+  color: black;
+}
+
+#first {
+  width: 100%;
+  height: 800px;
+  padding-top: 210px;
+  background-image: url(../img/first-bg.png);
+  background-repeat: no-repeat;
+}
+#first h1, #first h3, #first .wrapper {
+  margin: 0 auto;
+  color: white;
+}
+#first h3 {
+  width: 680px;
+  height: 50px;
+  font-size: 200%;
+}
+#first h1 {
+  width: 570px;
+  height: 80px;
+  font-size: 300%;
+  text-transform: uppercase;
+}
+#first .wrapper {
+  width: 362px;
+  height: 64px;
+  border: 1px solid white;
+  position: relative;
+}
+#first .wrapper a {
+  display: block;
+  width: 362px;
+  height: 64px;
+  background-color: black;
+  color: white;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  text-decoration: none;
+  line-height: 64px;
+}
+#first .wrapper a:hover {
+  background-color: white;
+  color: black;
+  transition: background-color 2s, color 1s;
+}
+#first .wrapper a:active {
+  top: 0px;
+  left: 0px;
+}
+
+#offer {
+  width: 100%;
+  height: 730px;
+  background-color: white;
+  position: relative;
+}
+#offer .arrowDown {
+  display: block;
+  width: 50px;
+  height: 84px;
+  margin: 0 auto;
+  cursor: pointer;
+  position: absolute;
+  top: -173px;
+  left: 640px;
+  background-image: url(../img/offer-button.png);
+  text-indent: -99999px;
+}
+#offer .wrapper {
+  width: 960px;
+  height: 575px;
+  margin: 80px auto;
+}
+#offer .wrapper .container {
+  width: 850px;
+  height: 385px;
+  border: 1px solid black;
+  position: relative;
+  display: flex;
+}
+#offer .wrapper .container .heading {
+  width: 365px;
+  height: 40px;
+  background-color: white;
+  position: absolute;
+  top: -20px;
+  line-height: 40px;
+  text-align: center;
+  left: 250px;
+}
+#offer .wrapper .container .textContainer {
+  width: 410px;
+  height: 260px;
+  margin-top: 80px;
+  margin-left: 100px;
+}
+#offer .wrapper .container .textContainer p {
+  text-align: left;
+  margin-bottom: 25px;
+  line-height: 30px;
+}
+#offer .wrapper .container .imgContainer {
+  position: relative;
+}
+#offer .wrapper .container .imgContainer div:first-child {
+  width: 456px;
+  height: 437px;
+  position: absolute;
+  top: 90px;
+  left: 145px;
+  background-image: url(../img/offer-lower.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#offer .wrapper .container .imgContainer div:last-child {
+  width: 462px;
+  height: 414px;
+  position: absolute;
+  top: 30px;
+  left: 85px;
+  background-image: url(../img/offer-upper.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#offer .wrapper > p:last-child {
+  width: 538px;
+  height: 70px;
+  margin-top: 10px;
+  font-size: small;
+  text-align: left;
+}
+
+#order {
+  width: 100%;
+  height: 820px;
+  background-color: #f1f1f1;
+  padding-top: 75px;
+}
+#order .container {
+  width: 960px;
+  height: 678px;
+  margin: auto;
+  border: 1px solid black;
+  position: relative;
+  display: flex;
+}
+#order .container .heading {
+  width: 555px;
+  height: 40px;
+  position: absolute;
+  top: -20px;
+  left: 210px;
+  line-height: 40px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+#order .container .column {
+  width: 470px;
+  height: 510px;
+  margin-top: 85px;
+}
+#order .container .column div {
+  margin-bottom: 100px;
+}
+#order .container .column div h4 {
+  font-weight: bold;
+  text-decoration: underline;
+}
+#order .container .column div p {
+  margin-top: 40px;
+  text-align: left;
+}
+#order .container .left {
+  margin-left: 90px;
+  padding-right: 30px;
+}
+#order .container .right {
+  margin-right: 90px;
+  padding-left: 30px;
+}
+
+/*# sourceMappingURL=style.css.map */
