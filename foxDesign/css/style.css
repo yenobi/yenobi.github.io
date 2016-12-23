@@ -1,11 +1,11 @@
 body {
   font-size: medium;
 }
-body p, body a {
+body p, body a, body h1, body h3 {
   font-family: 'Ubuntu', sans-serif;
   text-align: center;
 }
-body h1, body h2, body h3 {
+body h2 {
   font-family: 'PT Mono';
 }
 
@@ -30,12 +30,12 @@ header .wrapper nav ul {
 }
 header .wrapper nav ul li a {
   width: 130px;
-  height: 30px;
+  height: 24px;
   display: block;
   color: white;
   text-decoration: none;
-  line-height: 12px;
-  margin-top: 10px;
+  line-height: 18px;
+  margin-top: 8px;
 }
 header .wrapper nav ul li a:hover {
   background-color: white;
@@ -111,7 +111,7 @@ header .wrapper nav ul li a:hover {
   margin: 0 auto;
   cursor: pointer;
   position: absolute;
-  top: -116px;
+  top: -133px;
   left: 630px;
   background-image: url(../img/offer-button.png);
   background-size: contain;
