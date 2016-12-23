@@ -1,14 +1,17 @@
 body {
   font-size: medium;
 }
-body p, body a, body h1, body h3 {
+body p, body a {
   font-family: 'Ubuntu', sans-serif;
   text-align: center;
+}
+body h1, body h2, body h3 {
+  font-family: 'PT Mono';
 }
 
 header {
   width: 100%;
-  height: 55px;
+  height: 44px;
   padding-top: 5px;
   background-color: black;
 }
@@ -18,16 +21,20 @@ header .wrapper {
   display: flex;
   justify-content: space-between;
 }
+header .wrapper .logo img {
+  width: 184px;
+  height: 34px;
+}
 header .wrapper nav ul {
   display: flex;
 }
 header .wrapper nav ul li a {
-  width: 125px;
+  width: 130px;
   height: 30px;
   display: block;
   color: white;
   text-decoration: none;
-  line-height: 30px;
+  line-height: 12px;
   margin-top: 10px;
 }
 header .wrapper nav ul li a:hover {
@@ -37,43 +44,49 @@ header .wrapper nav ul li a:hover {
 
 #first {
   width: 100%;
-  height: 800px;
-  padding-top: 210px;
+  height: 487px;
+  padding-top: 153px;
   background-image: url(../img/first-bg.png);
   background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 #first h1, #first h3, #first .wrapper {
   margin: 0 auto;
   color: white;
 }
 #first h3 {
-  width: 680px;
+  width: 828px;
   height: 50px;
-  font-size: 200%;
+  font-size: 267%;
 }
 #first h1 {
   width: 570px;
   height: 80px;
-  font-size: 300%;
+  margin-top: 20px;
+  margin-bottom: 111px;
+  font-size: 500%;
   text-transform: uppercase;
 }
 #first .wrapper {
-  width: 362px;
-  height: 64px;
+  width: 284px;
+  height: 46px;
   border: 1px solid white;
   position: relative;
 }
 #first .wrapper a {
   display: block;
-  width: 362px;
-  height: 64px;
+  width: 284px;
+  height: 46px;
   background-color: black;
   color: white;
   position: absolute;
   top: -10px;
-  left: -10px;
+  left: -14px;
   text-decoration: none;
-  line-height: 64px;
+  line-height: 42px;
+  font-size: 1.4em;
 }
 #first .wrapper a:hover {
   background-color: white;
@@ -93,43 +106,46 @@ header .wrapper nav ul li a:hover {
 }
 #offer .arrowDown {
   display: block;
-  width: 50px;
-  height: 84px;
+  width: 39px;
+  height: 66px;
   margin: 0 auto;
   cursor: pointer;
   position: absolute;
-  top: -173px;
-  left: 640px;
+  top: -116px;
+  left: 630px;
   background-image: url(../img/offer-button.png);
+  background-size: contain;
+  background-repeat: no-repeat;
   text-indent: -99999px;
 }
 #offer .wrapper {
   width: 960px;
   height: 575px;
-  margin: 80px auto;
+  margin: 97px auto;
 }
 #offer .wrapper .container {
-  width: 850px;
-  height: 385px;
-  border: 1px solid black;
+  width: 673px;
+  height: 303px;
+  border: 2px solid black;
   position: relative;
   display: flex;
 }
 #offer .wrapper .container .heading {
-  width: 365px;
+  width: 288px;
   height: 40px;
   background-color: white;
   position: absolute;
   top: -20px;
-  line-height: 40px;
+  line-height: 32px;
   text-align: center;
-  left: 250px;
+  left: 192px;
+  font-size: 1.8em;
 }
 #offer .wrapper .container .textContainer {
   width: 410px;
   height: 260px;
-  margin-top: 80px;
-  margin-left: 100px;
+  margin-top: 48px;
+  margin-left: 74px;
 }
 #offer .wrapper .container .textContainer p {
   text-align: left;
@@ -140,31 +156,34 @@ header .wrapper nav ul li a:hover {
   position: relative;
 }
 #offer .wrapper .container .imgContainer div:first-child {
-  width: 456px;
-  height: 437px;
+  width: 366px;
+  height: 327px;
   position: absolute;
-  top: 90px;
-  left: 145px;
+  top: 84px;
+  left: 59px;
   background-image: url(../img/offer-lower.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 #offer .wrapper .container .imgContainer div:last-child {
-  width: 462px;
-  height: 414px;
+  width: 366px;
+  height: 364px;
   position: absolute;
-  top: 30px;
-  left: 85px;
+  top: 18px;
+  left: 34px;
   background-image: url(../img/offer-upper.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 #offer .wrapper > p:last-child {
-  width: 538px;
+  width: 439px;
   height: 70px;
-  margin-top: 10px;
-  font-size: small;
+  margin-top: 17px;
   text-align: left;
+  font-size: 0.9em;
+  line-height: 18px;
 }
 
 #order {
