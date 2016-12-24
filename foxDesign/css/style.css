@@ -5,13 +5,13 @@ body p, body a, body h1, body h3 {
   font-family: 'Ubuntu', sans-serif;
   text-align: center;
 }
-body h2 {
+body h2, body h4 {
   font-family: 'PT Mono';
 }
 
 header {
   width: 100%;
-  height: 44px;
+  height: 39px;
   padding-top: 5px;
   background-color: black;
 }
@@ -100,7 +100,7 @@ header .wrapper nav ul li a:hover {
 
 #offer {
   width: 100%;
-  height: 730px;
+  height: 500px;
   background-color: white;
   position: relative;
 }
@@ -135,11 +135,14 @@ header .wrapper nav ul li a:hover {
   height: 40px;
   background-color: white;
   position: absolute;
-  top: -20px;
+  top: -18px;
   line-height: 32px;
   text-align: center;
   left: 192px;
-  font-size: 1.8em;
+}
+#offer .wrapper .container .heading h2 {
+  font-size: 1.4em;
+  font-weight: bold;
 }
 #offer .wrapper .container .textContainer {
   width: 410px;
@@ -186,53 +189,130 @@ header .wrapper nav ul li a:hover {
   line-height: 18px;
 }
 
+#noName {
+  width: 100%;
+  height: 603px;
+  padding-top: 24px;
+}
+#noName .container {
+  width: 673px;
+  height: 503px;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+  left: 92px;
+  border: 2px solid black;
+}
+#noName .container .heading {
+  width: 366px;
+  height: 40px;
+  background-color: white;
+  position: absolute;
+  top: -18px;
+  line-height: 32px;
+  text-align: center;
+  left: 154px;
+}
+#noName .container .heading h2 {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+#noName .container .imgContainer {
+  width: 520px;
+  position: relative;
+}
+#noName .container .imgContainer div:first-child {
+  width: 366px;
+  height: 328px;
+  background-image: url(../img/noName-lower.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  right: 76px;
+  top: 97px;
+}
+#noName .container .imgContainer div:last-child {
+  width: 365px;
+  height: 361px;
+  background-image: url(../img/noName-upper.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  right: 101px;
+  top: 31px;
+}
+#noName .container .textContainer {
+  width: 671px;
+  margin-top: 52px;
+  margin-right: 149px;
+}
+#noName .container .textContainer p {
+  text-align: left;
+  line-height: 23px;
+  margin-bottom: 20px;
+}
+
 #order {
   width: 100%;
-  height: 820px;
+  height: 601px;
   background-color: #f1f1f1;
-  padding-top: 75px;
+  padding-top: 56px;
 }
 #order .container {
-  width: 960px;
-  height: 678px;
+  width: 910px;
+  height: 543px;
   margin: auto;
-  border: 1px solid black;
+  border: 2px solid black;
   position: relative;
+  left: -24px;
   display: flex;
 }
 #order .container .heading {
-  width: 555px;
+  width: 446px;
   height: 40px;
   position: absolute;
-  top: -20px;
-  left: 210px;
+  top: -22px;
+  left: 231px;
   line-height: 40px;
   text-align: center;
   background-color: #f1f1f1;
 }
+#order .container .heading h2 {
+  font-size: 1.4em;
+  font-weight: bold;
+}
 #order .container .column {
   width: 470px;
   height: 510px;
-  margin-top: 85px;
+  margin-top: 70px;
 }
 #order .container .column div {
-  margin-bottom: 100px;
+  margin-bottom: 55px;
 }
 #order .container .column div h4 {
+  font-size: 1.3em;
   font-weight: bold;
   text-decoration: underline;
 }
 #order .container .column div p {
-  margin-top: 40px;
+  margin-top: 24px;
+  line-height: 23px;
   text-align: left;
 }
 #order .container .left {
-  margin-left: 90px;
+  margin-left: 78px;
   padding-right: 30px;
 }
 #order .container .right {
-  margin-right: 90px;
-  padding-left: 30px;
+  margin-right: 101px;
+  padding-left: 18px;
+}
+
+#portfolio {
+  width: 100%;
+  height: 601px;
 }
 
 /*# sourceMappingURL=style.css.map */
