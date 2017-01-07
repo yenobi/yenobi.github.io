@@ -23,8 +23,8 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans');
 
 body{
-  font-size: 14px;
-  line-height: 25px;
+  font-size: medium;
+  line-height: 1.4em;
 
   h1, h2, h3, th {
     font-family: 'PT Sans', Verdana, sans-serif;
@@ -121,7 +121,6 @@ header {
 
 .features {
   width: 100%;
-  height: 615px;
   background-color: white;
   display: flex;
   flex-direction: row;
@@ -133,69 +132,85 @@ header {
   }
 
   article {
-    width: 290px;
-    height: 130px;
+    width: 67%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10%;
 
     p {
-      margin-top: 10px;
+      margin-top: 3%;
     }
   }
 }
 
 .about {
   width: 100%;
-  height: 430px;
+  padding-top: 5%;
+  padding-bottom: 5%;
   background-color: #e8e8e8;
   display: flex;
   justify-content: space-around;
   align-items: center;
 
   div {
-    width: 430px;
-    height: 290px;
+    width: 36%;
 
     p {
-      margin-top: 20px;
+      margin-top: 3%;
     }
 
     ul {
-      margin: 20px 0 0 20px;
+      margin-top: 3%;
+      margin-left: 5%;
 
       li {
-        padding-left: 15px;
-        line-height: 15px;
-        margin-bottom: 12px;
+        padding-left: 3%;
+        line-height: 1em;
+        margin-bottom: 3%;
         background-image: url(../img/bullet.png);
         background-repeat: no-repeat;
       }
     }
   }
+
+  iframe {
+    width: 37%;
+    height: 281px;
+  }
 }
 
 .advantages {
   width: 100%;
-  height: 765px;
   text-align: center;
-  background-image: url(../img/advantages-bg.jpg);
+  // background-image: url(../img/advantages-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
 
   h1 {
-    margin-top: 62px;
+    margin-top: 6%;
   }
 
   > p {
-    width: 700px;
-    margin: 28px auto;
+    width: 60%;
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .wrapper {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 1120px;
-    height: 550px;
-    margin: 70px auto;
+    width: 83%;
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+    background-image: url(../img/advantages-bg.jpg);
+    background-position: center;
+    background-position-y: 125%;
+    background-repeat: no-repeat;
+    overflow: hidden;
 
     > div {
       width: 370px;
@@ -249,27 +264,28 @@ header {
 
 .pricing {
   width: 100%;
-  height: 600px;
+  height: 580px;
   background-color: #e8e8e8;
   text-align: center;
 
   > div {
-    padding-top: 60px;
+    padding-top: 4%;
   }
 
   p {
-    width: 700px;
-    margin: 10px auto;
+    width: 56%;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .wrapper {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 60px;
 
     div {
-      margin-right: 5px;
+      margin-right: 1%;
 
       &:hover {
 
@@ -338,17 +354,22 @@ header {
 
 .testimonals {
   div {
-    width: 820px;
-    margin: 130px auto 0 auto;
+    width: 50%;
+    margin-top: 8%;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 1.15em;
 
     p:first-child {
       font-family: 'Helvetica Neue Italic';
+      text-align: center;
     }
 
     p:last-child {
-      width: 90px;
-      margin: 10px auto;
+      width: 16%;
+      margin-top: 1%;
+      margin-left: auto;
+      margin-right: auto;
       font-size: 0.9em;
       font-family: 'PT Sans';
       font-weight: bold;
@@ -356,9 +377,10 @@ header {
   }
 
   & > :last-child{
-    width: 65px;
+    width: 5%;
     height: 22px;
-    margin: 35px auto;
+    margin-top: 3%;
+    margin-bottom: 5%;
     background-image: url(../img/testimonals-nav.png);
     background-repeat: no-repeat;
     cursor: pointer;
@@ -371,18 +393,20 @@ header {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 255px;
+  padding-top: 3%;
+  padding-bottom: 3%;
   background-image: url(../img/subscribe-bg.jpg);
   background-repeat: no-repeat;
 
   form {
-    margin-top: 30px;
+    width: 40%;
   }
 
   input[type="email"] {
-    width: 310px;
-    height: 43px;
-    padding: 15px;
+    width: 50%;
+    height: 43%;
+    padding: 3%;
+    margin-top: 5%;
     border: none;
     background-color: rgba(0, 0, 0, 0.65);
     color: white;
@@ -391,8 +415,8 @@ header {
   }
 
   button {
-    width: 175px;
-    height: 73px;
+    width: 38%;
+    height: 83%;
     border: none;
     background-color: #e74c3c;
     color: white;
@@ -404,7 +428,8 @@ header {
 
 .socials {
   width: 100%;
-  height: 245px;
+  padding-top: 3%;
+  padding-bottom: 3%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -418,9 +443,7 @@ header {
     display: flex;
 
     div {
-      width: 35px;
-      height: 35px;
-      margin-right: 10px;
+      margin-right: 4%;
       border-radius: 50%;
       background-color: #d4d4d4;
 
@@ -469,7 +492,8 @@ header {
 
 footer {
   width: 100%;
-  height: 125px;
+  padding-top: 3%;
+  padding-bottom: 3%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -477,13 +501,18 @@ footer {
 
   ul {
     display: flex;
+    width: 33%;
 
     li {
-      margin-right: 34px;
+      margin-right: 3%;
 
       a {
         color: grey;
         text-decoration: none;
+
+        &:hover {
+          border-bottom: 1px solid #e74c3c;
+        }
       }
     }
 
