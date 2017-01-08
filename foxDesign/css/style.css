@@ -371,11 +371,8 @@ footer .container {
   margin-left: auto;
   margin-right: auto;
 }
-footer .container .heading {
-  width: 35%;
-  position: absolute;
-  top: -4%;
-  left: 33%;
+footer .container legend {
+  width: 38%;
   font-size: 1.3em;
   font-weight: bold;
   text-align: center;
