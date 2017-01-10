@@ -5,19 +5,29 @@ body {
     font-family: 'Ubuntu', sans-serif;
     text-align: center;
   }
+
+  h2, h4 {
+    font-family: 'PT Mono';
+  }
 }
 
 header {
   width: 100%;
-  height: 55px;
-  padding-top: 5px;
+  padding-top: 0.3%;
   background-color: black;
 
   .wrapper {
-    width: 960px;
-    margin: 0 auto;
+    width: 71%;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     justify-content: space-between;
+
+    .logo {
+      img {
+        width: 85%;
+      }
+    }
 
     nav {
       ul {
@@ -25,13 +35,14 @@ header {
 
         li {
           a {
-            width: 125px;
-            height: 30px;
+            min-width: 120px;
+            height: 92%;
             display: block;
             color: white;
             text-decoration: none;
-            line-height: 30px;
-            margin-top: 10px;
+            line-height: 1.3em;
+            margin-top: 6%;
+            font-weight: bold;
 
             &:hover {
               background-color: white;
@@ -46,46 +57,49 @@ header {
 
 #first {
   width: 100%;
-  height: 800px;
-  padding-top: 210px;
+  padding-top: 10%;
+  padding-bottom: 11%;
   background-image: url(../img/first-bg.png);
   background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 
   h1,h3, .wrapper {
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     color: white;
   }
 
   h3 {
-    width: 680px;
-    height: 50px;
-    font-size: 200%;
+    font-size: 267%;
   }
 
   h1 {
-    width: 570px;
-    height: 80px;
-    font-size: 300%;
+    margin-top: 1%;
+    margin-bottom: 7%;
+    font-size: 500%;
     text-transform: uppercase;
   }
 
   .wrapper {
-    width: 362px;
-    height: 64px;
+    width: 21%;
+    min-height: 46px;
     border: 1px solid white;
     position: relative;
 
     a {
       display: block;
-      width: 362px;
-      height: 64px;
+      width: 100%;
+      height: 100%;
       background-color: black;
       color: white;
       position: absolute;
-      top: -10px;
-      left: -10px;
+      top: -20%;
+      left: -5%;
       text-decoration: none;
-      line-height: 64px;
+      line-height: 2em;
+      font-size: 1.4em;
 
       &:hover {
         background-color: white;
@@ -103,57 +117,60 @@ header {
 
 #offer {
   width: 100%;
-  height: 730px;
   background-color: white;
   position: relative;
 
   .arrowDown {
     display: block;
-    width: 50px;
-    height: 84px;
+    min-height: 66px;
     margin: 0 auto;
     cursor: pointer;
     position: absolute;
-    top: -173px;
-    left: 640px;
+    top: -20.7%;
+    left: 49%;
     background-image: url(../img/offer-button.png);
+    background-size: contain;
+    background-repeat: no-repeat;
     text-indent: -99999px;
   }
 
   .wrapper {
-    width: 960px;
-    height: 575px;
-    margin: 80px auto;
+    width: 71%;
+    min-height: 575px;
+    margin-top: 6%;
+    margin-left: auto;
+    margin-right: auto;
 
     .container {
-      width: 850px;
-      height: 385px;
-      border: 1px solid black;
+      width: 62%;
+      border: 2px solid black;
       position: relative;
       display: flex;
 
       .heading {
-        width: 365px;
-        height: 40px;
+        width: 47%;
         background-color: white;
         position: absolute;
-        top: -20px;
-        line-height: 40px;
+        top: -5%;
+        left: 25%;
         text-align: center;
-        left: 250px;
-        // шрифт и размер
+
+        h2 {
+          font-size: 1.4em;
+          font-weight: bold;
+        }
       }
 
       .textContainer {
-        width: 410px;
-        height: 260px;
-        margin-top: 80px;
-        margin-left: 100px;
+        width: 65%;
+        margin-top: 5%;
+        margin-left: 10%;
+        margin-bottom: 3%;
 
         p {
           text-align: left;
-          margin-bottom: 25px;
-          line-height: 30px;
+          margin-bottom: 5%;
+          line-height: 1.6em;
         }
       }
 
@@ -161,94 +178,353 @@ header {
         position: relative;
 
         div:first-child {
-          width: 456px;
-          height: 437px;
+          width: 366px;
+          height: 327px;
           position: absolute;
-          top: 90px;
-          left: 145px;
+          top: 84px;
+          left: 59px;
           background-image: url(../img/offer-lower.jpg);
           background-repeat: no-repeat;
           background-position: center;
+          background-size: cover;
         }
 
         div:last-child {
-          width: 462px;
-          height: 414px;
+          width: 366px;
+          height: 364px;
           position: absolute;
-          top: 30px;
-          left: 85px;
+          top: 18px;
+          left: 34px;
           background-image: url(../img/offer-upper.jpg);
           background-repeat: no-repeat;
           background-position: center;
+          background-size: cover;
         }
       }
     }
 
     > p:last-child {
-      width: 538px;
-      height: 70px;
-      margin-top: 10px;
-      font-size: small;
+      width: 45%;
+      margin-top: 3%;
       text-align: left;
+      font-size: 0.9em;
+      line-height: 1.2em;
     }
   }
 }
 
-// noName section styles
+#noName {
+  width: 100%;
+  padding-top: 2%;
+  padding-bottom: 8%;
+
+  .container {
+    width: 53%;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    position: relative;
+    border: 2px solid black;
+
+    .heading {
+      width: 62%;
+      background-color: white;
+      position: absolute;
+      top: -4%;
+      left: 25%;
+      text-align: center;
+
+      h2 {
+        font-size: 1.4em;
+        font-weight: bold;
+      }
+    }
+
+    .imgContainer {
+      width: 520px;
+      position: relative;
+
+      div:first-child {
+        width: 366px;
+        height: 328px;
+        background-image: url(../img/noName-lower.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        right: 76px;
+        top: 97px;
+      }
+
+      div:last-child {
+        width: 365px;
+        height: 361px;
+        background-image: url(../img/noName-upper.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        right: 101px;
+        top: 31px;
+      }
+
+    }
+
+    .textContainer {
+      width: 65%;
+      margin-top: 7%;
+      margin-right: 15%;
+      margin-bottom: 5%;
+
+      p {
+        text-align: left;
+        line-height: 1.4em;
+        margin-bottom: 5%;
+      }
+    }
+  }
+}
 
 #order {
   width: 100%;
-  height: 820px;
   background-color: #f1f1f1;
-  padding-top: 75px;
+  padding-top: 5%;
+  padding-bottom: 5%;
 
   .container {
-    width: 960px;
-    height: 678px;
+    width: 70%;
     margin: auto;
-    border: 1px solid black;
+    border: 2px solid black;
     position: relative;
     display: flex;
 
     .heading {
-      width: 555px;
-      height: 40px;
+      width: 47%;
       position: absolute;
-      top: -20px;
-      left: 210px;
-      line-height: 40px;
+      top: -4%;
+      left: 24%;
+      line-height: 2.2em;
       text-align: center;
       background-color: #f1f1f1;
+
+      h2 {
+        font-size: 1.4em;
+        font-weight: bold;
+      }
     }
 
     .column {
-      width: 470px;
-      height: 510px;
-      margin-top: 85px;
+      margin-top: 8%;
 
       div {
-        margin-bottom: 100px;
+        margin-bottom: 15%;
 
         h4 {
+          font-size: 1.3em;
           font-weight: bold;
           text-decoration: underline;
         }
 
         p {
-          margin-top: 40px;
+          margin-top: 5%;
+          line-height: 1.3em;
           text-align: left;
         }
       }
     }
 
     .left {
-      margin-left: 90px;
-      padding-right: 30px;
+      margin-left: 10%;
+      padding-right: 8%;
     }
 
     .right {
-      margin-right: 90px;
-      padding-left: 30px;
+      margin-right: 10%;
+    }
+  }
+}
+
+#portfolio {
+  width: 100%;
+  padding-top: 8%;
+  padding-bottom: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  a {
+    width: 5%;
+    min-height: 70px;
+    text-indent: -99999px;
+    overflow: hidden;
+    background-color: black;
+    background-image: url(../img/portfolio-arrow.png);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .arrowRight {
+    transform: rotate(180deg);
+  }
+
+    .container {
+      width: 50%;
+      min-height: 400px;
+      border: 2px solid black;
+      position: relative;
+      display: flex;
+
+      div {
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+
+      .heading {
+        width: 40%;
+        position: absolute;
+        top: -3%;
+        left: 13%;
+        text-align: center;
+        background-color: white;
+        font-size: 1.3em;
+        font-weight: bold;
+      }
+
+      .monitor {
+        min-width: 100%;
+        min-height: 100%;
+        position: absolute;
+        top: 14%;
+        left: -13%;
+        background-image: url(../img/portfolio-macPresentation.png);
+      }
+
+      .layout {
+        min-width: 44%;
+        min-height: 119.8%;
+        position: absolute;
+        left: 72%;
+        top: -8%;
+        background-image: url(../img/portfolio-layout.png);
+        box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.3);
+      }
+    }
+}
+
+footer {
+  width: 100%;
+  min-height: 385px;
+  padding-top: 8%;
+  margin-top: 10%;
+  background-image: url(../img/footer-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+
+  .container {
+    width: 57%;
+    border: 2px solid black;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+
+    // .heading {
+    //   width: 35%;
+    //   position: absolute;
+    //   top: -4%;
+    //   left: 33%;
+    //   font-size: 1.3em;
+    //   font-weight: bold;
+    //   text-align: center;
+    // }
+
+    legend {
+        width: 38%;
+        font-size: 1.3em;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .wrapper {
+      width: 30%;
+      min-height: 46px;
+      border: 1px solid black;
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 15%;
+      margin-bottom: 15%;
+
+      a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        color: white;
+        position: absolute;
+        top: -20%;
+        left: -5%;
+        text-decoration: none;
+        line-height: 2em;
+        font-size: 1.4em;
+
+        &:hover {
+          background-color: white;
+          color: black;
+          transition: background-color 2s, color 1s;
+        }
+
+        &:active {
+          top: 0px;
+          left: 0px;
+        }
+      }
+    }
+  }
+
+  .socials {
+    display: flex;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+
+    a {
+      width: 14%;
+      min-height: 28px;
+      margin-right: 3%;
+      display: block;
+      text-indent: -9999px;
+      overflow: hidden;
+      background-image: url(../img/footer-socials-sprite.png);
+      background-repeat: no-repeat;
+
+      &:first-child {
+        background-position: 0 0;
+      }
+
+      &:nth-child(2) {
+background-position: -46px 0;
+      }
+
+      &:nth-child(3) {
+        margin-top: 1%;
+        background-position: -101px 0;
+      }
+
+      &:nth-child(4) {
+            margin-top: 0.7%;
+            background-position: -171px 0;
+      }
+
+      &:nth-child(5) {
+            margin-top: 0.7%;
+            background-position: -226px 0;
+      }
+
+      &:last-child {
+            margin-top: 0.7%;
+            background-position: -287px 0;
+      }
     }
   }
 }
