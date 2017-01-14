@@ -31,35 +31,8 @@ container.appendChild(buttonWrapper);
 
 // change start for pause
 
-if ( buttonStart.classList.contains('start') ) {
+buttonStart.addEventListener('click', pauseTimer);
 
-  buttonStart.addEventListener('click', pauseTimer);
-
-  function pauseTimer() {
-    buttonStart.classList.remove('start');
-    buttonStart.classList.add('pause');
-    buttonStart.innerHTML = 'pause';
-  }
-
-} else {
-    buttonStart.removeEventListener('click', pauseTimer);
+function pauseTimer() {
+  buttonStart.classList.toggle('pause');
 }
-
-// second try to change for continue
-// function contTimer() {
-//   buttonStart.classList.remove('pause');
-//   buttonStart.classList.add('continue');
-//   buttonStart.innerHTML = 'continue';
-// }
-//
-// while ( buttonStart.classList.contains('pause') ) {
-//   buttonStart.addEventListener('click', contTimer);
-// }
-
-// first try to change for continue
-// if ( buttonStart.classList.contains('pause') ) {
-//   alert('pause');
-//   buttonStart.addEventListener('click', contTimer);
-// } else {
-//   buttonStart.removeEventListener('click', contTimer);
-// }
