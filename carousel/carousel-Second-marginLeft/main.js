@@ -17,7 +17,7 @@ function moveNext() {
   if (k === 0) {
     var newMargin = k - item.offsetWidth;
   } else if (k === -7) {
-    return;
+    itemList.style.marginLeft = '0px';
   } else {
     var newMargin = (k-1)*item.offsetWidth;
   }
@@ -26,7 +26,7 @@ function moveNext() {
 
 function movePrev() {
   if (parseInt(listStyle.marginLeft) === 0) {
-    return console.log('edge');
+    itemList.style.marginLeft = '-910px';
   } else {
       itemList.style.marginLeft = parseInt(listStyle.marginLeft) + item.offsetWidth + 'px';
   }
