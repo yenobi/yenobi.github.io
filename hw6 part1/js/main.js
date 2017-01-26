@@ -51,9 +51,10 @@ function pauseTimer() {
 buttonStart.addEventListener('click', showTimeStart);
 
 function showTimeStart() {
-  var dateStart = new Date();
+  var dateStart = Date.now();
+  // new Date();
   // console.log(dateStart.getSeconds());
-  console.log(dateStart);
+  console.log(dateStart - Date.now());
 }
 
 buttonClear.addEventListener('click', showTimeClear);
@@ -70,7 +71,7 @@ function showTimeClear() {
 // сколько прошло с момента date
 // new Date() - date;
 
-// some try 
+// some try
 // function timerNew() {
 //   console.log(new Date() - dateStart)
 // }
