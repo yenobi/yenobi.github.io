@@ -1,0 +1,29 @@
+body {
+  font-family: sans-serif;
+}
+
+.clock {
+  width: 80%;
+  height: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 10px solid black;
+  border-radius: 40px;
+  background-color: aliceblue;
+  font-size: 8em;
+  text-align: center;
+    margin-top: 10%;
+}
+
+button {
+  display: block;
+  width: 25%;
+  border: 5px solid black;
+  border-radius: 15px;
+  font-size: 2em;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+}
