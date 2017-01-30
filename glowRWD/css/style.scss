@@ -140,6 +140,11 @@ header {
     margin-left: auto;
     margin-bottom: 10%;
 
+    &:hover {
+      text-shadow: 3px 3px 3px rgba(150, 150, 150, 0.5);
+      // for future - to tie with picture
+    }
+
     p {
       margin-top: 3%;
     }
@@ -176,8 +181,8 @@ header {
     }
   }
 
-  iframe {
-    width: 37%;
+  .iframe {
+    width: 36%;
     // height: 281px;
   }
 }
@@ -788,10 +793,15 @@ footer {
   }
 }
 
+// mb 1024 ? ipad in lanscape
+
 @media screen and (min-width: 1200px) {
   .about {
-    iframe {
-      height: 280px;
+    .iframe {
+      iframe {
+        height: 274px;
+        width: 100%;
+      }
     }
   }
 }
@@ -806,3 +816,108 @@ footer {
   }
 }
 // major breakpoint for arvantages 800px
+
+@media screen and (min-width: 760px) and (max-width: 960px){
+  header {
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    > div:last-child {
+      margin-bottom: 16%;
+    }
+  }
+
+  .features {
+
+    > div:first-child, div:last-child {
+      margin-top: 5%;
+      margin-bottom: 5%;
+    }
+
+    article {
+      width: 87%;
+    }
+
+      div.features-img {
+        margin-top: -11%;
+        img {
+          height: 435px;
+        }
+      }
+
+  }
+
+  .about {
+    position: relative;
+
+    div:first-child {
+      h1 {
+        position: relative;
+        left: 65%;
+        line-height: 1em;
+        width: 120%;
+        margin-bottom: 10%;
+      }
+
+      p {
+        width: 115%;
+      }
+
+      ul {
+        li {
+          padding-left: 6%;
+        }
+      }
+    }
+
+    .iframe {
+      width: 41%;
+      margin-top: 8%;
+      margin-right: 5%;
+
+      iframe {
+        height: 205px;
+        width: 114%;
+      }
+    }
+  }
+
+  .advantages {
+    // верхний абзац подрастянуть
+    // по два итема в ряду, всего три ряда
+    > p {
+      width: 80%;
+    }
+
+    .wrapper {
+      width: 90%;
+      margin-top: 4%;
+
+      div {
+        width: 48%;
+
+        p {
+          width: 87%;
+        }
+      }
+    }
+  }
+
+  .pricing {
+    // добавить карусель
+    // область видимости - 2 плана
+  }
+
+  .testimonals {
+    // увеличить шрифты
+    // увеличить иконки точек
+  }
+
+  .socials {
+    // позиционирование
+  }
+
+  .footer {
+    // разместить аккуратней, сделать 40х40
+  }
+}

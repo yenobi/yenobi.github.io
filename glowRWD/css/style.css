@@ -109,6 +109,9 @@ header > div:last-child a {
   margin-left: auto;
   margin-bottom: 10%;
 }
+.features article:hover {
+  text-shadow: 3px 3px 3px rgba(150, 150, 150, 0.5);
+}
 .features article p {
   margin-top: 3%;
 }
@@ -139,8 +142,8 @@ header > div:last-child a {
   background-image: url(../img/bullet.png);
   background-repeat: no-repeat;
 }
-.about iframe {
-  width: 37%;
+.about .iframe {
+  width: 36%;
 }
 
 .advantages {
@@ -624,8 +627,9 @@ footer ul li:last-child {
   }
 }
 @media screen and (min-width: 1200px) {
-  .about iframe {
-    height: 280px;
+  .about .iframe iframe {
+    height: 274px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 1300px) {
@@ -633,6 +637,69 @@ footer ul li:last-child {
     width: 22%;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+@media screen and (min-width: 760px) and (max-width: 960px) {
+  header {
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  header > div:last-child {
+    margin-bottom: 16%;
+  }
+
+  .features > div:first-child, .features div:last-child {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  .features article {
+    width: 87%;
+  }
+  .features div.features-img {
+    margin-top: -11%;
+  }
+  .features div.features-img img {
+    height: 435px;
+  }
+
+  .about {
+    position: relative;
+  }
+  .about div:first-child h1 {
+    position: relative;
+    left: 65%;
+    line-height: 1em;
+    width: 120%;
+    margin-bottom: 10%;
+  }
+  .about div:first-child p {
+    width: 115%;
+  }
+  .about div:first-child ul li {
+    padding-left: 6%;
+  }
+  .about .iframe {
+    width: 41%;
+    margin-top: 8%;
+    margin-right: 5%;
+  }
+  .about .iframe iframe {
+    height: 205px;
+    width: 114%;
+  }
+
+  .advantages > p {
+    width: 80%;
+  }
+  .advantages .wrapper {
+    width: 90%;
+    margin-top: 4%;
+  }
+  .advantages .wrapper div {
+    width: 48%;
+  }
+  .advantages .wrapper div p {
+    width: 87%;
   }
 }
 
