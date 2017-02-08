@@ -1,0 +1,118 @@
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+  width: 150px;
+  height: 200px;
+  margin-left: auto;
+margin-right: auto;
+margin-top: 20%;
+animation: becomeX;
+animation-duration: 2s;
+animation-timing-function: linear;
+animation-iteration-count: 2;
+}
+
+#container:hover{
+  cursor: pointer;
+}
+
+#container div {
+  position: relative;
+  width: 150px;
+  height: 50px;
+  border-radius: 20px;
+  background-color: darkblue;
+}
+
+@keyframes becomeX {
+
+    50% {
+
+    }
+
+    100% {
+      .middle {
+        display: none;
+      }
+
+      #container div:first-child {
+        transform: rotate( 230deg );
+      }
+
+      #container div:last-child {
+        top: -100px;
+        transform: rotate( -230deg );
+      }
+    }
+}
+
+
+#wrapper {
+  margin-top: 10%;
+  width: 400px;
+  height: 100px;
+  background-color: aqua;
+  position: relative;
+  overflow: hidden;
+}
+
+#hero {
+  position: relative;
+  width: 80px;
+  height: 20px;
+  background-color: grey;
+  margin-top: auto;
+  margin-bottom: auto;
+  left: 0px;
+}
+
+.goingRight {
+  animation: goToRight;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}
+
+@keyframes goToRight {
+  25% {
+      left: 100px;
+  }
+
+  50% {
+    left: 200px;
+  }
+
+  75% {
+      left: 300px;
+  }
+
+  100% {
+    left: 400px;
+  }
+}
+
+.becomeLittle {
+  animation: littleHero;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+}
+
+@keyframes littleHero {
+  25% {
+    width: 60px;
+  }
+
+  50% {
+    width: 40px;
+  }
+
+  75% {
+    width: 60px;
+  }
+
+  100% {
+    width: 80px;
+  }
+}
