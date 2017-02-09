@@ -1,0 +1,28 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+nav {
+  padding: 30px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li > a {
+    font-size: 1.5em;
+    /*font-weight: bold;*/
+}
+
+nav ul.submenu a{
+  padding-left: 50px;
+  font-size: 1em;
+  font-style: italic;
+}
+
+.submenu {
+  display: none;
+}
