@@ -26,3 +26,29 @@ nav ul.submenu a{
 .submenu {
   display: none;
 }
+
+.wrapper {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 50px;
+  margin-left: 100px;
+  border: 3px solid blue;
+}
+
+.eyeUpper {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: black;
+  position: relative;
+}
+
+
+.eyeLower {
+  width: 100px;
+  height: 10px;
+  background-color: black;
+  transform: rotate(-30deg);
+}
