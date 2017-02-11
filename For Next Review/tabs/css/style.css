@@ -1,0 +1,14 @@
+#container {
+  margin-left: 50px;
+  margin-top: 50px;
+  font-family: sans-serif;
+}
+
+.panel-default {
+  width: 30%;
+  min-width: 400px;
+}
+
+.displayNone {
+  display: none;
+}
