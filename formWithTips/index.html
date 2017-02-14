@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name='viewport' content="width=device-width, initial-scale=1">
+    <link rel='stylesheet' href='style.css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <title>form with tips</title>
+  </head>
+  <body>
+    <div id='container'>
+      <form action="" method=''>
+        <label for='firstName'>First name
+          <input type="text" id='firstName'>
+        </label>
+        <div id='firstTip' class='tip'>Please enter your first name</div>
+        <label for='lastName'>Last Name
+          <input type="text" id='lastName'>
+        </label>
+        <div id='surnameTip' class='tip'>Please enter your last name</div>
+        <label for='adress'>Adress
+          <input type="text" id='adress'>
+        </label>
+        <div id='adressTip' class='tip'>Please enter your adress</div>
+      </form>
+      <button id='showTips'>Show help</button>
+    </div>
+    <script src='main.js'></script>
+  </body>
+</html>
