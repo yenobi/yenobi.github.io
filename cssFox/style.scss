@@ -1,5 +1,6 @@
 $mainColor: #ff7373;
 $earsColor: #ff9090;
+@import url('https://fonts.googleapis.com/css?family=Pangolin');
 
 body {
     display: flex;
@@ -7,10 +8,11 @@ body {
     justify-content: center;
     align-content: center;
     background-color: #f9ece8;
+    font-family: 'Pangolin', cursive;
 }
 
 .fox {
-    margin-top: 15%;
+    max-height: 300px;
     align-self: center;
     position: relative;
 }
@@ -61,8 +63,8 @@ body {
         &:before {
             content: "";
             display: block;
-            width: 8px;
-            height: 8px;
+            width: 10px;
+            height: 10px;
             border-radius: 50%;
             position: relative;
             left: 33px;
@@ -129,4 +131,31 @@ body {
     background-color: $mainColor;
     top: -255px;
     left: 100px;
+}
+
+header {
+  margin-top: 3%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.fox:hover {
+  .ears {
+    transform: scale(0.9);
+    transform: rotate(15deg);
+    left: 14px;
+  }
+
+  .head {
+    transform: rotate(15deg);
+  }
+
+  .nose {
+    left: 45px;
+  }
+
+  .eyes div:before {
+    transform: scale(0.5);
+  }
 }
