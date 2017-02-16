@@ -299,7 +299,9 @@ header {
     margin-bottom: auto;
     min-height: 50px;
     min-width: 50px;
-    background-color: blue;
+    background-color: black;
+    color: white;
+    cursor: pointer;
   }
 
   #prevArrow, #nextArrow {
@@ -817,6 +819,7 @@ footer {
 }
 // major breakpoint for arvantages 800px
 
+// mb start this breakpoint from 720 (tablet-portrait)
 @media screen and (min-width: 760px) and (max-width: 960px){
   header {
     background-size: contain;
@@ -919,5 +922,198 @@ footer {
 
   .footer {
     // разместить аккуратней, сделать 40х40
+  }
+}
+
+@media screen and (min-width: 451px) and (max-width: 540px) {
+  header {
+    background-position: center;
+    background-size: cover;
+  }
+
+  .features {
+    flex-direction: column;
+
+    div:nth-child(odd) {
+      padding-right: 34%;
+
+      article {
+        margin-left: 8%;
+        margin-right: none;
+      }
+    }
+
+    > div:first-child {
+      order: 1;
+      margin-top: 5%;
+    }
+
+    .features-img {
+      position: absolute;
+      width: 55%;
+          right: 0%;
+
+      img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }
+
+    > div:last-child {
+      order: 2;
+
+      article:first-child {
+        margin-left: 10%;
+      }
+
+      article:last-child {
+        width: 119%;
+        margin-left: 20%;
+      }
+    }
+  }
+
+  .about {
+    flex-direction: column;
+
+    div:first-child {
+      width: 75%;
+      order: 2;
+      margin-top: 3%;
+
+      ul {
+        li {
+          padding-left: 4%;
+        }
+      }
+    }
+
+    .iframe {
+      width: 68%;
+      order: 1;
+    }
+  }
+
+  .advantages {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    > p {
+      width: 80%;
+      margin-top: 5%;
+    }
+
+    .wrapper > div {
+      width: 48%;
+
+      p {
+        width: 85%;
+      }
+    }
+  }
+
+  .pricing {
+    p {
+      width: 80%;
+      margin-top: 4%;
+    }
+
+    #carousel-container {
+      display: flex;
+      position: relative;
+
+      #prevArrow, #nextArrow {
+        display: block;
+        position: absolute;
+        top: 160px;
+        font-size: 4em;
+        line-height: 0.5em;
+      }
+
+      #prevArrow {
+        margin-right: 5%;
+      }
+
+      #nextArrow {
+        margin-left: 5%;
+        left: 83%;
+      }
+
+      #additional-wrapper {
+        width: 57%;
+        overflow: hidden;
+        margin-left: auto;
+        margin-right: auto;
+
+        &:hover {
+          width: 290px;
+        }
+
+        .wrapper {
+          // пока только дефолтное значение,
+          // для статического представления
+          // карусель позже сделаю
+          transform: translateX(146px);
+
+          div:hover {
+            table {
+              width: 290px;
+              margin-top: -13px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .testimonals {
+    div {
+      width: 80%;
+      margin-top: 14%;
+
+      p:last-child {
+        width: 40%;
+        font-size: 1em;
+      }
+    }
+
+    > div:last-child {
+      width: 12%;
+    }
+  }
+
+  .subscribe {
+    background-position: center;
+    background-size: cover;
+
+    form {
+      width: 90%;
+
+      input[type="email"] {
+        width: 36%;
+        margin-left: 6%;
+      }
+
+      button {
+        width: 36%;
+        margin-left: 4%;
+      }
+    }
+  }
+
+  .socials {
+    p {
+      text-align: center;
+    }
+
+    .wrapper {
+      width: 68%;
+    }
+  }
+
+  footer {
+    ul {
+      width: 98%;
+    }
   }
 }

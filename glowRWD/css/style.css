@@ -229,7 +229,9 @@ header > div:last-child a {
   margin-bottom: auto;
   min-height: 50px;
   min-width: 50px;
-  background-color: blue;
+  background-color: black;
+  color: white;
+  cursor: pointer;
 }
 .pricing #prevArrow, .pricing #nextArrow {
   display: none;
@@ -700,6 +702,155 @@ footer ul li:last-child {
   }
   .advantages .wrapper div p {
     width: 87%;
+  }
+}
+@media screen and (min-width: 451px) and (max-width: 540px) {
+  header {
+    background-position: center;
+    background-size: cover;
+  }
+
+  .features {
+    flex-direction: column;
+  }
+  .features div:nth-child(odd) {
+    padding-right: 34%;
+  }
+  .features div:nth-child(odd) article {
+    margin-left: 8%;
+    margin-right: none;
+  }
+  .features > div:first-child {
+    order: 1;
+    margin-top: 5%;
+  }
+  .features .features-img {
+    position: absolute;
+    width: 55%;
+    right: 0%;
+  }
+  .features .features-img img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .features > div:last-child {
+    order: 2;
+  }
+  .features > div:last-child article:first-child {
+    margin-left: 10%;
+  }
+  .features > div:last-child article:last-child {
+    width: 119%;
+    margin-left: 20%;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+  .about div:first-child {
+    width: 75%;
+    order: 2;
+    margin-top: 3%;
+  }
+  .about div:first-child ul li {
+    padding-left: 4%;
+  }
+  .about .iframe {
+    width: 68%;
+    order: 1;
+  }
+
+  .advantages {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .advantages > p {
+    width: 80%;
+    margin-top: 5%;
+  }
+  .advantages .wrapper > div {
+    width: 48%;
+  }
+  .advantages .wrapper > div p {
+    width: 85%;
+  }
+
+  .pricing p {
+    width: 80%;
+    margin-top: 4%;
+  }
+  .pricing #carousel-container {
+    display: flex;
+    position: relative;
+  }
+  .pricing #carousel-container #prevArrow, .pricing #carousel-container #nextArrow {
+    display: block;
+    position: absolute;
+    top: 160px;
+    font-size: 4em;
+    line-height: 0.5em;
+  }
+  .pricing #carousel-container #prevArrow {
+    margin-right: 5%;
+  }
+  .pricing #carousel-container #nextArrow {
+    margin-left: 5%;
+    left: 83%;
+  }
+  .pricing #carousel-container #additional-wrapper {
+    width: 57%;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .pricing #carousel-container #additional-wrapper:hover {
+    width: 290px;
+  }
+  .pricing #carousel-container #additional-wrapper .wrapper {
+    transform: translateX(146px);
+  }
+  .pricing #carousel-container #additional-wrapper .wrapper div:hover table {
+    width: 290px;
+    margin-top: -13px;
+  }
+
+  .testimonals div {
+    width: 80%;
+    margin-top: 14%;
+  }
+  .testimonals div p:last-child {
+    width: 40%;
+    font-size: 1em;
+  }
+  .testimonals > div:last-child {
+    width: 12%;
+  }
+
+  .subscribe {
+    background-position: center;
+    background-size: cover;
+  }
+  .subscribe form {
+    width: 90%;
+  }
+  .subscribe form input[type="email"] {
+    width: 36%;
+    margin-left: 6%;
+  }
+  .subscribe form button {
+    width: 36%;
+    margin-left: 4%;
+  }
+
+  .socials p {
+    text-align: center;
+  }
+  .socials .wrapper {
+    width: 68%;
+  }
+
+  footer ul {
+    width: 98%;
   }
 }
 
