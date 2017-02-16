@@ -1,0 +1,21 @@
+body {
+  background: #F0EFE7;
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  width: 225px;
+  height: 228px;
+  padding: 5px;
+  background-color: white;
+  border-radius: 3px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+}
+
+p {
+  margin-top: 35px;
+text-align: center;
+}
