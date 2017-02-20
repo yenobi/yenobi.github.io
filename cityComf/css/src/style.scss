@@ -169,7 +169,7 @@ header {
       div {
         width: 100px;
         height: 82px;
-        margin: 35px 35px;
+        margin: 28px 35px;
         background-image: url(../../img/advantages-sprite.png);
         background-repeat: no-repeat;
       }
@@ -199,6 +199,24 @@ header {
 
     & div:last-child {
       margin-right: none;
+    }
+  }
+
+  .item:nth-child(2) {
+    .for-sprite {
+        background-position-x: -107px;
+    }
+  }
+
+  .item:nth-child(3) {
+    .for-sprite {
+          background-position-x: -212px;
+    }
+  }
+
+  .item:last-child {
+    .for-sprite {
+          background-position-x: -337px;
     }
   }
 }
@@ -821,5 +839,92 @@ header {
         }
       }
     }
+  }
+}
+
+#faq {
+  width: 100%;
+  background-color: #24323a;
+  padding-top: 62px;
+  padding-bottom: 55px;
+
+  h2 {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    font-size: 2em;
+  }
+
+  div {
+    width: 1020px;
+    height: 291px;
+    border: 2px solid white;
+    margin-left: auto;
+    margin-right: auto;
+
+    h3 {
+      width: 53%;
+      margin-top: 45px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 25px;
+      color: #1ebda2;
+      font-size: 1.3em;
+    }
+
+    p {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 15px;
+      text-align: center;
+      line-height: 1.3em;
+    }
+  }
+}
+
+#map {
+  width: 100%;
+  height: 400px;
+  background-image: url(../../img/map-bg.png);
+  background-position: center;
+  background-size: cover;
+
+  .map-wrapper {
+    width: 88%;
+
+    div {
+      width: 30%;
+      background-color: rgba(30, 189, 162, 0.7);
+      float: right;
+      text-align: center;
+      margin-top: 50px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+
+      p:first-of-type, p:nth-of-type(3), p:nth-of-type(5), p:last-child > span {
+        font-weight: bold;
+        font-size: 1.2em;
+      }
+
+      p:nth-of-type(2), p:nth-of-type(4), p:nth-of-type(6) {
+        margin-top: 7px;
+        margin-bottom: 35px;
+      }
+    }
+  }
+}
+
+footer {
+  width: 100%;
+  background-color: #24323a;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  p {
+    width: 10%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
