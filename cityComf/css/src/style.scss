@@ -647,22 +647,26 @@ header {
     }
   }
 
-  .arrow {
-    position: absolute;
-    width: 38px;
-    height: 74px;
-    background-color: rgba(0,0,0,0);
-    border: none;
-    top: 10px;
-  }
+  // .arrow {
+  //   position: absolute;
+  //   width: 38px;
+  //   height: 74px;
+  //   background-color: rgba(0,0,0,0);
+  //   border: none;
+  //   top: 10px;
+  // }
+  //
+  // .prev {
+  //   background-image: url(../../portfolio-arrow.png);
+  // }
+  //
+  // .next {
+  //   background-image: url(../../portfolio-arrow.png);
+  //
+  // }
 
-  .prev {
-    background-image: url(../../portfolio-arrow.png);
-  }
-
-  .next {
-    background-image: url(../../portfolio-arrow.png);
-
+  .displayNone {
+    display: none;
   }
 }
 
