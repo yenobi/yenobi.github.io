@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+$logo-color: #3498db;
+$gray: rgba(37, 37, 37, 0.13);
+$nav-color: #2c3e50;
+$bg-color: #ecf0f1;
+$card-text-color: #a3a3a3;
+$card-button-color: rgba(228, 228, 228, 0);
+$card-button-color-hover: rgba(228, 228, 228, 0.3);
+$hover-underline-color: #f95738;
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: medium;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  // justify-content: space-between;
+  align-items: center;
+
+  .logo {
+    width: 40%;
+    background-color: $logo-color;
+
+    img {
+      margin-top: 12%;
+      margin-left: 5%;
+      margin-bottom: 5%;
+    }
+  }
+
+  .searchPanel {
+    width: 13%;
+    height: 40px;
+    margin-left: 10%;
+    background-color: $gray;
+    text-align: center;
+    border-radius: 25%;
+
+    p {
+      display: none;
+    }
+
+    img {
+      margin-top: 25%;
+    }
+  }
+
+  .email, .planet, .cart {
+    margin-left: 5%;
+  }
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  background-color: $nav-color;
+
+  ul {
+    padding-left: 3%;
+    list-style: none;
+    display: flex;
+  }
+
+  li {
+    margin-right: 5%;
+
+    a {
+      min-width: 20px;
+      min-height: 20px;
+      display: block;
+      padding-left: 20px;
+      color: white;
+      text-decoration: none;
+      background-repeat: no-repeat;
+
+      span {
+        display: none;
+      }
+    }
+  }
+
+  li:first-child {
+    a {
+        span {
+          display: inline;
+        }
+
+        background-image: url(../../img/dashboard-item.png);
+    }
+  }
+
+  li:nth-child(2) {
+    a {
+      background-image: url(../../img/statistics-item.png);
+    }
+  }
+
+  li:nth-child(3) {
+    a {
+      background-image: url(../../img/sales-item.png);
+    }
+  }
+
+  li:nth-child(4) {
+    a {
+      background-image: url(../../img/customers-item.png);
+    }
+  }
+
+  li:nth-child(5) {
+    a {
+      background-image: url(../../img/settings-item.png);
+    }
+  }
+}
+
+main {
+  width: 100%;
+  background-color: #ecf0f1;
+  color: $card-text-color;
+}
+
+#sales {
+  display: flex;
+  flex-direction: column;
+
+  > div {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 2%;
+    background-color: white;
+
+    header {
+      justify-content: space-around;
+
+      button {
+        min-width: 35px;
+        min-height: 35px;
+        background-color: $card-button-color;
+        border: 1px solid $card-text-color;
+        border-radius: 25%;
+        cursor: pointer;
+
+        img {
+          margin-top: 10%;
+        }
+
+        &:hover {
+          background-color: $card-button-color-hover;
+        }
+      }
+    }
+
+    > img {
+      margin-left: 8%;
+      margin-bottom: 13%;
+      margin-top: 10%;
+    }
+
+    a {
+      display: block;
+      text-decoration: none;
+      margin-left: 5%;
+      margin-bottom: 8%;
+      color: $card-text-color;
+      width: 36%;
+      text-align: center;
+
+      &:hover {
+        border-bottom: 2px solid #f95738;
+      }
+    }
+  }
+}
