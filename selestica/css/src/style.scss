@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+
+// some variables for colors
 $logo-color: #3498db;
 $gray: rgba(37, 37, 37, 0.13);
 $nav-color: #2c3e50;
@@ -7,6 +9,35 @@ $card-text-color: #a3a3a3;
 $card-button-color: rgba(228, 228, 228, 0);
 $card-button-color-hover: rgba(228, 228, 228, 0.3);
 $hover-underline-color: #f95738;
+
+// mixin for a card header
+
+@mixin card-header($h2-margin-right) {
+  header {
+    h2 {
+      margin-left: 4%;
+      margin-right: $h2-margin-right;
+    }
+
+    button {
+      min-width: 35px;
+      min-height: 35px;
+      margin-right: 3%;
+      background-color: $card-button-color;
+      border: 1px solid $card-text-color;
+      border-radius: 25%;
+      cursor: pointer;
+
+      img {
+        margin-top: 10%;
+      }
+
+      &:hover {
+        background-color: $card-button-color-hover;
+      }
+    }
+  }
+}
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -38,7 +69,7 @@ header {
     text-align: center;
     border-radius: 25%;
 
-    p {
+    span {
       display: none;
     }
 
@@ -49,6 +80,10 @@ header {
 
   .email, .planet, .cart {
     margin-left: 5%;
+  }
+
+  .photo {
+    display: none;
   }
 }
 
@@ -110,7 +145,10 @@ nav {
   }
 
   li:nth-child(5) {
+    margin-right: 0px;
+
     a {
+      padding-left: 0px;
       background-image: url(../../img/settings-item.png);
     }
   }
@@ -135,26 +173,7 @@ main {
     padding: 2%;
     background-color: white;
 
-    header {
-      justify-content: space-around;
-
-      button {
-        min-width: 35px;
-        min-height: 35px;
-        background-color: $card-button-color;
-        border: 1px solid $card-text-color;
-        border-radius: 25%;
-        cursor: pointer;
-
-        img {
-          margin-top: 10%;
-        }
-
-        &:hover {
-          background-color: $card-button-color-hover;
-        }
-      }
-    }
+    @include card-header(15%);
 
     > img {
       margin-left: 8%;
@@ -176,4 +195,254 @@ main {
       }
     }
   }
+
+  .saleChart {
+    div {
+      width: 190px;
+      height: 200px;
+      margin-top: 10%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 13%;
+      background-image: url(../../img/sales/salesChart.png);
+      background-repeat: no-repeat;
+      background-position-x: -170px;
+    }
+  }
+}
+
+// minor breakpoint
+@media screen and (min-width: 400px) {
+  nav {
+    li {
+      margin-right: 10%;
+
+      &:last-child {
+        margin-right: 0px;
+      }
+    }
+  }
+
+  #sales {
+    > div {
+        @include card-header(26%);
+
+        > img {
+          margin-left: 16%;
+        }
+    }
+
+    .saleChart {
+      div {
+        width: 285px;
+        background-position-x: -86px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 450px) {
+  header {
+    .searchPanel {
+      border-radius: 18%;
+
+      img {
+        margin-top: 21%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 500px) {
+  header {
+    .searchPanel {
+      margin-left: 15%;
+    }
+  }
+
+  nav {
+    ul {
+      width: 80%;
+      padding-left: 40px;
+      justify-content: center;
+    }
+  }
+
+  #sales {
+    > div {
+      @include card-header(40%);
+
+      > img {
+        margin-left: 25%;
+      }
+    }
+
+    .saleChart {
+      div {
+        width: 353px;
+        background-position-x: 0px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 550px) {
+  header {
+    .logo {
+      img {
+        margin-top: 8%;
+        margin-left: 22%;
+      }
+    }
+
+    .searchPanel {
+      display: flex;
+    margin-left: 5%;
+    width: 20%;
+    border-radius: 11px;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2%;
+    padding-right: 2%;
+    color: $gray;
+
+    img {
+      margin-top: 0px;
+    }
+
+    span:nth-child(1) {
+      display: inline-block;
+    }
+    }
+  }
+}
+// major breakpoint
+@media screen and (min-width: 614px) {
+  nav {
+    ul {
+      padding-left: 50px;
+      justify-content: none;
+
+      li {
+        margin-right: 6%;
+        a {
+          padding-left: 23px;
+          span {
+            display: inline-block;
+          }
+        }
+
+        &:last-child {
+          a {
+            padding-left: 23px;
+          }
+        }
+      }
+    }
+  }
+
+  #sales {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    > div {
+      width: 42%;
+
+      @include card-header(30%);
+
+      > img {
+        margin-left: 8%;
+      }
+    }
+
+    > div:last-child {
+      width: 92%;
+      margin-top: 0%;
+
+      @include card-header(50%);
+
+      div {
+        width: 450px;
+        background-size: contain;
+        background-position: center;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 750px) {
+  header {
+    .logo {
+      width: 30%;
+    }
+
+    .searchPanel {
+      span:nth-child(2) {
+        display: inline-block;
+        margin-left: -30%;
+      }
+    }
+
+    .planet, .cart {
+      margin-left: 2%;
+    }
+
+    .photo {
+      display: block;
+      position: absolute;
+      width: 70px;
+      height: 100px;
+      right: 4%;
+      top: 3%;
+    }
+  }
+
+  nav {
+    ul {
+      padding-left: 40px;
+    }
+  }
+
+  #sales {
+    .todaysSale {
+        @include card-header(25%);
+    }
+
+    .saleChart {
+      > div:last-child {
+        width: 600px;
+        height: 300px;
+        background-size: 85%;
+        margin-top: 2%;
+        margin-bottom: 5%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 800px) {
+  header {
+    .logo {
+      width: 27%;
+    }
+  }
+
+  nav {
+    ul {
+      padding-left: 26px;
+    }
+  }
+
+  #sales {
+    > div {
+      > img {
+          margin-left: 17%;
+      }
+    }
+  }
+}
+
+// major breakpoint for three column
+@media screen and (min-width: 875px) {
+
 }
