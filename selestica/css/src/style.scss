@@ -40,6 +40,22 @@ $darkblue: #2c3e50;
   }
 }
 
+@mixin full-list-url($width, $margin-bottom) {
+  a {
+    display: block;
+    text-decoration: none;
+    margin-left: 5%;
+    margin-bottom: $margin-bottom;
+    color: $card-text-color;
+    width: $width;
+    text-align: center;
+
+    &:hover {
+      border-bottom: 2px solid #f95738;
+    }
+  }
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   font-size: medium;
@@ -182,19 +198,20 @@ main {
       margin-top: 10%;
     }
 
-    a {
-      display: block;
-      text-decoration: none;
-      margin-left: 5%;
-      margin-bottom: 8%;
-      color: $card-text-color;
-      width: 36%;
-      text-align: center;
-
-      &:hover {
-        border-bottom: 2px solid #f95738;
-      }
-    }
+    @include full-list-url(36%, 8%);
+    // a {
+    //   display: block;
+    //   text-decoration: none;
+    //   margin-left: 5%;
+    //   margin-bottom: 8%;
+    //   color: $card-text-color;
+    //   width: 36%;
+    //   text-align: center;
+    //
+    //   &:hover {
+    //     border-bottom: 2px solid #f95738;
+    //   }
+    // }
   }
 
   .saleChart {
@@ -263,6 +280,92 @@ main {
   }
 }
 
+#withProducts {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .productList {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 2%;
+    background-color: white;
+
+    @include card-header(15%);
+
+    table {
+      width: 95%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 5%;
+      border-spacing: 0px;
+
+      tr:nth-child(even) {
+        background-color: $bg-color;
+      }
+
+      th, td {
+        padding-top: 5%;
+        padding-bottom: 5%;
+        border-bottom: 1px solid black;
+      }
+
+      .raiting {
+        display: none;
+      }
+    }
+
+    @include full-list-url(36%, 8%);
+  }
+
+  .amount {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 2%;
+    background-color: white;
+
+    @include card-header(15%);
+
+    p {
+      font-size: 4.5em;
+      font-weight: bold;
+      position: relative;
+      margin-top: 15%;
+      margin-bottom: 5%;
+      margin-left: 10%;
+      color: $hover-underline-color;
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 25px;
+        right: 23px;
+        border: 20px solid transparent;
+        border-bottom: 20px solid $hover-underline-color;
+      }
+    }
+
+    @include full-list-url(36%, 8%);
+
+    a:first-of-type {
+      font-weight: bold;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 20%;
+    }
+  }
+
+  .todayLines {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 400px) {
   nav {
     li {
@@ -298,6 +401,29 @@ main {
       width: 285px;
     }
   }
+
+  #withProducts {
+    .productList {
+      @include card-header(34%);
+
+      table {
+        margin-bottom: 8%;
+        text-align: center;
+      }
+    }
+
+    .amount {
+      @include card-header(30%);
+
+      p {
+        margin-left: 20%;
+
+        &:after {
+          right: 52px;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 450px) {
@@ -308,6 +434,29 @@ main {
       img {
         margin-top: 21%;
       }
+    }
+  }
+
+  #sales {
+    > div:first-child, > div:nth-child(2) {
+      @include full-list-url(26%, 8%);
+    }
+  }
+
+  #withProducts {
+    .productList {
+      @include card-header(40%);
+      @include full-list-url(26%, 8%);
+    }
+
+    .amount {
+      @include card-header(40%);
+
+      p:after {
+        right: 90px;
+      }
+
+      @include full-list-url(26%, 8%);
     }
   }
 }
@@ -351,6 +500,95 @@ main {
       width: 350px;
     }
   }
+
+  #withProducts {
+    .productList {
+      @include card-header(44%);
+    }
+
+    .amount {
+      @include card-header(44%);
+
+      p {
+        font-size: 6em;
+
+        &:after {
+          top: 48px;
+          right: 67px;
+        }
+      }
+    }
+
+    .todayLines {
+      display: block;
+      width: 85%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 5%;
+      margin-bottom: 5%;
+      padding: 2%;
+      background-color: white;
+
+      @include card-header(40%);
+
+      p {
+        margin-bottom: 2%;
+        margin-left: 8%;
+        font-weight: bold;
+      }
+
+      div {
+        width: 85%;
+        height: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+
+      div:first-of-type {
+        background-image: url(../../img/today-lines/first-today-line.png);
+      }
+
+      div:nth-of-type(2) {
+        background-image: url(../../img/today-lines/second-today-line.png);
+      }
+
+      div:last-of-type {
+        background-image: url(../../img/today-lines/third-today-line.png);
+        margin-bottom: 8%;
+      }
+
+      span {
+        display: inline-block;
+        width: 24%;
+
+        &:before {
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          content: '';
+          background-color: $hover-underline-color;
+          margin-right: 20px;
+        }
+
+        &:first-of-type {
+          margin-bottom: 6%;
+          margin-left: 18%;
+        }
+
+        &:last-of-type {
+          width: 32%;
+
+          &:before {
+            background-color: $darkblue;
+          }
+        }
+      }
+
+      @include full-list-url(23%, 8%);
+    }
+  }
 }
 
 @media screen and (min-width: 550px) {
@@ -380,6 +618,28 @@ main {
     span:nth-child(1) {
       display: inline-block;
     }
+    }
+  }
+
+  #withProducts {
+    .productList {
+      table {
+        .raiting {
+          display: table-cell;
+        }
+
+        td.raiting {
+          background-image: url(../../img/raiting.png);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+
+          // don't work
+          // &:nth-child(even) {
+          //   background-image: url(../../img/raiting-even.png);
+          // }
+        }
+      }
     }
   }
 }
@@ -598,9 +858,7 @@ main {
         }
       }
 
-      a {
-        width: 40%;
-        }
+      @include full-list-url(40%, 8%);
     }
   }
 
@@ -705,9 +963,10 @@ main {
         }
       }
 
-      a {
-        margin-bottom: 4%;
-      }
+      // a {
+      //   margin-bottom: 4%;
+      // }
+      @include full-list-url(40%, 4%);
     }
 
     .totalSale {
