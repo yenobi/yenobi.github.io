@@ -621,25 +621,70 @@ main {
     }
   }
 
+  #sales {
+    .todaysSale {
+      @include full-list-url(21%, 8%);
+    }
+
+    .totalSale {
+      @include full-list-url(21%, 8%);
+    }
+  }
+
   #withProducts {
     .productList {
       table {
         .raiting {
           display: table-cell;
-        }
-
-        td.raiting {
-          background-image: url(../../img/raiting.png);
           background-repeat: no-repeat;
           background-position: center;
           background-size: contain;
+        }
 
-          // don't work
-          // &:nth-child(even) {
-          //   background-image: url(../../img/raiting-even.png);
-          // }
+        tr:nth-of-type(n+2) {
+          &:nth-of-type(even) {
+            .raiting {
+                background-image: url(../../img/raiting.png);
+              }
+          }
+
+          &:nth-of-type(odd) {
+            .raiting {
+              background-image: url(../../img/raiting-even.png);
+            }
+          }
         }
       }
+
+      @include full-list-url(21%, 8%);
+    }
+
+    .todayLines {
+      div:first-of-type {
+            background-size: 92%;
+      }
+
+      div:nth-of-type(2) {
+        background-size: 75%;
+      }
+
+      div:last-of-type {
+            background-size: 82%;
+      }
+
+      @include full-list-url(21%, 8%);
+    }
+
+    .amount {
+      p {
+        margin-left: 25%;
+
+        &:after {
+          right: 80px;
+        }
+      }
+
+      @include full-list-url(21%, 8%);
     }
   }
 }
@@ -722,6 +767,64 @@ main {
       }
     }
   }
+
+  #withProducts {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .productList {
+      width: 92%;
+      margin-top: 0%;
+      margin-bottom: 0%;
+
+      @include card-header(57%);
+      @include full-list-url(18%, 8%);
+    }
+
+    .todayLines {
+      width: 42%;
+
+      @include card-header(7%);
+
+      span {
+        margin-left: 18%;
+
+        &:first-of-type {
+          width: 31%;
+          margin-top: 5%;
+        }
+
+        &:last-of-type {
+          width: 56%;
+          margin-bottom: 15%;
+        }
+      }
+      @include full-list-url(39%, 8%);
+    }
+
+    .amount {
+      width: 42%;
+      @include card-header(16%);
+
+      p {
+        font-size: 5em;
+        margin-left: 5%;
+        margin-top: 25%;
+
+        &:after {
+          top: 33px;
+          right: 14px;
+        }
+      }
+
+      @include full-list-url(35%, 8%);
+
+      a:first-of-type {
+        margin-bottom: 45%;
+        margin-top: 10%;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 700px) {
@@ -729,6 +832,36 @@ main {
     footer {
       p {
         width: 35%;
+      }
+    }
+  }
+
+  #withProducts {
+    .todayLines {
+      @include card-header(20%);
+
+      p:first-of-type {
+        margin-top: 19%;
+      }
+
+      span:first-of-type, span:last-of-type {
+            margin-left: 8%;
+      }
+
+      span:last-of-type {
+          margin-bottom: 13%;
+      }
+    }
+
+    .amount {
+      @include card-header(27%);
+
+      p {
+          font-size: 6em;
+
+          &:after{
+            top: 48px;
+          }
       }
     }
   }
