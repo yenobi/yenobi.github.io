@@ -199,19 +199,6 @@ main {
     }
 
     @include full-list-url(36%, 8%);
-    // a {
-    //   display: block;
-    //   text-decoration: none;
-    //   margin-left: 5%;
-    //   margin-bottom: 8%;
-    //   color: $card-text-color;
-    //   width: 36%;
-    //   text-align: center;
-    //
-    //   &:hover {
-    //     border-bottom: 2px solid #f95738;
-    //   }
-    // }
   }
 
   .saleChart {
@@ -366,6 +353,182 @@ main {
   }
 }
 
+#lowest {
+  padding-bottom: 10px;
+
+  .averageSale {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 2%;
+    background-color: white;
+
+    @include card-header(8%);
+
+    .circles {
+      width: 190px;
+      height: 200px;
+      margin-top: 10%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 8%;
+      background-image: url(../../img/circles.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    .numbers {
+      .container {
+        display: flex;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 2%;
+        justify-content: space-between;
+        border-bottom: 1px solid $gray;
+
+        &:nth-child(2) {
+          p:before {
+            background-color: $logo-color;
+          }
+        }
+
+        &:nth-child(3) {
+          border-bottom: none;
+
+          p:before {
+            background-color: $darkblue;
+          }
+        }
+
+        p {
+          margin-top: 0%;
+          margin-bottom: 0%;
+
+          &:before {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            content: '';
+            background-color: $hover-underline-color;
+            margin-right: 20px;
+          }
+        }
+
+        span {
+          line-height: 1.9em;
+          font-weight: bold;
+          display: block;
+        }
+      }
+
+      > span {
+        display: block;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5%;
+        margin-bottom: 7%;
+        font-size: 2em;
+        color: black;
+      }
+    }
+
+    @include full-list-url(36%, 8%);
+  }
+
+  .todayDiagram {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 2%;
+    background-color: white;
+
+    @include card-header(8%);
+
+    .diagram {
+      width: 190px;
+      height: 200px;
+      margin-top: 10%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 8%;
+      background-image: url(../../img/diagram.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    .numbers {
+      .container {
+        display: flex;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 2%;
+        justify-content: space-between;
+        border-bottom: 1px solid $gray;
+
+        &:nth-child(2) {
+          p:before {
+            background-color: #cb2100;
+          }
+        }
+
+        &:nth-child(3) {
+          p:before {
+            background-color: #911800;
+          }
+        }
+
+        &:nth-child(4) {
+          border-bottom: none;
+
+          p:before {
+            background-color: #590e00;
+          }
+        }
+
+        p {
+          margin-top: 0%;
+          margin-bottom: 0%;
+
+          &:before {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            content: '';
+            background-color: $hover-underline-color;
+            margin-right: 20px;
+          }
+        }
+
+        span {
+          line-height: 1.9em;
+          font-weight: bold;
+          display: block;
+        }
+      }
+
+      > span {
+        display: block;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5%;
+        margin-bottom: 7%;
+        font-size: 2em;
+        color: black;
+      }
+    }
+
+    @include full-list-url(36%, 8%);
+  }
+}
+
 @media screen and (min-width: 400px) {
   nav {
     li {
@@ -420,6 +583,23 @@ main {
 
         &:after {
           right: 52px;
+        }
+      }
+    }
+  }
+
+  #lowest {
+    .averageSale, .todayDiagram {
+      @include card-header(25%);
+      @include full-list-url(27%, 8%);
+
+      .numbers {
+        .container {
+          width: 75%;
+        }
+
+        > span {
+          width: 75%;
         }
       }
     }
@@ -587,6 +767,23 @@ main {
       }
 
       @include full-list-url(23%, 8%);
+    }
+  }
+
+  #lowest {
+    .averageSale, .todayDiagram {
+      @include card-header(38%);
+      @include full-list-url(22%, 8%);
+
+      .numbers {
+        .container {
+          width: 65%;
+        }
+
+        > span {
+          width: 65%;
+        }
+      }
     }
   }
 }
@@ -783,6 +980,7 @@ main {
 
     .todayLines {
       width: 42%;
+      margin-bottom: 0%;
 
       @include card-header(7%);
 
@@ -804,6 +1002,8 @@ main {
 
     .amount {
       width: 42%;
+      margin-bottom: 0%;
+
       @include card-header(16%);
 
       p {
@@ -822,6 +1022,41 @@ main {
       a:first-of-type {
         margin-bottom: 45%;
         margin-top: 10%;
+      }
+    }
+  }
+
+  #lowest {
+    display: flex;
+
+    .averageSale, .todayDiagram {
+      width: 42%;
+
+      @include card-header(7%);
+
+      .numbers {
+        .container {
+          width: 90%;
+        }
+      }
+
+      @include full-list-url(34%, 8%);
+    }
+
+    .averageSale {
+      .numbers {
+        > span {
+          width: 90%;
+          margin-top: 21%;
+        }
+      }
+    }
+
+    .todayDiagram {
+      .numbers {
+        > span {
+          width: 90%;
+        }
       }
     }
   }
@@ -863,6 +1098,13 @@ main {
             top: 48px;
           }
       }
+    }
+  }
+
+  #lowest {
+    .averageSale, .todayDiagram {
+      @include card-header(17%);
+      @include full-list-url(31%, 8%);
     }
   }
 }
@@ -986,6 +1228,23 @@ main {
       }
     }
   }
+
+  #lowest {
+    .averageSale, .todayDiagram {
+      @include card-header(27%);
+      @include full-list-url(26%, 8%);
+
+      .numbers {
+        .container {
+          width: 75%;
+          }
+
+          > span {
+              width: 75%;
+        }
+      }
+    }
+  }
 }
 
 // major breakpoint for three column
@@ -1046,8 +1305,14 @@ main {
   }
 
   #withProducts {
+    display: block;
+    min-height: 780px;
+
     .productList {
       width: 56%;
+      max-height: 730px;
+      float: left;
+      clear: both;
       margin-left: 1%;
       margin-right: 1%;
 
@@ -1070,6 +1335,7 @@ main {
       margin-left: 1%;
       margin-right: 1%;
       margin-bottom: 1%;
+      float: right;
 
       @include card-header(17%);
 
@@ -1091,35 +1357,56 @@ main {
     }
 
     .amount {
-      width: 26%;
+      width: 32%;
       margin-left: 1%;
       margin-right: 1%;
       max-height: 320px;
       margin-top: 1%;
       margin-bottom: 1%;
+      float: right;
 
-      @include card-header(9%);
+      @include card-header(24%);
 
       p {
-        margin-left: 3%;
+        margin-top: 10%;
+        margin-left: 10%;
         font-size: 4.5em;
 
         &:after {
           top: 25px;
-          right: 10px;
+          right: 40px;
         }
       }
 
-      @include full-list-url(40%, 8%);
+      @include full-list-url(33%, 0%);
 
       a:first-of-type {
-            margin-bottom: 25%;
+            margin-bottom: 14%;
       }
+    }
+  }
+
+  #lowest {
+    .averageSale, .todayDiagram {
+      width: 44%;
+      margin-top: 0%;
+      margin-bottom: 0%;
+      margin-left: 1%;
+      margin-right: 1%;
+
+      @include card-header(35%);
+      @include full-list-url(23%, 8%);
     }
   }
 }
 
-// can't place .amount cart to it's place and make 2-columns
+@media screen and (min-width: 900px) {
+  #withProducts {
+    .amount {
+      max-height: 276px;
+    }
+  }
+}
 
 @media screen and (min-width: 950px) {
   header {
@@ -1162,6 +1449,101 @@ main {
     .graph {
       width: 875px;
     }
+  }
+
+  #withProducts {
+    margin-bottom: 2%;
+
+    .productList {
+      max-height: 750px;
+    }
+
+    .amount {
+      max-height: 300px;
+
+      a:last-of-type {
+          margin-bottom: 8px;
+      }
+    }
+  }
+
+  #lowest {
+    clear: both;
+
+    .averageSale, .todayDiagram {
+      .wrapper {
+        display: flex;
+
+        .numbers {
+          margin-top: 21%;
+          margin-right: 3%;
+          order: 1;
+
+          .container {
+            width: 95%;
+          }
+
+          > span {
+            width: 102%;
+          }
+        }
+
+        .circles, .diagram {
+          order: 2;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #withProducts {
+    min-height: 798px;
+
+    .productList {
+      max-height: 760px;
+
+      @include card-header(57%);
+
+      a:last-of-type {
+        margin-bottom: 5px;
+      }
+    }
+    .todayLines {
+      @include card-header(26%);
+
+      max-height: 450px;
+
+      span:last-of-type {
+        width: 48%;
+      }
+
+      @include full-list-url(28%, 8%);
+    }
+
+    .amount {
+      max-height: 305px;
+
+      @include card-header(32%);
+
+      p {
+        margin-left: 16%;
+
+        &:after {
+          right: 57px;
+        }
+      }
+
+      @include full-list-url(29%, 8%);
+
+      a:last-of-type {
+        margin-bottom: 13px;
+      }
+    }
+  }
+
+  #lowest {
+    padding-bottom: 20px;
   }
 }
 
@@ -1228,6 +1610,69 @@ main {
       &:first-child {
         margin-left: 18%;
       }
+    }
+  }
+
+  #withProducts {
+    min-height: 903px;
+
+    .productList {
+      max-height: 848px;
+
+      @include card-header(66%);
+
+      table {
+        th, td {
+          padding-top: 4%;
+          padding-bottom: 4%;
+        }
+      }
+
+      @include full-list-url(12%, 8%);
+
+      a:last-of-type {
+        margin-bottom: 28px;
+      }
+    }
+
+    .todayLines {
+      @include card-header(42%);
+      @include full-list-url(20%, 8%);
+    }
+
+    .amount {
+      max-height: 320px;
+
+      @include card-header(44%);
+
+      p {
+        margin-left: 21%;
+
+        &:after {
+          right: 130px;
+        }
+      }
+
+      @include full-list-url(21%, 8%);
+
+      a:first-of-type {
+        margin-bottom: 8%;
+      }
+    }
+  }
+
+  #lowest {
+    .averageSale, .todayDiagram {
+      @include card-header(55%);
+
+      .wrapper {
+        .numbers {
+          width: 55%;
+          margin-top: 5%;
+        }
+      }
+
+      @include full-list-url(15%, 2%);
     }
   }
 }
