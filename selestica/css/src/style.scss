@@ -97,6 +97,17 @@ header {
 
   .email, .planet, .cart {
     margin-left: 5%;
+    cursor: pointer;
+
+    .svgSettings {
+      fill: $gray;
+    }
+
+    &:hover {
+      .svgSettings {
+        fill: $hover-underline-color;
+      }
+    }
   }
 
   .photo {
@@ -127,47 +138,36 @@ nav {
       text-decoration: none;
       background-repeat: no-repeat;
 
+      .svgIcon {
+        width: 25px;
+        max-width: 40px;
+        max-height: 40px;
+        display: inline-block;
+      }
+
+      .statisticsSVG {
+        fill: white;
+      }
+
       span {
         display: none;
+        vertical-align: super;
       }
-    }
-  }
 
-  li:first-child {
-    a {
-        span {
-          display: inline;
+      &:hover {
+        .statisticsSVG {
+          fill: $hover-underline-color;
         }
 
-        background-image: url(../../img/dashboard-item.png);
-    }
-  }
-
-  li:nth-child(2) {
-    a {
-      background-image: url(../../img/statistics-item.png);
-    }
-  }
-
-  li:nth-child(3) {
-    a {
-      background-image: url(../../img/sales-item.png);
-    }
-  }
-
-  li:nth-child(4) {
-    a {
-      background-image: url(../../img/customers-item.png);
+        span {
+          color: $hover-underline-color;
+        }
+      }
     }
   }
 
   li:nth-child(5) {
     margin-right: 0px;
-
-    a {
-      padding-left: 0px;
-      background-image: url(../../img/settings-item.png);
-    }
   }
 }
 
