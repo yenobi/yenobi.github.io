@@ -787,145 +787,8 @@ footer {
 }
 
 // need to add some minor breakpoints for socials >350px
-@media screen and (min-width: 1000px) {
-  .features-img {
-    img {
-      height: 650px;
-    }
-  }
-}
 
-// mb 1024 ? ipad in lanscape
-
-@media screen and (min-width: 1200px) {
-  .about {
-    .iframe {
-      iframe {
-        height: 274px;
-        width: 100%;
-      }
-    }
-  }
-}
-
-@media screen and (min-width: 1300px) {
-  .socials {
-    .wrapper {
-      width: 22%;
-      margin-left: auto;
-      margin-right: auto;
-    }
-  }
-}
-// major breakpoint for arvantages 800px
-
-// mb start this breakpoint from 720 (tablet-portrait)
-@media screen and (min-width: 760px) and (max-width: 960px){
-  header {
-    background-size: contain;
-    background-repeat: no-repeat;
-
-    > div:last-child {
-      margin-bottom: 16%;
-    }
-  }
-
-  .features {
-
-    > div:first-child, div:last-child {
-      margin-top: 5%;
-      margin-bottom: 5%;
-    }
-
-    article {
-      width: 87%;
-    }
-
-      div.features-img {
-        margin-top: -11%;
-        img {
-          height: 435px;
-        }
-      }
-
-  }
-
-  .about {
-    position: relative;
-
-    div:first-child {
-      h1 {
-        position: relative;
-        left: 65%;
-        line-height: 1em;
-        width: 120%;
-        margin-bottom: 10%;
-      }
-
-      p {
-        width: 115%;
-      }
-
-      ul {
-        li {
-          padding-left: 6%;
-        }
-      }
-    }
-
-    .iframe {
-      width: 41%;
-      margin-top: 8%;
-      margin-right: 5%;
-
-      iframe {
-        height: 205px;
-        width: 114%;
-      }
-    }
-  }
-
-  .advantages {
-    // верхний абзац подрастянуть
-    // по два итема в ряду, всего три ряда
-    > p {
-      width: 80%;
-    }
-
-    .wrapper {
-      width: 90%;
-      margin-top: 4%;
-
-      div {
-        width: 48%;
-
-        p {
-          width: 87%;
-        }
-      }
-    }
-  }
-
-  .pricing {
-    // добавить карусель
-    // область видимости - 2 плана
-  }
-
-  .testimonals {
-    // увеличить шрифты
-    // увеличить иконки точек
-  }
-
-  .socials {
-    // позиционирование
-  }
-
-  .footer {
-    // разместить аккуратней, сделать 40х40
-  }
-}
-
-@media screen and (min-width: 451px) and (max-width: 540px) {
+@media screen and (min-width: 451px) {
   header {
     background-position: center;
     background-size: cover;
@@ -991,6 +854,7 @@ footer {
     .iframe {
       width: 68%;
       order: 1;
+      text-align: center;
     }
   }
 
@@ -1035,7 +899,7 @@ footer {
       }
 
       #nextArrow {
-        margin-left: 5%;
+        margin-left: 6%;
         left: 83%;
       }
 
@@ -1114,6 +978,244 @@ footer {
   footer {
     ul {
       width: 98%;
+    }
+  }
+}
+
+// minor breakpoints for about, pricing, socials, footer
+@media screen and (min-width: 530px) {
+  .pricing {
+
+    #carousel-container {
+      #additional-wrapper {
+        width: 53%;
+      }
+
+      #nextArrow {
+        margin-left: 8%;
+      }
+
+    }
+  }
+
+  .socials {
+    .wrapper {
+      width: 53%;
+    }
+  }
+
+  footer {
+    ul {
+      width: 78%;
+    }
+  }
+}
+
+@media screen and (min-width: 570px) {
+  .pricing {
+    #carousel-container {
+      #additional-wrapper {
+        width: 48%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 630px) {
+  .about {
+    .iframe {
+      width: 77%;
+      height: 250px;
+      margin-bottom: 3%;
+
+      iframe {
+        height: 273px;
+        width: 100%;
+      }
+    }
+  }
+
+  .pricing {
+    #carousel-container {
+      #additional-wrapper {
+        width: 41%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 635px) {
+  .pricing {
+    #carousel-container {
+      #nextArrow {
+        margin-left: 9%;
+      }
+    }
+  }
+
+  .socials {
+    .wrapper {
+      width: 44%;
+    }
+  }
+
+  footer {
+    ul {
+      width: 63%;
+    }
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .features {
+    .features-img {
+      width: 50%;
+    }
+  }
+
+  .pricing {
+    #carousel-container {
+      #nextArrow {
+        margin-left: 10%;
+      }
+    }
+  }
+}
+
+// this didn't done
+// mb start this breakpoint from 720 (tablet-portrait)
+// major breakpoint for advantages 800px
+@media screen and (min-width: 760px) and (max-width: 960px){
+  header {
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    > div:last-child {
+      margin-bottom: 16%;
+    }
+  }
+
+  .features {
+
+    > div:first-child, div:last-child {
+      margin-top: 5%;
+      margin-bottom: 5%;
+    }
+
+    article {
+      width: 87%;
+    }
+
+    div.features-img {
+      margin-top: -11%;
+      img {
+        height: 435px;
+      }
+    }
+
+  }
+
+  .about {
+    position: relative;
+
+    div:first-child {
+      h1 {
+        position: relative;
+        left: 65%;
+        line-height: 1em;
+        width: 120%;
+        margin-bottom: 10%;
+      }
+
+      p {
+        width: 115%;
+      }
+
+      ul {
+        li {
+          padding-left: 6%;
+        }
+      }
+    }
+
+    .iframe {
+      width: 41%;
+      margin-top: 8%;
+      margin-right: 5%;
+
+      iframe {
+        height: 205px;
+        width: 114%;
+      }
+    }
+  }
+
+  .advantages {
+    // верхний абзац подрастянуть
+    // по два итема в ряду, всего три ряда
+    > p {
+      width: 80%;
+    }
+
+    .wrapper {
+      width: 90%;
+      margin-top: 4%;
+
+      div {
+        width: 48%;
+
+        p {
+          width: 87%;
+        }
+      }
+    }
+  }
+
+  .pricing {
+    // добавить карусель
+    // область видимости - 2 плана
+  }
+
+  .testimonals {
+    // увеличить шрифты
+    // увеличить иконки точек
+  }
+
+  .socials {
+    // позиционирование
+  }
+
+  .footer {
+    // разместить аккуратней, сделать 40х40
+  }
+}
+
+// mb 1024 ? ipad in lanscape
+@media screen and (min-width: 1000px) {
+  .features-img {
+    img {
+      height: 650px;
+    }
+  }
+}
+// minor breakpoint
+@media screen and (min-width: 1200px) {
+  .about {
+    .iframe {
+      iframe {
+        height: 274px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .socials {
+    .wrapper {
+      width: 22%;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 }
