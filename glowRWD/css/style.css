@@ -840,32 +840,52 @@ footer ul li:last-child {
     margin-bottom: 16%;
   }
 
-  .features > div:first-child, .features div:last-child {
+  .features > div:first-child {
     margin-top: 5%;
-    margin-bottom: 5%;
+    margin-bottom: 0;
+  }
+  .features > div:last-child {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .features > div:last-child article:first-child {
+    margin-left: 8%;
+  }
+  .features > div:last-child article:last-child {
+    width: 87%;
+    margin-left: 8%;
   }
   .features article {
     width: 87%;
   }
   .features div.features-img {
-    margin-top: -11%;
+    width: 40%;
+    margin-top: 2%;
   }
   .features div.features-img img {
-    height: 435px;
+    height: 500px;
   }
 
   .about {
     position: relative;
+    flex-direction: row-reverse;
+  }
+  .about div:first-child {
+    width: 68%;
   }
   .about div:first-child h1 {
     position: relative;
-    left: 65%;
     line-height: 1em;
-    width: 120%;
-    margin-bottom: 10%;
+    width: 70%;
+    margin-bottom: 7%;
+    margin-left: 10%;
   }
   .about div:first-child p {
-    width: 115%;
+    width: 80%;
+    margin-left: 10%;
+  }
+  .about div:first-child ul {
+    margin-left: 15%;
   }
   .about div:first-child ul li {
     padding-left: 6%;
@@ -892,6 +912,46 @@ footer ul li:last-child {
   }
   .advantages .wrapper div p {
     width: 87%;
+  }
+
+  .pricing #carousel-container #additional-wrapper {
+    width: 80%;
+  }
+  .pricing #carousel-container #additional-wrapper .wrapper {
+    transform: translateX(300px);
+  }
+
+  .testimonals > div:last-child {
+    width: 7%;
+  }
+}
+@media screen and (min-width: 800px) {
+  header {
+    background-size: cover;
+  }
+
+  .features article {
+    width: 67%;
+  }
+  .features > div:last-child article:last-child {
+    width: 67%;
+  }
+  .features div.features-img {
+    width: 47%;
+  }
+  .features div.features-img img {
+    height: 600px;
+  }
+
+  .about {
+    padding-top: 2%;
+  }
+  .about div:first-child {
+    width: 50%;
+  }
+  .about div:first-child h1 {
+    width: 80%;
+    margin-bottom: 4%;
   }
 }
 @media screen and (min-width: 1000px) {

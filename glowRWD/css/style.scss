@@ -1097,9 +1097,23 @@ footer {
 
   .features {
 
-    > div:first-child, div:last-child {
+    > div:first-child {
       margin-top: 5%;
-      margin-bottom: 5%;
+      margin-bottom: 0;
+    }
+
+    > div:last-child {
+      margin-top: 0;
+      margin-bottom: 0;
+
+      article:first-child {
+        margin-left: 8%;
+      }
+
+      article:last-child {
+        width: 87%;
+        margin-left: 8%;
+      }
     }
 
     article {
@@ -1107,9 +1121,10 @@ footer {
     }
 
     div.features-img {
-      margin-top: -11%;
+      width: 40%;
+      margin-top: 2%;
       img {
-        height: 435px;
+        height: 500px;
       }
     }
 
@@ -1117,21 +1132,28 @@ footer {
 
   .about {
     position: relative;
+    flex-direction: row-reverse;
 
     div:first-child {
+      width: 68%;
+
       h1 {
         position: relative;
-        left: 65%;
+        // left: 65%;
         line-height: 1em;
-        width: 120%;
-        margin-bottom: 10%;
+        width: 70%;
+        margin-bottom: 7%;
+        margin-left: 10%;
       }
 
       p {
-        width: 115%;
+        width: 80%;
+        margin-left: 10%;
       }
 
       ul {
+        margin-left: 15%;
+
         li {
           padding-left: 6%;
         }
@@ -1151,8 +1173,6 @@ footer {
   }
 
   .advantages {
-    // верхний абзац подрастянуть
-    // по два итема в ряду, всего три ряда
     > p {
       width: 80%;
     }
@@ -1172,21 +1192,62 @@ footer {
   }
 
   .pricing {
-    // добавить карусель
-    // область видимости - 2 плана
+    // странный баг на ховере - ширина #additional-wrapper
+    // становится для одного итема, как пофиксить?
+    #carousel-container {
+      #additional-wrapper {
+        width: 80%;
+
+        .wrapper {
+          transform: translateX(300px);
+        }
+      }
+    }
   }
 
   .testimonals {
-    // увеличить шрифты
-    // увеличить иконки точек
+    > div:last-child {
+      width: 7%;
+    }
+  }
+}
+
+@media screen and (min-width: 800px) {
+  header {
+    background-size: cover;
   }
 
-  .socials {
-    // позиционирование
+  .features {
+    article {
+      width: 67%;
+    }
+
+    > div:last-child {
+      article:last-child {
+        width: 67%;
+      }
+    }
+
+    div.features-img {
+      width: 47%;
+
+      img {
+        height: 600px;
+      }
+    }
   }
 
-  .footer {
-    // разместить аккуратней, сделать 40х40
+  .about {
+    padding-top: 2%;
+
+    div:first-child {
+      width: 50%;
+
+      h1 {
+        width: 80%;
+        margin-bottom: 4%;
+      }
+    }
   }
 }
 
