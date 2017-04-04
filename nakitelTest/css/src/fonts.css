@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "Bebas Neue Regular";
+  src: url(../../fonts/Bebas_Neue/BebasNeue_Regular.otf),
+      url(../../font/Bebas_Neue/BebasNeue_Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+};
+
+@font-face {
+  font-family: "Helvetica Neue Regular";
+  src: url(../../fonts/Helvetica_Neue/HelveticaNeueCyr-Medium.otf);
+  font-weight: normal;
+  font-style: normal;
+};
+
+@font-face {
+  font-family: "Helvetica Neue Bold";
+  src: url(../../fonts/Helvetica_Neue/HelveticaNeueCyr-Bold.otf);
+  font-weight: normal;
+  font-style: normal;
+};
+
+@font-face {
+  font-family: "Helvetica Neue Light";
+  src: url(../../fonts/Helvetica_Neue/HelveticaNeueCyr-Light.otf);
+  font-weight: normal;
+  font-style: normal;
+};
+
+@font-face {
+
+}
