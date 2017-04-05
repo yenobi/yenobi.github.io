@@ -1,0 +1,137 @@
+header {
+  .wrapper {
+    width: 90%;
+    justify-content: space-between;
+
+    nav {
+      display: none;
+      position: absolute;
+      top: 40px;
+      width: 100%;
+      left: 0px;
+
+      ul {
+        flex-direction: column;
+        background-color: black;
+
+        li {
+          width: 140px;
+          margin-left: auto;
+          margin-right: auto;
+
+          &:last-child {
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
+
+    .menu-icon {
+      position: relative;
+      margin-top: 10px;
+      width: 40px;
+      height: 40px;
+      margin-right: 20px;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      div {
+        width: 35px;
+        height: 0px;
+        border-bottom: 2px solid white;
+
+        &:before {
+          position: absolute;
+          top: 10px;
+          display: block;
+          content: "  ";
+          width: 35px;
+          height: 2px;
+          background-color: white;
+        }
+
+        &:after {
+           position: absolute;
+          top: 20px;
+          display: block;
+          content: "  ";
+          width: 35px;
+          height: 2px;
+          background-color: white;
+        }
+      }
+    }
+  }
+}
+
+#first {
+  padding-top: 15%;
+  padding-bottom: 15%;
+
+  h3 {
+    font-size: 2em;
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+}
+
+#offer {
+  .arrowDown {
+    display: none;
+  }
+
+  .wrapper {
+    width: 100%;
+    margin-top: 25%;
+
+    > p:last-child {
+      display: none;
+    }
+
+    .container {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      flex-direction: column;
+
+      .heading {
+        width: 75%;
+        top: -5%;
+        left: 13%;
+      }
+
+      .textContainer {
+        width: 85%;
+          margin-top: 12%;
+          z-index: 2;
+      }
+
+      .imgContainer {
+        top: -80px;
+        right: 40px;
+
+        div:first-child {
+          width: 230px;
+          height: 197px;
+          top: 90px;
+          left: 67px;
+        }
+
+        div:last-child {
+          width: 236px;
+          height: 234px;
+          top: 18px;
+          left: 31px;
+        }
+      }
+    }
+  }
+}
+
+#noName {
+  padding-top: 25%;
+}

@@ -8,7 +8,7 @@ const autoprefixer = require('gulp-autoprefixer');
 const csso = require('gulp-csso');
 
 gulp.task('sass', function() {
-  return gulp.src('css/*.scss')
+  return gulp.src('css/style.scss')
     .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer())

@@ -13,6 +13,7 @@ body {
 
 header {
   width: 100%;
+  min-height: 40px;
   padding-top: 0.3%;
   background-color: black;
 
@@ -23,10 +24,15 @@ header {
     display: flex;
     justify-content: space-between;
 
-    .logo {
-      img {
-        width: 85%;
-      }
+    a.logo {
+      display: block;
+      text-indent: -9999px;
+      min-width: 155px;
+      min-height: 30px;
+      margin-top: 8px;
+      background-image: url(../img/logo.png);
+      background-repeat: no-repeat;
+      background-size: contain;
     }
 
     nav {
@@ -57,6 +63,7 @@ header {
 
 #first {
   width: 100%;
+  min-width: 180px;
   padding-top: 10%;
   padding-bottom: 11%;
   background-image: url(../img/first-bg.png);
@@ -84,6 +91,7 @@ header {
 
   .wrapper {
     width: 21%;
+    min-width: 180px;
     min-height: 46px;
     border: 1px solid white;
     position: relative;
@@ -527,4 +535,9 @@ background-position: -46px 0;
       }
     }
   }
+}
+
+
+@media screen and (max-width: 320px) {
+  @import '320';
 }
