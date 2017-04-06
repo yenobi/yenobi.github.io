@@ -1,0 +1,1 @@
+{"version":3,"sources":["carousel.js","menu.js"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA;AACA;ACLA;AACA;AACA;AACA;AACA;AACA","file":"build.js","sourcesContent":["'use strict';\n\nconst b = 3;\n\nconsole.log(b);\n","'use strict';\n\nlet a = 2;\n\nconsole.log(a);\n"],"sourceRoot":"/source/"}

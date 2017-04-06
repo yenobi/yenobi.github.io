@@ -6,6 +6,8 @@ const sourcemaps = require('gulp-sourcemaps');
 const del = require('del');
 const autoprefixer = require('gulp-autoprefixer');
 const csso = require('gulp-csso');
+const eslint = require('gulp-eslint');
+const concat = require('gulp-concat');
 
 gulp.task('sass', function() {
   return gulp.src('css/style.scss')
@@ -14,6 +16,17 @@ gulp.task('sass', function() {
     .pipe(autoprefixer())
     .pipe(csso())
     .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest('build'));
+});
+
+gulp.task('js', function() {
+  return gulp.src('js/**.js')
+    .pipe(sourcemaps.init())
+    .pipe(eslint())
+    .pipe(eslint.format())
+    .pipe(eslint.failAfterError())
+    .pipe(concat('build.js'))
+     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('build'));
 });
 
