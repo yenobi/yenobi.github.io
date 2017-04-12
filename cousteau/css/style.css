@@ -1,0 +1,155 @@
+/* some common code  */
+.first-screen,
+.second-screen,
+.third-screen,
+.turtle {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.for-bg-3,
+.for-bg-2,
+.turtle-bg,
+.title {
+  width: 100%;
+  min-height: 750px;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.for-bg-2,
+.for-bg-3,
+.turtle-bg {
+  background-attachment: fixed;
+}
+/* header */
+.navbar {
+  border-radius: 0px;
+  padding: 10px 50px;
+}
+
+.navbar-brand {
+  display: block;
+  width: 200px;
+  height: 50px;
+  background-image: url(../img/subm.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-left: 60px;
+  font-size: 1.8em;
+  line-height: 1.2em;
+}
+
+/* first screen section */
+
+.first-screen {
+  padding-top: 71px;
+}
+
+.title {
+  min-height: 700px;
+  background-image: url(../img/lodyssée.jpg);
+}
+
+/* first-text-block */
+
+.text-block {
+  min-height: 150px;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 1.5em;
+}
+
+.for-bg-2 {
+  background-position-y: 74%;
+  background-image: url(../img/v2.jpg);
+}
+
+.text-bg-2 {
+  font-size: 1.5em;
+  text-align: center;
+  color: white;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.for-bg-3 {
+  background-image: url(../img/v3.jpg);
+}
+
+.turtle-bg {
+  background-image: url(../img/turtle.jpg);
+}
+
+footer {
+  background-color: grey;
+  min-height: 100px;
+}
+
+
+@media screen and (max-width: 580px) {
+  .navbar {
+    padding: 10px 20px;
+  }
+
+  .navbar-brand {
+    width: 100px;
+    text-indent: -9999px;
+  }
+
+  .for-bg-2 {
+    min-height: 600px;
+    background-position: center;
+    /*background-position-x: -120px;
+    background-position-y: -50px*/
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    background-position-x: -200px;
+  }
+
+  /*.for-bg-2 {
+    background-position-y: 0px;
+  }*/
+}
+
+@media screen and (max-width: 400px) {
+  .turtle-bg {
+    background-position-x: -660px;
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width: 500px) {
+  .turtle-bg {
+    background-position-x: -550px;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 720px) {
+  .turtle-bg {
+    background-position-x: -480px;
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .for-bg-3 {
+    background-position-x: -177px;
+  }
+}
+
+/* TODO:
+1. shrink of header and add some opacity 0.9
+2. add arrow
++ 3. rename sections and link them
++ 4. scrool spy
+5. parallax scrolling of first screen
++ 6. smooth scroll
+7. filter for first screen and title
+*/
