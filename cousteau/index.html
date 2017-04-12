@@ -20,14 +20,16 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#header">Cousteau</a>
+            <a class="navbar-brand" href="#header">Кусто</a>
           </div>
 
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
+              <!-- scrollspy doen't work with first text block -->
+              <!-- <li><a href="#first-text-block">Первые сомнения</a></li> -->
               <li><a href="#second-screen">L'odyssée</a></li>
               <li><a href="#third-screen">Отец и Сын</a></li>
-              <li><a href="#turtle">Достижение</a></li>
+              <li><a href="#turtle">Вопрос</a></li>
             </ul>
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
@@ -36,10 +38,21 @@
     <main>
 
       <section class="container-fluid first-screen">
-        <div class="title"></div>
+        <div class="title" data-parallax="scroll"
+        data-image-src="img/lodyssee.jpg">
+          <div class="heading">
+            <p>Капитан Кусто<br>
+              герой детства<br>или проклятие океана?</p>
+            </div>
+              <a class="down-arrow" href="#first-text-block">
+                <svg viewBox="0 0 1792 1792"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1412 897q0-27-18-45l-91-91q-18-18-45-18t-45 18l-189 189v-502q0-26-19-45t-45-19h-128q-26 0-45 19t-19 45v502l-189-189q-19-19-45-19t-45 19l-91 91q-18 18-18 45t18 45l362 362 91 91q18 18 45 18t45-18l91-91 362-362q18-18 18-45zm252-1q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"/></svg>
+              </a>
+        </div>
       </section>
 
-      <section class="container-fluid text-block">
+      <section id="first-text-block" class="container-fluid text-block">
         <div class="row">
         <p class="col-sm-6">Жак-Ив Кусто не нуждается в представлении. Ну кто не помнит этого бравого исследователя в красной маске аквалангиста? Да-да, это была не шапка. Его фильмы и книги воспитали любовь к Мировому океану далеко не у одного поколения. Каждый второй защитник природы хоть раз вспоминал его в своих выступлениях. Вдохновляющий герой и бесстрашный исследователь... А вдруг все это неправда? Каким на самом деле был капитан?</p>
         <p class="col-sm-6">Сразу признаюсь, что первые сомнения закрались лишь после просмотра фильма Одиссея (обязательный к просмотру между прочим!). Он потрясающе красив - морские виды приоткрывают завесу, которую известный мечтатель и первопроходец хотел сдернуть совсем. Да и сама история трогает, ведь напрямую связана с героем детства. Однако, показывает она его не в самом лучшем свете, по крайней мере, подавляющее большинство времени.</p>
@@ -81,11 +94,12 @@
       </section>
     </main>
     <footer>
-      footer
+      <span>Тут какие-то буквы в футере (с)</span>
     </footer>
     <script src="lib/jquery.min.js"></script>
     <script src="lib/bootstrap.min.js"></script>
     <script src="lib/jquery.easing.1.3.js"></script>
+    <script src="lib/parallax.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

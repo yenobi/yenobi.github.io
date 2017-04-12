@@ -24,7 +24,8 @@
 .turtle-bg {
   background-attachment: fixed;
 }
-/* header */
+
+/* styles itself */
 .navbar {
   border-radius: 0px;
   padding: 10px 50px;
@@ -42,18 +43,25 @@
   line-height: 1.2em;
 }
 
-/* first screen section */
-
 .first-screen {
   padding-top: 71px;
 }
 
 .title {
+  width: 100%;
   min-height: 700px;
-  background-image: url(../img/lodyssée.jpg);
+  /*background-image: url(../img/lodyssee.jpg);*/
+  position: relative;
 }
 
-/* first-text-block */
+.title a svg {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left: 50%;
+  bottom: 40px;
+  fill: white;
+}
 
 .text-block {
   min-height: 150px;
@@ -87,10 +95,34 @@
 }
 
 footer {
-  background-color: grey;
-  min-height: 100px;
+  background-color: black;
+  min-height: 50px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.2em;
+  text-align: center;
+  padding-top: 10px;
 }
 
+.heading {
+  /*min-width: 100%;
+  min-height: 100%;*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.heading p {
+  position: absolute;
+  top: 63%;
+  left: 65%;
+  font-size: 3em;
+  color: white;
+  text-align: right;
+  margin-right: 40px;
+}
 
 @media screen and (max-width: 580px) {
   .navbar {
@@ -108,6 +140,14 @@ footer {
     /*background-position-x: -120px;
     background-position-y: -50px*/
   }
+
+  .heading p {
+    top: 30%;
+    left: 5%;
+    text-align: center;
+    font-size: 2.5em;
+    /*margin-right: 5%;*/
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -124,6 +164,10 @@ footer {
   .turtle-bg {
     background-position-x: -660px;
   }
+
+  .title a svg {
+    left: 40%;
+  }
 }
 
 @media screen and (min-width: 401px) and (max-width: 500px) {
@@ -138,18 +182,16 @@ footer {
   }
 }
 
+@media screen and (min-width: 581px) and (max-width: 920px) {
+  .heading p {
+    top: 30%;
+    left: 30%;
+    text-align: center;
+  }
+}
+
 @media screen and (max-width: 1030px) {
   .for-bg-3 {
     background-position-x: -177px;
   }
 }
-
-/* TODO:
-1. shrink of header and add some opacity 0.9
-2. add arrow
-+ 3. rename sections and link them
-+ 4. scrool spy
-5. parallax scrolling of first screen
-+ 6. smooth scroll
-7. filter for first screen and title
-*/
