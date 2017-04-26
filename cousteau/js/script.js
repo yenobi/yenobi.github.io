@@ -28,4 +28,6 @@ $(function(){
     $('.title').parallax({
       imageSrc: 'img/lodyssee.jpg'
     });
+    
+    new WOW().init();
 });
