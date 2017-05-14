@@ -7,15 +7,15 @@
   "display": "standalone",
   "start_url": "https://yenobi.github.io/ping/index.html",
   "icons": [ {
-    "src": "imag/icons/android-icon-16x16.png",
+    "src": "img/icons/android-icon-16x16.png",
     "sizes": "16x16",
     "type": "image/png"
     }, {
-      "src": "imag/icons/android-icon-32x32.png",
+      "src": "img/icons/android-icon-32x32.png",
       "sizes": "32x32",
       "type": "image/png"
     }, {
-      "src": "imag/icons/android-icon-36x36.png",
+      "src": "img/icons/android-icon-36x36.png",
       "sizes": "36x36",
       "type": "image/png"
     }, {
