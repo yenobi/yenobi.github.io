@@ -29,9 +29,6 @@ gulp.task('less', function() {
 gulp.task('js', function() {
   return gulp.src('src/js/**.js')
     .pipe(sourcemaps.init())
-    .pipe(eslint())
-    .pipe(eslint.format())
-    .pipe(eslint.failAfterError())
     .pipe(concat('build.js'))
     .pipe(uglify())
     .pipe(rename({suffix: '.min'}))

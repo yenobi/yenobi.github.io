@@ -1,13 +1,13 @@
-// fonts 
+// fonts
 
 @import url(../../fonts/fonts.css);
 
 @Open-sans-light:  'open_sans_light', Tahoma, sans-serif;
-// how to fallback extrablod font? 
+// how to fallback extrablod font?
 @Open-sans-bold: 'open_sans_extrabold', sans-serif;
 @League-gothic-regular:  'league_gothic_regular', sans-serif;
 
-// variables 
+// variables
 
 @text-color-white: white;
 @text-color-pink: #edbfff;
@@ -16,7 +16,7 @@
 @menu-color:#4d354f;
 @menu-color-hover: #251628;
 
-// mixins 
+// mixins
 
 .paddings {
     padding-left: 20px;
@@ -55,8 +55,8 @@ main.container-fluid {
     margin-left: 0px;
 }
 
-h1, 
-h2, 
+h1,
+h2,
 h3 {
   font-family: @League-gothic-regular;
 }
@@ -173,7 +173,7 @@ header {
   padding-bottom: 60px;
   background-image: linear-gradient(to top, #322539 0%, #745083 100%);
   color: @text-color-white;
-  // why shadow didn't work? 
+  // why shadow didn't work?
   // box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.75);
 
   article {
@@ -355,14 +355,15 @@ footer {
 .to-top {
   display: none;
   position: fixed;
-      top: 600px;
-    right: 20px;
-    border: none;
-    cursor: pointer;
-    transform: rotate(-90deg);
-    width: 45px;
-    height: 45px;
-    background: rgba(0,0,0,0.3);
+  top: 90%;
+  right: 20px;
+  border: none;
+  cursor: pointer;
+  transform: rotate(-90deg);
+  width: 45px;
+  height: 45px;
+  padding-right: 5px;
+  background: rgba(0,0,0,0.3);
 
     &:hover{
       border: 1px solid @text-color-pink;
@@ -387,7 +388,7 @@ footer {
           background-color: rgba(0,0,0, 0.3);
       }
 
-  h1, 
+  h1,
   h2 {
     text-align: left;
   }
@@ -509,7 +510,7 @@ footer {
 @media screen and (min-width: 768px) {
   header {
     .logo {
-      float: left; 
+      float: left;
     }
 
     .header-nav {
@@ -551,7 +552,7 @@ footer {
 
   .carousel-control .glyphicon-chevron-left {
     left: 30%;
-  } 
+  }
 
   .img-container {
     background-image: url(../../img/iphone-img.png);
