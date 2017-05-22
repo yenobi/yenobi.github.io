@@ -1,0 +1,101 @@
+.search-form {
+    &__wrapper {
+        
+    }
+    
+    &__inner {
+        width: 280px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 25px;
+        margin-bottom: 50px;
+        text-align: left;
+        font-weight: bold;
+    }
+    
+    &__header {
+        font-family: $font-headings;
+        background-color: $brown;
+        color: white;
+        padding-top: 33px;
+        padding-bottom: 33px;
+        font-size: 18px;
+    }
+    
+    &__date-input {
+        input {
+            display: block;
+            background-color: $gray-bg;
+            border: none;
+            margin-top: 10px;
+            margin-bottom: 25px;
+            padding-top: 5%;
+            padding-right: 50%;
+            padding-bottom: 5%;
+            padding-left: 3%;
+            outline-color: darken($main-color, 10%);
+            background-repeat: no-repeat;
+            background-position-x: 94%;
+            background-position-y: 13px;
+            background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNS4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4wLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL1RSLzIwMDEvUkVDLVNWRy0yMDAxMDkwNC9EVEQvc3ZnMTAuZHRkIj4NCjxzdmcgdmVyc2lvbj0iMS4wIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHdpZHRoPSIxOS44NzVweCIgaGVpZ2h0PSIyMS45MTZweCIgdmlld0JveD0iMCAwIDE5Ljg3NSAyMS45MTYiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDE5Ljg3NSAyMS45MTYiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPHBhdGggZD0iTTE3LjA0LDJoLTIuMDgxVjBoLTJ2Mkg2LjkxN1YwaC0ydjJIMi44MzVDMS4yNzUsMiwwLDMuMjc1LDAsNC44MzV2MTQuMjQ2YzAsMS41NiwxLjI3NSwyLjgzNSwyLjgzNSwyLjgzNUgxNy4wNA0KCQljMS41NiwwLDIuODM1LTEuMjc1LDIuODM1LTIuODM1VjQuODM1QzE5Ljg3NSwzLjI3NSwxOC42LDIsMTcuMDQsMnogTTE3Ljg3NSwxOS4wODFjMCwwLjQ1My0wLjM4MywwLjgzNS0wLjgzNSwwLjgzNUgyLjgzNQ0KCQlDMi4zODMsMTkuOTE2LDIsMTkuNTM0LDIsMTkuMDgxVjQuODM1QzIsNC4zODIsMi4zODMsNCwyLjgzNSw0SDE3LjA0YzAuNDUyLDAsMC44MzUsMC4zODIsMC44MzUsMC44MzVWMTkuMDgxeiIvPg0KCTxyZWN0IHg9IjQuOTE3IiB5PSI2Ljk1OCIgd2lkdGg9IjIiIGhlaWdodD0iMiIvPg0KCTxyZWN0IHg9IjEyLjk1OSIgeT0iNi45NTgiIHdpZHRoPSIyIiBoZWlnaHQ9IjIiLz4NCgk8cmVjdCB4PSI4LjkzOCIgeT0iNi45NTgiIHdpZHRoPSIyIiBoZWlnaHQ9IjIiLz4NCgk8cmVjdCB4PSI0LjkxNyIgeT0iMTAuOTU4IiB3aWR0aD0iMiIgaGVpZ2h0PSIyIi8+DQoJPHJlY3QgeD0iMTIuOTU5IiB5PSIxMC45NTgiIHdpZHRoPSIyIiBoZWlnaHQ9IjIiLz4NCgk8cmVjdCB4PSI4LjkzOCIgeT0iMTAuOTU4IiB3aWR0aD0iMiIgaGVpZ2h0PSIyIi8+DQoJPHJlY3QgeD0iNC45MTciIHk9IjE0Ljk0MiIgd2lkdGg9IjIiIGhlaWdodD0iMiIvPg0KCTxyZWN0IHg9IjEyLjk1OSIgeT0iMTQuOTQyIiB3aWR0aD0iMiIgaGVpZ2h0PSIyIi8+DQoJPHJlY3QgeD0iOC45MzgiIHk9IjE0Ljk0MiIgd2lkdGg9IjIiIGhlaWdodD0iMiIvPg0KPC9nPg0KPC9zdmc+DQo=");
+        }
+    }
+    
+    &__amount-wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 46px;
+    }
+    
+    &__amount {
+        h4 {
+            margin-bottom: 10px;
+            padding-left: 10px;
+        }
+        input[type="number"] {
+            padding: 15px;
+            max-width: 80px;
+            background-color: $gray-bg;
+            border: none;
+            outline-color: darken($main-color, 10%);
+        }
+        
+    }
+    
+    &__button {
+        padding-top: 16px;
+        padding-bottom: 16px;
+        width: 280px;
+        border: none;
+        font-size: 24px;
+        color: white;
+        cursor: pointer;
+        background-color: $main-color;
+        outline-color: darken($main-color, 10%);
+        
+        &:hover,
+        &:focus {
+            background-color: darken($main-color, 5%);
+        }
+    }   
+}
+
+@media screen and (min-width: 768px) {
+    .search-form {
+        position: absolute;
+        background-color: white;
+        width: 560px;
+        margin-left: auto;
+        margin-right: auto;
+        left: 100px;
+        right: 100px;
+        top: -81px;
+        
+//        display: none;
+        
+        &__wrapper {
+            position: relative;
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,95 @@
+.tourism-essentials {
+    width: 100%;
+    padding-top: 75px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    font-family: $font;
+    
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    
+     &__inner {
+        @include inner-container;
+    }
+    
+    &__list-item {
+        padding-right: 25px;
+        
+        h3 {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        
+        p {
+            padding-left: 60px;
+        }
+    }
+    
+    &__list-item-icon {
+        display: inline-block;
+        vertical-align: middle;
+        width: 56px;
+        
+        svg {
+            width: 40px;
+            height: 40px;
+            fill: $main-color;
+        }
+    }
+}
+
+@media(min-width: 768px) {
+    .tourism-essentials {
+        margin-bottom: 60px;
+        
+        &__inner {
+            width: 100%;
+        }
+        
+        &__list {
+            display: flex;
+            justify-content: center;
+        }
+        
+        &__list-item {
+            padding-right: 0px;
+            text-align: center;
+            
+            h3 {
+                display: block;
+                font-size: 22px;
+                line-height: 26px;
+            }
+            
+            p {
+                padding-left: 0;
+                width: 76%;
+                margin-left: auto;
+                margin-right: auto;
+                font-size: 16px;
+                line-height: 22px;
+            }
+        }
+        
+        &__list-item-icon {
+            display: block;
+            width: auto;
+            
+            svg {
+                width: 80px;
+                height: 75px;
+            }
+        }
+    }
+}
+
+@media(min-width: 1280px) {
+    .tourism-essentials {
+        padding-bottom: 60px;
+        background-color: white;
+        margin-bottom: 0px;
+    }
+}

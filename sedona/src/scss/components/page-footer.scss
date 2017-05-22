@@ -1,0 +1,98 @@
+.page-footer {
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: rgba(255,255,255,0.8);
+    font-family: $font;
+    
+    &__heading {
+        font-family: $font-headings;
+        font-weight: bold;
+        font-size: 22px;
+        margin-bottom: 35px;
+    }
+    
+    &__copyright {
+        margin-top: 40px;
+    }
+    
+    &__copyright-item {
+        background-repeat: no-repeat;
+        display: inline-block;
+        background-position-x: right;
+        padding-right: 30px;
+        min-height: 40px;
+        margin-left: 6px;
+        margin-right: 6px;
+        
+        &_a {
+            background-image: url(../../img/a-logo.png);    
+        }
+        
+        &_html {
+            background-image: url(../../img/html-logo.png);
+            
+        }
+
+    }
+}
+
+.page-footer .socials {
+    &__list {
+        width: 160px;
+        margin: 0 auto;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    &__item {
+        display: block;
+        width: 46px;
+        height: 48px;
+        font-size: 0;
+        background-color: $main-color;
+        background-image: url(../../img/socials-sprite.png);
+        background-repeat: no-repeat;
+        background-position-y: center;
+        
+        &:hover,
+        &:focus {
+            background-color: darken($main-color, 5%);
+        }
+        
+        &_tw {
+            background-position-x: 14px;
+        }
+        
+        &_fb {
+            background-position-x: center;
+        }
+        
+        &_yt {
+            background-position-x: -90px;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .page-footer {
+        
+        &__inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+        
+        &__copyright {
+            margin-top: 0;
+        }
+        
+        &__heading {
+            margin-bottom: 0;
+        }
+    }
+}

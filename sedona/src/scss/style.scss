@@ -1,0 +1,139 @@
+// variables 
+//fonts
+@import "../../fonts/fonts.css";
+
+$font: 'pt_sans_regular', Arial, sans-serif;
+$font-size: 14px;
+$line-height: $font-size*1.2;
+$font-headings: 'pt_sans_bold', sans-serif;
+$font-size-headings: 18px;
+$line-height-headings: $font-size-headings*1.2;
+//sizes
+$inner-width: 300px;
+//colors
+//blue
+$main-color: #81b3d2;
+$gray: #eeeeee;
+$brown: #766357;
+$gorgeous-brown: #83746a;
+$gray-bg: #f2f2f2;
+
+//mixins
+@mixin inner-container {
+    width: $inner-width;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin desktop-container {
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow:  0 0 10px rgba(0,0,0,0.75);
+}
+
+body {
+    font-family: $font;
+    font-size: $font-size;
+    line-height: $line-height;
+    margin: 0;
+}
+
+@import "components/page-header.scss";
+
+@import "components/main-nav.scss";
+
+@import "components/welcome-screen.scss";
+
+.greetings-text {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: $font;
+    position: relative;
+    padding-bottom: 30px;
+    padding-left: 3%;
+    padding-right: 3%;
+    box-sizing: border-box;
+    
+    &__header {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        font-family: $font-headings;
+        font-size: $font-size-headings;
+        line-height: 26px;
+    }
+    
+    &__text {
+        margin-bottom: 25px;
+        line-height: 20px;
+    }
+    
+    &:after {
+        position: absolute;
+        display: block;
+        content: '';
+        width: 0;
+        height: 0;
+        border-bottom: 30px solid $main-color; 
+        border-right: 225px solid transparent;
+        bottom: 0;
+        left: 0;
+    }
+    
+    &:before {
+        position: absolute;
+        display: block;
+        content: '';
+        width: 0;
+        height: 0;
+        bottom: 0;
+        right: 0;
+        border-bottom: 30px solid $main-color;
+        border-left: 225px solid transparent;
+    }
+}
+
+@import "components/city-content.scss";
+
+@import "components/tourism-essentials.scss";
+
+@import "components/bridge-content.scss";
+
+@import "components/tourism-features.scss";
+
+@import "components/hotel-search.scss";
+
+@import "components/search-form.scss";
+
+@import "components/page-footer.scss";
+
+@media(min-width: 768px) {
+    .greetings-text {
+        &:before,
+        &:after {
+            display: none;
+        }
+    }
+}
+
+@media(min-width: 1280px) {
+    body {
+        width: 100%;
+        position: relative;
+        background-color: lightgray;
+    }
+    
+    .greetings-text {
+        @include desktop-container;
+        background-color: white;
+        padding-bottom: 50px;
+        padding-top: 50px;
+        margin-bottom: 0px;
+    }
+    
+    .page-content {
+        @include desktop-container;
+    }
+}

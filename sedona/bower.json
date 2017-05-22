@@ -1,0 +1,22 @@
+{
+  "name": "sedona",
+  "description": "first project with bem-methodology",
+  "main": "index.html",
+  "authors": [
+    "Sergey Koshman"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize-css": "normalize.css#^6.0.0",
+    "moveto": "moveTo#^1.6.1"
+  }
+}

@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'pt_sans_regular';
+    src:  url('PT_Sans_regular.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'pt_sans_bold';
+    src: url('PT_Sans_bold.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
