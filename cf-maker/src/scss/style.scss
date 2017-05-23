@@ -1,0 +1,62 @@
+@import "../../fonts/fonts.css";
+@import "var.scss";
+
+body {
+    margin: 0;
+    font-family: $font;
+    font-size: 18px;
+    line-height: 22px;
+    background-image: url(../../img/programs-bg.jpg);
+    background-size: contain;
+}
+
+.first-screen-wrapper {
+    width: 100%;
+    background-image: url(../../img/header-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    
+    &:after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 70px;
+        background-image: url(../../img/line--bg-lower.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+@import "components/page-header.scss";
+
+@import "components/welcome-screen.scss";
+
+@import "components/main-nav.scss";
+
+@import "components/programs.scss";
+
+@import "components/study-plan.scss";
+
+@import "components/plan-tabs.scss";
+
+@import "components/testimonals.scss";
+
+@import "components/ask-question.scss";
+
+@import "components/school-description.scss";
+
+.page-footer {
+    background-color: black;
+}
+
+@import "components/contacts.scss";
+
+@import "components/footer-nav.scss";
+
+@import "components/page-footer.scss";
+
+@import "components/gallery.scss";
+
+@import "components/partners.scss";

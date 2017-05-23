@@ -1,0 +1,218 @@
+.plan-tabs {
+    &__list {
+        position: relative;
+        margin: 0 auto;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        width: 86%;
+        justify-content: space-between;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-family: $font-heading;
+        
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            z-index: 0;
+            border-bottom: 1px solid $gray;
+            width: 106%;
+            top: 23px;
+            margin-left: -3%;
+        }
+    }
+    
+    &__list-item {
+        display: block;
+        color: $gray;
+        cursor: pointer;
+    }
+    
+    .js-hidden {
+        display: none;
+    }
+}
+
+//should be separte block beacuse of big amount of nesting elements but choose element because of connected idea (расшифровать более конкретно о том, что не имеет смысла без контекста)
+
+.plan-tabs__content {
+    position: relative;
+    padding-left: 35%;
+    margin-bottom: 20px;
+    overflow: hidden;
+    text-align: right;
+    padding-right: 5%;
+    z-index: 5;
+    
+    &:before {
+        display: block;
+        position: absolute;
+        z-index: 1;
+        font-size: 8em;
+        top: 50px;
+        right: 0;
+        color: black;
+        opacity: 0.2;
+        font-family: $font-heading;
+        text-transform: uppercase;
+    }
+    
+    &_basic {
+        &:before {
+            content: 'BASIC';
+        }
+    }
+    
+     &_premium {
+        &:before {
+            content: 'prem';
+        }
+    }
+    
+    &_platinum {
+        &:before {
+            content: 'platin';
+        }
+    }
+    
+    
+    &-header {
+        z-index: 2;
+    }
+    
+    &-img {
+        max-width: 70%;
+        position: absolute;
+        left: -57px;
+        top: 60px;
+            z-index: 2;
+    }
+    
+    &-cerf {
+        background-image: url(../../img/cerf.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position-x: 45%;
+            z-index: 2;
+    }
+    
+    &-time {
+        background-image: url(../../img/time.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position-x: 45%;
+            z-index: 2;
+    }
+    
+    &-price {
+        font-weight: bold;
+        font-size: 1.2em;
+            z-index: 2;
+        
+        span {
+           font-size: 1.5em; 
+        }
+    }
+    
+    &-button {
+        padding: 18px 36px;
+        font-family: $font-heading;
+        font-size: 1em;
+        font-weight: bold;
+        color: $textcolor-with-bg;
+        background-color: $textcolor-without-bg;
+        border: 1px solid transparent;
+        text-transform: uppercase;
+        
+        &:hover,
+        &:focus {
+            color: $textcolor-without-bg;
+            background-color: $textcolor-with-bg;
+            border: 1px solid $textcolor-without-bg;
+        }
+    }
+}
+
+.js-tabs__list-item_active {
+    position: relative;
+    z-index: 2;
+    color: $textcolor-without-bg;
+    border-bottom: 3px solid $textcolor-without-bg;
+}
+
+@media(min-width: 375px) {
+    
+    .plan-tabs {
+        &__content-cerf, 
+        &__content-time {
+            background-position-x: 52%;
+        }
+        
+        &__content-cerf {
+            margin-top: 40px;
+        }
+    }
+}
+
+@media(min-width: 425px) {
+    .plan-tabs__content-price {
+        margin-bottom: 50px;
+    }
+}
+
+@media(min-width: 768px) {
+    .plan-tabs {
+        margin-bottom: 50px;
+        
+        &__list-item {
+            padding: 20px;
+        }
+        
+        &__list:after {
+            top: 63px;
+        }
+        
+        &__content-img {
+            max-width: 56%;
+            left: 70px;
+        }
+        
+        &__content-cerf, 
+        &__content-time {
+            background-position-x: 78%;
+        }
+    }
+}
+
+@media(min-width: 960px) {
+    .plan-tabs {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        
+        &__list {
+            &:after {
+                width: 116%;
+                top: 93px;
+                margin-left: -8%;
+            }
+        }
+        
+        &__list-item {
+            padding: 35px 65px;
+        }
+    }
+}
+
+
+@media(min-width: 1366px) {
+    .plan-tabs {
+        width: 80%;
+        
+        &__content-img {
+            left: 154px;
+            width: 500px;
+        }
+    }
+}

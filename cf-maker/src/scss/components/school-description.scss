@@ -1,0 +1,37 @@
+.school-description {
+    text-align: center;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 50px;
+    margin-bottom: 30px;
+    color: $textcolor-with-bg;
+    
+    &__header {
+        font-family: $font-heading;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    
+    &__text-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    &__text {
+        margin-bottom: 15px;
+        text-align: justify;
+    }
+}
+
+@media(min-width: 1024px) {
+    .school-description {
+        &__text-wrapper {
+            flex-direction: row;
+            
+            p:first-child {
+                margin-right: 45px;
+            }
+        }
+    }
+}

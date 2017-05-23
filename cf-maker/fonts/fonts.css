@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'minion_pro_regular';
+    src:  url('MinionPro-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), local('Roboto-black') url('Roboto-Black.ttf');
+}

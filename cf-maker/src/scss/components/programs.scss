@@ -1,0 +1,193 @@
+.programs {
+    width: 100%;
+    padding-top: 180px;
+    text-align: center;
+    background-image: url(../../img/programs-bg.jpg);
+    background-size: contain;
+    
+    &__inner {
+        position: relative;
+        overflow: hidden;
+    }
+    
+    &__bean-wrapper {
+        min-height: 1860px;
+        position: absolute;
+        min-width: 100%;
+    }
+    
+    &__bean {
+        position: absolute !important;
+        width: 250px;
+        height: 250px;
+        display: none !important;
+        
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        &_first {
+            top: 7% !important;
+            left: -6% !important;
+        }
+        
+        &_second {
+            top: 37% !important;
+            left: 93% !important;
+        }
+    }
+
+    
+    &__header {
+        font-family: $font-heading;
+        text-transform: uppercase;
+        position: relative;
+        margin-top: 0px;
+
+        
+        &:before,
+        &:after {
+            content: "";
+            display: block;
+            width: 15px;
+            height: 15px;
+            position: absolute;
+            background-size: cover;
+            top: 3px;
+            background-image: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABJlBMVEUAAAAiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIAAACfIhmCAAAAYHRSTlMAU/qOAtj8H0+RxfQSO3yx6gko/mec2yD5XRY+Zo+28v3CmXBJnsbu99CpbQE3yPAaFdPzG9z2Qh3kSiTnUC3rWzRpkNLexAgvWECAaMHxqruV10sqA+xsBEeYjRDo1AfPuFcRAAAAAWJLR0QAiAUdSAAAAAlwSFlzAAAWJQAAFiUBSVIk8AAAAQZJREFUKM9jYEAGjEzMDLgBC2sCGztuaY6EhARO3NJcQGluHlyyvAkgwIdLmh8sLSCIXVZIGCydIIJdWhQimyDGgk1WXAIqnSCJJiMlLSMrJw+TTVBQVFJWEYeYoaKqpp6ADWhoamnrMGgk4AG6DHp4ZPUNGAyNcMoa6wItNzHFIWtmDnachSVWWSYrqL+sbbDIKtjC/W1njynrgBQujsbo0k4o4eaMJuuCPTpgwBVV2g3dancUaYxg90CJMgyXeyJLe2FIeyNL+8Cs9PWDsvyRpTkhYgF2DIaBbJg+CwCJBAWD2SFyII5EKJI0MNLCwiNgvEhQHFsgSUdJRMcgcSN8YuPiwSwAu5+jdzpKWmAAAAAASUVORK5CYII=");
+        }
+        
+        &:before{
+            left: 21%;
+        }
+        
+        &:after {
+            right: 21%;
+        }
+    }
+    
+    &__sub-header {
+        font-size: 16px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    
+    &__table-info {
+        clear: both;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    
+    &__table {
+        border-collapse: collapse;
+        border: 1px solid black;
+        text-align: left;
+        
+        &-header {
+            text-align: left;
+            text-transform: uppercase;
+            font-family: $font-heading;
+            font-weight: bold;
+        }
+        
+        &-icon {
+            text-align: center;
+            
+            &_check {
+                svg {
+                    fill: $green;
+                }
+            }
+            
+            &_cross {
+                fill: $red;
+            }
+            
+        }
+        
+        td {
+            border: 1px solid black;
+            min-width: 40px;
+            padding: 10px;
+        }
+        
+        &-more {
+            float: right;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            margin-left: 20px;
+            text-decoration: none;
+            color: $textcolor-without-bg;
+            cursor: pointer;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.js-programs__table-hidden {
+    display: none;
+}
+
+@media(min-width: 768px) {
+    .programs {
+        &__header {
+            &:before{
+                left: 37%;
+            }
+        
+            &:after {
+                right: 37%;
+            }
+        }
+    }
+}
+
+@media(min-width: 960px) {
+    .programs {
+        &__header {
+            &:before{
+                left: 43%;
+            }
+        
+            &:after {
+                right: 43%;
+            }
+        }
+    }
+}
+
+@media(min-width: 1024px) {
+    .programs {
+        &__header {
+            &:before{
+                left: 40%;
+            }
+        
+            &:after {
+                right: 40%;
+            }
+        }
+        
+        &__table {
+            margin-bottom: 50px;
+        }
+        
+        &__table-hidden {
+            display: table-row;
+        }
+        
+        &__table-more {
+            display: none;
+        }
+    }
+}
+
+@media(min-width: 1368px) {
+    .programs__bean {
+        display: block !important;
+    }
+}

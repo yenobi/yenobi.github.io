@@ -1,0 +1,26 @@
+.contacts {
+    color: $textcolor-with-bg;
+    font-family: $font-heading;
+    
+    &__table {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        border: 2px solid white;
+        border-spacing: 0px;
+        border-collapse: collapse;
+        
+        td {
+            border: 1px solid $gray-line;
+            padding: 10px;
+        }
+    }
+}
+
+@media(min-width: 768px) {
+    .contacts__icon-cell {
+        svg {
+            max-width: 40px;
+        }
+    }
+}

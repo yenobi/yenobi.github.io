@@ -1,0 +1,93 @@
+.study-plan {
+    text-align: left;
+    padding-left: 5%;
+    padding-right: 5%;
+    
+    &__header {
+        font-family: $font-heading;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    
+    &__list {
+        list-style: none;
+    }
+    
+    &__list-item {
+        text-align: left;
+        
+        &:before {
+            content: '-';
+            display: inline-block;
+            margin-right: 5px;
+        }
+    }
+    
+    &__item {
+        border-top: 1px solid $gray;
+        padding-top: 20px;
+        clear: both;
+    }
+    
+    &__more {
+        float: right;
+        margin-bottom: 20px;
+        text-decoration: none;
+        color: $textcolor-without-bg;
+        cursor: pointer;
+        
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.js-study-plan__hidden {
+    display: none;
+}
+
+@media(min-width: 768px) {
+    .study-plan {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 3%;
+        padding-right: 3%;
+        
+        &__list {
+            padding: 0;
+            margin-top: 60px; 
+        }
+        
+        &__item {
+            width: 30%;
+            
+            &:nth-last-of-type(1) {
+                ul.study-plan__list {
+                    margin-top: 35px;
+                }
+            }
+            
+            &:nth-of-type(2) {
+                ul.study-plan__list {
+                    margin-top: 82px;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 1024px) {
+    .study-plan {
+        &__hidden {
+            display: block;
+        }
+        
+        &__more {
+            display: none;
+        }
+        
+        &__list-item {
+            line-height: 34px;
+        }
+    }
+}
