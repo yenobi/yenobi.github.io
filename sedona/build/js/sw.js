@@ -1,17 +1,5 @@
 //This is the "Offline page" service worker
 
-//Add this below content to your HTML page, or add the js file to your page at the very top to register sercie worker
-if (navigator.serviceWorker.controller) {
-  console.log('[PWA Builder] active service worker found, no need to register')
-} else {
-  //Register the ServiceWorker
-  navigator.serviceWorker.register('pwabuider-sw.js', {
-    scope: './'
-  }).then(function(reg) {
-    console.log('Service worker has been registered for scope:'+ reg.scope);
-  });
-}
-
 //Install stage sets up the offline page in the cahche and opens a new cache
 self.addEventListener('install', function(event) {
   var offlinePage = new Request('offline.html');

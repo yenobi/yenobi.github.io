@@ -20,6 +20,7 @@
     "gulp-eslint": "^3.0.1",
     "gulp-imagemin": "^3.2.0",
     "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.5.1",
     "gulp-uglify": "^2.1.2",
     "gulp-uglifyjs": "^0.6.2",
