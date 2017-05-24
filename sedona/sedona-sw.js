@@ -2,7 +2,11 @@
 
 //Install stage sets up the offline page in the cahche and opens a new cache
 self.addEventListener('install', function(event) {
-  var offlinePage = new Request('offline.html');
+
+  console.log('begin installation of sw');
+  // ! i changed line bellow
+  // var offlinePage = new Request('offline.html');
+  var offlinePage = new Request('sedona.html');
   event.waitUntil(
   fetch(offlinePage).then(function(response) {
     return caches.open('pwabuilder-offline').then(function(cache) {
@@ -19,7 +23,8 @@ self.addEventListener('fetch', function(event) {
     fetch(event.request).catch(function(error) {
         console.error( '[PWA Builder] Network request Failed. Serving offline page ' + error );
         return caches.open('pwabuilder-offline').then(function(cache) {
-          return cache.match('offline.html');
+          return cache.match('sedona.html');
+          // return cache.match('offline.html');
       });
     }));
 });
@@ -30,4 +35,16 @@ self.addEventListener('refreshOffline', function(response) {
     console.log('[PWA Builder] Offline page updated from refreshOffline event: '+ response.url);
     return cache.put(offlinePage, response);
   });
+});
+
+// this is from video-course
+var options = {};
+
+self.addEventListener('push', function(event) {
+  event.waitUntil(
+    self.registrtion.showNotification(
+      'hello!',
+      options
+    );
+  );
 });
