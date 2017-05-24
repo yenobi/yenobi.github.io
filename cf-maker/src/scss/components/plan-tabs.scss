@@ -10,7 +10,7 @@
         text-transform: uppercase;
         font-weight: bold;
         font-family: $font-heading;
-        
+
         &:after {
             content: '';
             display: block;
@@ -22,13 +22,13 @@
             margin-left: -3%;
         }
     }
-    
+
     &__list-item {
         display: block;
         color: $gray;
         cursor: pointer;
     }
-    
+
     .js-hidden {
         display: none;
     }
@@ -44,7 +44,7 @@
     text-align: right;
     padding-right: 5%;
     z-index: 5;
-    
+
     &:before {
         display: block;
         position: absolute;
@@ -57,30 +57,30 @@
         font-family: $font-heading;
         text-transform: uppercase;
     }
-    
+
     &_basic {
         &:before {
             content: 'BASIC';
         }
     }
-    
+
      &_premium {
         &:before {
             content: 'prem';
         }
     }
-    
+
     &_platinum {
         &:before {
             content: 'platin';
         }
     }
-    
-    
+
+
     &-header {
         z-index: 2;
     }
-    
+
     &-img {
         max-width: 70%;
         position: absolute;
@@ -88,7 +88,7 @@
         top: 60px;
             z-index: 2;
     }
-    
+
     &-cerf {
         background-image: url(../../img/cerf.svg);
         background-repeat: no-repeat;
@@ -96,7 +96,7 @@
         background-position-x: 45%;
             z-index: 2;
     }
-    
+
     &-time {
         background-image: url(../../img/time.svg);
         background-repeat: no-repeat;
@@ -104,17 +104,18 @@
         background-position-x: 45%;
             z-index: 2;
     }
-    
+
     &-price {
         font-weight: bold;
         font-size: 1.2em;
-            z-index: 2;
-        
+        z-index: 2;
+        margin-bottom: 35px;
+
         span {
-           font-size: 1.5em; 
+           font-size: 1.5em;
         }
     }
-    
+
     &-button {
         padding: 18px 36px;
         font-family: $font-heading;
@@ -124,7 +125,7 @@
         background-color: $textcolor-without-bg;
         border: 1px solid transparent;
         text-transform: uppercase;
-        
+
         &:hover,
         &:focus {
             color: $textcolor-without-bg;
@@ -142,13 +143,13 @@
 }
 
 @media(min-width: 375px) {
-    
+
     .plan-tabs {
-        &__content-cerf, 
+        &__content-cerf,
         &__content-time {
             background-position-x: 52%;
         }
-        
+
         &__content-cerf {
             margin-top: 40px;
         }
@@ -164,21 +165,21 @@
 @media(min-width: 768px) {
     .plan-tabs {
         margin-bottom: 50px;
-        
+
         &__list-item {
             padding: 20px;
         }
-        
+
         &__list:after {
             top: 63px;
         }
-        
+
         &__content-img {
             max-width: 56%;
             left: 70px;
         }
-        
-        &__content-cerf, 
+
+        &__content-cerf,
         &__content-time {
             background-position-x: 78%;
         }
@@ -190,7 +191,7 @@
         width: 90%;
         margin-left: auto;
         margin-right: auto;
-        
+
         &__list {
             &:after {
                 width: 116%;
@@ -198,7 +199,7 @@
                 margin-left: -8%;
             }
         }
-        
+
         &__list-item {
             padding: 35px 65px;
         }
@@ -209,7 +210,7 @@
 @media(min-width: 1366px) {
     .plan-tabs {
         width: 80%;
-        
+
         &__content-img {
             left: 154px;
             width: 500px;

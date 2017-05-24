@@ -1,13 +1,13 @@
 .ask-question {
     margin-bottom: 50px;
     position: relative;
-    
+
     &__bean-wrapper {
         position: absolute;
         width: 100%;
         min-height: 320px;
     }
-    
+
     &__bean {
         position: absolute !important;
         width: 250px;
@@ -15,19 +15,19 @@
         display: none !important;
         top: 17% !important;
         left: 15% !important;
-        
+
         img {
             max-width: 100%;
             height: auto;
         }
     }
-    
+
     &__inner {
         text-align: left;
         padding-left: 3%;
         padding-right: 3%;
     }
-    
+
     &__header {
         padding-bottom: 15px;
         font-family: $font-heading;
@@ -35,12 +35,12 @@
         text-transform: uppercase;
         border-bottom: 1px solid $textcolor-without-bg;
     }
-    
+
     &__form {
         display: flex;
         flex-direction: column;
         padding-top: 30px;
-        
+
         &-input {
             text-transform: uppercase;
             font-weight: bold;
@@ -51,13 +51,14 @@
             margin-bottom: 30px;
             outline: none;
             background-image: url(../../img/programs-bg.jpg);
-            
+            background-size: cover;
+
             &:focus {
                 border-bottom: 2px solid $textcolor-without-bg;
                 margin-bottom: 29px;
             }
         }
-        
+
         &-submit {
             display: block;
             width: 110px;
@@ -68,7 +69,7 @@
             padding: 10px 20px;
             text-transform: uppercase;
             position: relative;
-            
+
             &:after {
                 content: "→";
                 display: block;
@@ -78,7 +79,7 @@
                 top: -18px;
                 left: 90px
             }
-            
+
             &:hover {
                 color: $textcolor-with-bg;
                 background-color: $textcolor-without-bg;
@@ -92,24 +93,24 @@
         background-image: url(../../img/ask-question__bg.png);
         background-repeat: no-repeat;
         background-size: contain;
-        
+
         &__inner {
             width: 58%;
             margin-left: auto;
             padding-top: 50px;
             padding-left: 0;
         }
-        
+
         &__form {
             display: block;
         }
-        
+
         &__form-submit {
             float: right;
             margin-right: 30px;
             margin-top: -5px;
         }
-        
+
         &__form-input {
             width: 50%;
         }
@@ -118,6 +119,6 @@
 
 @media(min-width: 1024px) {
     .ask-question__bean {
-        display: block !important;   
+        display: block !important;
     }
 }
