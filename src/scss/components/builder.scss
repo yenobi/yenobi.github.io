@@ -1,0 +1,27 @@
+.builder {
+    @include margin-bottom;
+
+    &__inner {
+        @include container;
+        background-color: $coral;
+    }
+
+    @include header;
+
+    @include content-text;
+
+    @include open-btn;
+    
+    &__content-img {
+        position: absolute;
+        max-width: 70%;
+        right: 10px;
+        bottom: 10px;
+    }
+}
+
+@media(min-width: 768px) {
+    .builder {
+        @include container_item-for-three;
+    }
+}

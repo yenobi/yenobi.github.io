@@ -1,0 +1,50 @@
+.page-header {
+    &__inner {
+        padding-top: 5%;
+        padding-bottom: 5%;
+        @include margin-sides;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    &__logo {
+        display: block;
+        color: $gray;
+        font-size: 1em;
+        font-family: $font-main;
+        text-decoration: none;
+        max-width: 170px;
+
+        img {
+            max-width: 30%;
+            height: auto;
+        }
+
+        span {
+            margin-top: 18px;
+            vertical-align: top;
+            display: inline-block;
+        }
+    }
+}
+
+@media(min-width: 768px) {
+    .page-header {
+        &__inner {
+            padding-top: 18px;
+            padding-bottom: 18px;
+        }
+    }
+}
+
+@media(min-width: 1200px) {
+    .page-header {
+        &__inner {
+            width: 1160px;
+            margin-left: auto;
+            margin-right: auto;
+            box-sizing: border-box;
+        }
+    }
+}

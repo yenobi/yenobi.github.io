@@ -1,0 +1,59 @@
+.pingbuller {
+    @include margin-bottom;
+
+    &__inner {
+        text-align: left;
+        background-color: $pink;
+        background-size: cover;
+        @include container;
+    }
+
+    &__content-img {
+        max-width: 100%;
+        position: absolute;
+        top: 285px;
+        left: 0px;
+        z-index: 0;
+    }
+
+    @include header;
+
+    @include content-text;
+
+    @include open-btn;
+
+    &__button {
+        z-index: 2;
+        position: relative;
+    }
+}
+
+@media(min-width: 768px) {
+    .pingbuller {
+        flex-grow: 1;
+
+        &__inner {
+            padding-left: 30px;
+            margin-left: 0%;
+            margin-right: 0px;
+            max-width: 94%;
+        }
+    }
+}
+
+@media(min-width: 1024px) {
+   .pingbuller {
+       &__content-img {
+           width: 100%;
+           max-width: auto;
+       }
+   }
+}
+
+@media(min-width: 1200px) {
+   .pingbuller {
+       &__content-img {
+           top: 220px;
+       }
+   }
+}

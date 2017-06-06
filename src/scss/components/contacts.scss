@@ -1,0 +1,71 @@
+.contacts {
+    
+    &__header {
+        color: white;
+    }
+    
+    &__icon-wrapper {
+        display: flex;
+        justify-content: space-around;
+
+        a {
+            display: block;
+            min-width: 40px;
+            width: 25%;
+            max-width: 60px;
+            min-height: 40px;
+            
+    animation-name: bounce;
+    animation-duration: 1s;
+//    animation-delay: 0s, .3s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+//    animation-fill-mode: forwards;
+//    animation-direction: normal, alternate;
+            animation-play-state: paused;
+            
+            &:hover {
+                animation-play-state: running;
+            }
+        }
+    }
+}
+
+@media(min-width: 768px) {
+    .contacts {
+        &__icon-wrapper {
+            width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+@keyframes bounce {
+  from, 20%, 53%, 80%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+  }
+
+  40%, 43% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0);
+  }
+
+  70% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    -webkit-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0,-4px,0);
+    transform: translate3d(0,-4px,0);
+  }
+}
+

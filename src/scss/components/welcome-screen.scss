@@ -1,0 +1,68 @@
+.welcome-screen {
+    margin-bottom: 20px;
+
+    &__inner {
+        @include margin-sides;
+        @include container-shadow;
+        padding-left: 10px;
+        padding-bottom: 20px;
+        color: $white;
+        background-image: url(../../img/welcome-screen__bg.jpg);
+        background-size: cover;
+    }
+
+    &__header {
+        margin-top: 0px;
+        margin-bottom: 40px;
+        padding-top: 60px;
+    }
+
+    &__bio {
+        margin-bottom: 50px;
+    }
+
+    @include open-btn;
+    // &__button {
+    //     border: 2px solid $peach;
+    //     background-color: transparent;
+    //     color: $white;
+    //     font-size: 1em;
+    //     padding: 10px;
+    //     margin-bottom: 50px;
+    //
+    //     &:hover,
+    //     &:focus {
+    //         background-color: $peach;
+    //         color: $blue;
+    //     }
+    // }
+}
+
+//padding-left: 60px
+
+@media(min-width: 768px) {
+    .welcome-screen {
+        &__inner {
+            padding-left: 20px;
+        }
+    }
+}
+
+@media(min-width: 1024px) {
+    .welcome-screen {
+        &__inner {
+            background-position: center;
+        }
+    }
+}
+
+@media(min-width: 1200px) {
+    .welcome-screen {
+        &__inner {
+            width: 1160px;
+            margin-left: auto;
+            margin-right: auto;
+            box-sizing: border-box;
+        }
+    }
+}

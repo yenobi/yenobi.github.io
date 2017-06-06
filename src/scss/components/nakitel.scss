@@ -1,0 +1,63 @@
+.nakitel {
+    @include margin-bottom;
+
+    &__inner {
+        text-align: right;
+        background-color: $light-green;
+        background-size: cover;
+        @include container;
+    }
+
+    &__content-img {
+        max-width: 185px;
+        position: absolute;
+        top: 130px;
+        left: 3px;
+        z-index: 0;
+    }
+
+    @include header;
+
+    @include content-text;
+
+    @include open-btn;
+
+}
+
+@media(min-width: 768px) {
+    .nakitel {
+        flex-grow: 1;
+
+        &__inner {
+            padding-right: 30px;
+            margin-left: 0px;
+            margin-right: 10px;
+            max-width: 86%;
+        }
+
+        &__button {
+            margin-top: 23px;
+            margin-bottom: 53px;
+        }
+    }
+}
+
+@media(min-width: 1024px) {
+    .nakitel {
+        &__inner {
+                max-width: 90%;
+        }
+
+        &__button {
+            margin-bottom: 74px;
+        }
+    }
+}
+
+@media(min-width:1200px) {
+    .nakitel {
+        &__inner {
+                margin-right: 17px;
+        }
+    }
+}

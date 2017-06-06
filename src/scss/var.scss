@@ -1,0 +1,97 @@
+//COLORS
+
+//bg-color
+$blue: #272f45;
+//text-color
+$gray: #9aa5a9;
+$white: white;
+//border and hover on buttons
+$peach: #eec9a2;
+
+// color for cards
+$pink: #7778c6;
+$light-green:  #60b8a3;
+
+$coral: #e97864;
+$dark-blue: #557581;
+$turquoise: #82c9d8;
+//FONTS
+
+$font-main: 'HKGrotesk-Light', Arial, Helvetica, sans-serif;
+$font-heading: 'LeagueSpartan-Bold', Tahoma, Geneva, sans-serif;
+
+//MIXINS
+@mixin margin-sides($margin: 7%) {
+    margin-left: $margin;
+    margin-right: $margin;
+}
+
+@mixin container-shadow {
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.63);
+}
+
+@mixin container {
+    height: 353px;
+    min-width: 265px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 50px;
+    color: $white;
+    position: relative;
+    overflow: hidden;
+    @include margin-sides;
+    @include container-shadow;
+}
+
+@mixin container_item-for-three {
+    width: 30%;
+    flex-basis: 215px;
+    flex-grow: 1;
+
+    &__inner {
+        margin-left: 0px;
+        margin-right: 5%;
+        min-width: auto;
+    }
+}
+
+@mixin margin-bottom($margin: 20px) {
+    margin-bottom: $margin;
+}
+
+@mixin open-btn {
+    &__button {
+        display: inline-block;
+        padding: 10px;
+        margin-bottom: 50px;
+        border: 2px solid $peach;
+        background-color: transparent;
+        color: $white;
+        font-size: 1em;
+        text-decoration: none;
+
+        &:hover,
+        &:focus {
+            background-color: $peach;
+            color: $blue;
+        }
+    }
+}
+
+@mixin header {
+    &__header {
+        margin-top: 0px;
+        margin-bottom: 20px;
+        padding-top: 30px;
+        font-size: 1.8em;
+    }
+}
+
+@mixin content-text {
+    &__text {
+        margin-bottom: 50px;
+        z-index: 1;
+        position: relative;
+        font-size: 1.2em;
+    }
+}

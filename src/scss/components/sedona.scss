@@ -1,0 +1,36 @@
+.sedona {
+    @include margin-bottom;
+
+    &__inner {
+        @include container;
+        background-color: $turquoise;
+    }
+
+    @include header;
+
+    @include content-text;
+
+    @include open-btn;
+
+    &__button {
+        z-index: 2;
+        position: relative;
+    }
+
+    &__content-img {
+        position: absolute;
+        max-width: 100%;
+        right: 0px;
+        bottom: -30px;
+    }
+}
+
+@media(min-width: 768px) {
+    .sedona {
+        @include container_item-for-three;
+
+        &__inner {
+            margin-right: 0px;
+        }
+    }
+}

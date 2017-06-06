@@ -1,0 +1,63 @@
+@import 'fonts.scss';
+
+@import 'var.scss';
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: $blue;
+    color: $gray;
+    font-size: 18px;
+    font-family: $font-main;
+    width: 100%;
+}
+
+@import 'components/page-header.scss';
+
+@import 'components/welcome-screen.scss';
+
+@import 'components/main-nav.scss';
+
+//  main-part
+
+//  upper-container
+
+@import 'components/nakitel.scss';
+
+@import 'components/pingbuller.scss';
+
+//  lower-container
+
+@import 'components/coffee.scss';
+
+@import 'components/sedona.scss';
+
+@import 'components/builder.scss';
+
+//  page-footer
+
+@import 'components/contacts.scss';
+
+@import 'components/page-footer.scss';
+
+@media(min-width: 768px) {
+    .container {
+        display: flex;
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+
+    .container_three-items {
+            justify-content: space-between;
+    }
+}
+
+@media(min-width: 1200px) {
+    .container {
+        width: 1160px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}

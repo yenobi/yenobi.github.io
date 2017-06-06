@@ -1,0 +1,35 @@
+.coffee {
+    @include margin-bottom;
+
+    &__inner {
+        @include container;
+        background-color: $dark-blue;
+    }
+
+    @include header;
+
+    @include content-text;
+
+    @include open-btn;
+
+    &__content-img {
+        position: absolute;
+        max-width: 70%;
+        right: 0px;
+        bottom: 10px;
+    }
+}
+
+@media(min-width: 768px) {
+    .coffee {
+        width: auto;
+        flex-basis: 215px;
+        flex-grow: 1;
+
+        &__inner {
+            margin-left: 0px;
+            margin-right: 5%;
+            min-width: auto;
+        }
+    }
+}

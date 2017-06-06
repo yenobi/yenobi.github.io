@@ -1,0 +1,21 @@
+{
+  "name": "portfolior",
+  "description": "portfolio-project",
+  "main": "index.html",
+  "authors": [
+    "Sergey Koshman"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/yenobi/exercises",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize-css": "normalize.css#^6.0.0"
+  }
+}
