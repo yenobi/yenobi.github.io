@@ -28,7 +28,6 @@
 @media(min-width: 768px) {
     .sedona {
         @include container_item-for-three;
-
         &__inner {
             margin-right: 0px;
         }
