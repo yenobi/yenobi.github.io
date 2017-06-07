@@ -25,6 +25,7 @@
         background-color: $blue;
         padding-top: 20px;
         padding-bottom: 20px;
+        text-shadow: 1px 1px 1px #000000;
 
         &:hover {
             background-color: lighten($blue, 10%);
@@ -78,11 +79,13 @@
     }
 }
 
+
+@media(min-width: 1920px) {
+    .main-nav {
+            top: -940px;
+    }
+}
+
 .main-nav_opened {
     top: 0px;
 }
-//@media(min-width: 768px) {
-//    .main-nav__toggler {
-//        top: 54px;
-//    }
-//}
