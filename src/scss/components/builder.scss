@@ -3,7 +3,7 @@
 
     &__inner {
         @include container;
-        background-color: $coral;
+        background-color: $red;
     }
 
     @include header;
@@ -19,7 +19,6 @@
         bottom: 10px;
     }
 }
-
 
 @media(min-width: 768px) {
     .builder {

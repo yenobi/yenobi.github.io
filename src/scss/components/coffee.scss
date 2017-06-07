@@ -3,7 +3,7 @@
 
     &__inner {
         @include container;
-        background-color: $dark-blue;
+        background-color: $light-gray;
     }
 
     @include header;
