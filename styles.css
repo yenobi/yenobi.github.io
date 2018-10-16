@@ -1,0 +1,107 @@
+:root {
+    --black: #000000;
+    --gray: #4A4A4A;
+    --lightgray: #535353;
+    --gray-with-opacity: rgba(74, 74, 74, 0.5);
+    
+    --border: 2px solid var(--gray-with-opacity);
+    
+    --font-size: 1em;
+}
+
+body {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1em;
+}
+
+.header {
+    width: 720px;
+    display: flex;
+    justify-content: space-between;
+    padding: 31px 33px 25px;
+    border-bottom: var(--border);
+}
+
+.contacts {
+    width: 206px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-left: 30px;
+    border-left: var(--border);
+}
+
+.main {
+    width: 786px;
+}
+
+.summary {
+    padding: 15px 33px 12.5px;
+    border-bottom: var(--border);
+}
+
+.summary .text {
+    line-height: 1.5em;
+}
+
+.text {
+    color: var(--lightgray);
+}
+
+.cols-wrapper {
+    padding: 15px 33px 12.5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+    padding: 0 19px 0;
+}
+
+.col section {
+    margin-bottom: 22px;
+}
+
+/* .col section p,  */
+.col section .description {
+    border-left: var(--border);
+    line-height: 1.3em;
+    padding: 5px 0 5px 18px;
+}
+
+.skills {
+    padding-left: 18px;
+}
+
+
+/* utility styles */
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mt-0 {
+    margin-top: 0;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
+.mb-4 {
+    margin-bottom: 4px;
+}
