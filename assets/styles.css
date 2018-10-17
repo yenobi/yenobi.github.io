@@ -1,3 +1,5 @@
+@import url('./fonts/fonts.css');
+
 :root {
     --black: #000000;
     --gray: #4A4A4A;
@@ -11,7 +13,8 @@
 
 body {
     margin: 0;
-    font-family: 'Ubuntu', sans-serif;
+    /* font-family: 'Ubuntu', sans-serif; */
+    font-family: 'Avenir Next', serif;
     font-size: 1em;
 }
 
@@ -76,6 +79,26 @@ body {
 
 .skills {
     padding-left: 18px;
+}
+
+/* todo: add class to div-wrapper of position and use cascad */
+.date {
+    margin-top: 0;
+    margin-bottom: 4px;
+    font-weight: bold;
+}
+
+.position {
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 4px;
+    font-weight: 500;
+}
+
+.company {
+    color: var(--lightgray);
+    margin-top: 0;
+    font-weight: 400;
 }
 
 
